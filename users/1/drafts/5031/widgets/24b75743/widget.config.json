@@ -1,0 +1,25 @@
+{
+  "id": "24b75743",
+  "type": "chart",
+  "title": "Basic Line Chart",
+  "layout": {
+    "x": 0,
+    "y": 12,
+    "w": 14,
+    "h": 8,
+    "minW": 2,
+    "minH": 1,
+    "zIndex": 0
+  },
+  "templateId": "150",
+  "dataSource": {
+    "type": "mock",
+    "config": {},
+    "refreshMode": "interval",
+    "refreshIntervalMs": 5000
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

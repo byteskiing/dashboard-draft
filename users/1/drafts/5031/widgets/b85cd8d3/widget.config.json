@@ -1,0 +1,25 @@
+{
+  "id": "b85cd8d3",
+  "type": "chart",
+  "title": "Three.js Demo Chart",
+  "layout": {
+    "x": 41,
+    "y": 11,
+    "w": 6,
+    "h": 4,
+    "minW": 2,
+    "minH": 1,
+    "zIndex": 0
+  },
+  "dataSource": {
+    "type": "mock",
+    "config": {},
+    "refreshMode": "interval",
+    "refreshIntervalMs": 5000
+  },
+  "configFileName": "three-scene.json",
+  "dataFileName": "three-data.json",
+  "code": "/**\r\n * Galaxy Spiral Chart - Theme Aware\r\n * Uses \u0027themeData\u0027 and \u0027theme\u0027 injected by CodeChartRenderer\r\n */\r\nconst themeThree = themeData?.threejs || {};\r\nconst bgValue = themeThree.backgroundColor || \u0027#050505\u0027;\r\n\r\nconst scene = new THREE.Scene();\r\nconst camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 2000);\r\nconst renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });\r\n\r\nrenderer.setSize(width, height);\r\nrenderer.setPixelRatio(window.devicePixelRatio);\r\n\r\n// Handle Theme Background (Dark / Light / Transparent)\r\nif (bgValue === \u0027transparent\u0027 || theme === \u0027transparent\u0027) {\r\n  renderer.setClearColor(0x000000, 0); // Fully transparent\r\n  scene.background = null;\r\n} else {\r\n  const bgColor = new THREE.Color(bgValue);\r\n  scene.background = bgColor;\r\n  renderer.setClearColor(bgColor, 1);\r\n}\r\n\r\ncontainer.appendChild(renderer.domElement);\r\n\r\n// --- Galaxy Parameters (Aligned with Plotly Theme Colors) ---\r\nconst parameters = {\r\n  count: 30000,\r\n  size: 3,\r\n  radius: 400,\r\n  branches: 3,\r\n  spin: 1,\r\n  randomness: 0.2,\r\n  randomnessPower: 3,\r\n  // Using Plotly standard colorway colors\r\n  insideColor: new THREE.Color(0xEF553B), // Plotly Red-ish\r\n  outsideColor: new THREE.Color(0x636efa) // Plotly Blue\r\n};\r\n\r\nconst geometry = new THREE.BufferGeometry();\r\nconst positions = new Float32Array(parameters.count * 3);\r\nconst colors = new Float32Array(parameters.count * 3);\r\n\r\nfor (let i = 0; i \u003C parameters.count; i\u002B\u002B) {\r\n  const i3 = i * 3;\r\n  const r = Math.random() * parameters.radius;\r\n  const spinAngle = (r / parameters.radius) * parameters.spin * Math.PI * 2;\r\n  const branchAngle = ((i % parameters.branches) / parameters.branches) * Math.PI * 2;\r\n\r\n  const randomX = Math.pow(Math.random(), parameters.randomnessPower) * (Math.random() \u003C 0.5 ? 1 : -1) * parameters.randomness * r;\r\n  const randomY = Math.pow(Math.random(), parameters.randomnessPower) * (Math.random() \u003C 0.5 ? 1 : -1) * (parameters.randomness * r * 0.5);\r\n  const randomZ = Math.pow(Math.random(), parameters.randomnessPower) * (Math.random() \u003C 0.5 ? 1 : -1) * parameters.randomness * r;\r\n\r\n  positions[i3] = Math.cos(branchAngle \u002B spinAngle) * r \u002B randomX;\r\n  positions[i3 \u002B 1] = randomY;\r\n  positions[i3 \u002B 2] = Math.sin(branchAngle \u002B spinAngle) * r \u002B randomZ;\r\n\r\n  const mixedColor = parameters.insideColor.clone();\r\n  mixedColor.lerp(parameters.outsideColor, r / parameters.radius);\r\n\r\n  colors[i3] = mixedColor.r;\r\n  colors[i3 \u002B 1] = mixedColor.g;\r\n  colors[i3 \u002B 2] = mixedColor.b;\r\n}\r\n\r\ngeometry.setAttribute(\u0027position\u0027, new THREE.BufferAttribute(positions, 3));\r\ngeometry.setAttribute(\u0027color\u0027, new THREE.BufferAttribute(colors, 3));\r\n\r\nconst canvas = document.createElement(\u0027canvas\u0027);\r\ncanvas.width = 32;\r\ncanvas.height = 32;\r\nconst ctx = canvas.getContext(\u00272d\u0027);\r\nconst gradient = ctx.createRadialGradient(16, 16, 0, 16, 16, 16);\r\ngradient.addColorStop(0, \u0027rgba(255, 255, 255, 1)\u0027);\r\ngradient.addColorStop(0.2, \u0027rgba(255, 255, 255, 0.8)\u0027);\r\ngradient.addColorStop(0.5, \u0027rgba(255, 255, 255, 0.1)\u0027);\r\ngradient.addColorStop(1, \u0027rgba(0, 0, 0, 0)\u0027);\r\nctx.fillStyle = gradient;\r\nctx.fillRect(0, 0, 32, 32);\r\nconst texture = new THREE.CanvasTexture(canvas);\r\n\r\nconst material = new THREE.PointsMaterial({\r\n  size: parameters.size,\r\n  sizeAttenuation: true,\r\n  depthWrite: false,\r\n  blending: THREE.AdditiveBlending,\r\n  vertexColors: true,\r\n  map: texture,\r\n  transparent: true\r\n});\r\n\r\nconst particles = new THREE.Points(geometry, material);\r\nscene.add(particles);\r\n\r\ncamera.position.set(0, 300, 500);\r\ncamera.lookAt(0, 0, 0);\r\n\r\nconst controls = new OrbitControls(camera, renderer.domElement);\r\ncontrols.enableDamping = true;\r\ncontrols.dampingFactor = 0.05;\r\ncontrols.autoRotate = true;\r\ncontrols.autoRotateSpeed = 0.5;\r\n\r\nlet animationId;\r\nconst animate = () =\u003E {\r\n  animationId = requestAnimationFrame(animate);\r\n  particles.rotation.y \u002B= 0.0005;\r\n  controls.update();\r\n  renderer.render(scene, camera);\r\n};\r\nanimate();\r\n\r\nreturn () =\u003E {\r\n  cancelAnimationFrame(animationId);\r\n  controls.dispose();\r\n  geometry.dispose();\r\n  material.dispose();\r\n  texture.dispose();\r\n  renderer.dispose();\r\n  if (container.contains(renderer.domElement)) {\r\n    container.removeChild(renderer.domElement);\r\n  }\r\n};",
+  "isCodeDriven": false,
+  "libraryCode": "threejs"
+}
