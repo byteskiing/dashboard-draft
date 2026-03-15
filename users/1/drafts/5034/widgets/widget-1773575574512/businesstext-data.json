@@ -1,0 +1,10 @@
+{
+  "avgPerformance": 85.2,
+  "avgResilience": 72.8,
+  "avgSkill": 68.4,
+  "avgOverallScore": 75.5,
+  "alerts": [
+    { "level": "critical", "message": "乙烯装置 E-201 高压偏低 — 当前值 4.8 MPa（阈值 5.0 MPa）", "time": "2026-03-15T08:32:00Z" },
+    { "level": "warning", "message": "压缩单元 K-301 振动超限 — 当前值 68 μm（阈值 65 μm）", "time": "2026-03-15T09:15:00Z" }
+  ]
+}

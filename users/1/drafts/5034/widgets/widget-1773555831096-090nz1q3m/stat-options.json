@@ -6,5 +6,6 @@
   "textMode": "auto",
   "decimals": 2,
   "fieldName": "avgResilience",
-  "displayName": "Resilience"
+  "displayName": "Resilience",
+  "colorScheme": "blue-yellow-red"
 }
