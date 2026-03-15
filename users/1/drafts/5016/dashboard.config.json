@@ -22,15 +22,92 @@
       }
     },
     "monitor": {
-      "rows": [],
+      "rows": [
+        {
+          "id": "row-008af262",
+          "title": "Line Chart Row",
+          "sortOrder": 0,
+          "showTitle": true
+        },
+        {
+          "id": "row-877a674e",
+          "title": "Performance Overview",
+          "sortOrder": 1,
+          "showTitle": true
+        },
+        {
+          "id": "row-74306e61",
+          "title": "Environmental Data",
+          "sortOrder": 2,
+          "showTitle": true
+        }
+      ],
       "rowGapPx": 16,
       "panelGapPx": 12
     }
   },
-  "widgets": [],
+  "widgets": [
+    {
+      "id": "d7ac39e1",
+      "type": "echarts",
+      "title": "System Performance Trends",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 4,
+        "zIndex": 0
+      },
+      "templateId": "150",
+      "monitor": {
+        "rowId": "row-877a674e",
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 6,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "b903f11b",
+      "type": "echarts",
+      "title": "Rainfall Trend",
+      "layout": {
+        "x": 0,
+        "y": 8,
+        "w": 6,
+        "h": 4,
+        "zIndex": 0
+      },
+      "templateId": "3",
+      "monitor": {
+        "rowId": "row-74306e61",
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 8,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    }
+  ],
   "templates": [],
+  "variables": [],
   "metadata": {
-    "savedAt": "2026-01-28T10:57:33.2954149Z",
+    "savedAt": "2026-02-18T11:20:42.9994071Z",
     "dbVersion": 1,
     "isStale": false
   }

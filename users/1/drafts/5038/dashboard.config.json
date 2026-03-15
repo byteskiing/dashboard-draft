@@ -1,0 +1,71 @@
+{
+  "$schema": "./draft-schema.json",
+  "version": "1.0",
+  "dashboard": {
+    "id": "5038",
+    "name": "\u4E59\u70EF\u88C5\u7F6E",
+    "description": "",
+    "category": "Production",
+    "mode": "monitor",
+    "canvas": {
+      "gridSettings": {
+        "cols": 24,
+        "rowHeight": 30,
+        "margin": [
+          8,
+          8
+        ],
+        "padding": [
+          16,
+          16
+        ]
+      }
+    },
+    "monitor": {
+      "rows": [
+        {
+          "id": "row-1773481540057",
+          "title": "New Row",
+          "sortOrder": 0,
+          "showTitle": true,
+          "rowHeight": "auto"
+        }
+      ],
+      "rowHeight": "auto",
+      "rowGapPx": 16,
+      "panelGapPx": 12
+    }
+  },
+  "widgets": [
+    {
+      "id": "widget-1773481540288",
+      "type": "chart",
+      "title": "Basic area chart",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1",
+      "monitor": {
+        "rowId": "row-1773481540057",
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    }
+  ],
+  "templates": [],
+  "variables": [],
+  "metadata": {
+    "savedAt": "2026-03-14T09:45:40.9591106Z",
+    "dbVersion": 1,
+    "isStale": false
+  }
+}

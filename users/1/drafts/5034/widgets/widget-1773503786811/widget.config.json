@@ -1,0 +1,40 @@
+{
+  "id": "widget-1773503786811",
+  "type": "chart",
+  "title": "SBC Metric Card",
+  "layout": {
+    "x": 0,
+    "y": 0,
+    "w": 4,
+    "h": 3,
+    "minW": 2,
+    "minH": 2,
+    "zIndex": 1
+  },
+  "templateId": "1369",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    },
+    "refreshMode": "interval",
+    "refreshIntervalMs": 5000
+  },
+  "monitor": {
+    "rowId": "row-1773486163932",
+    "gridPos": {
+      "x": 9,
+      "y": 16,
+      "w": 6,
+      "h": 4,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "grafana-businesstext-options.json",
+  "dataFileName": "grafana-businesstext-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "grafana-businesstext"
+}

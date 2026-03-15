@@ -1,0 +1,50 @@
+{
+  "id": "widget-347b9c2c",
+  "type": "chart",
+  "title": "Texture on Pie Chart",
+  "layout": {
+    "x": 36,
+    "y": 0,
+    "w": 12,
+    "h": 8,
+    "minW": 2,
+    "minH": 1,
+    "zIndex": 0
+  },
+  "templateId": "204",
+  "dataSource": {
+    "type": "manual",
+    "config": {
+      "columns": [
+        {
+          "type": "string",
+          "name": "category"
+        },
+        {
+          "name": "value",
+          "type": "number"
+        }
+      ],
+      "rows": [
+        {
+          "value": 10,
+          "category": "A"
+        },
+        {
+          "category": "B",
+          "value": 20
+        },
+        {
+          "value": 30,
+          "category": "C"
+        }
+      ]
+    },
+    "refreshMode": "interval",
+    "refreshIntervalMs": 30000
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

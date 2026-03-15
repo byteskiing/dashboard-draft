@@ -1,0 +1,668 @@
+{
+  "$schema": "./draft-schema.json",
+  "version": "1.0",
+  "dashboard": {
+    "id": "5034",
+    "name": "scen1",
+    "description": "",
+    "category": "Production",
+    "mode": "monitor",
+    "canvas": {
+      "gridSettings": {
+        "cols": 24,
+        "rowHeight": 30,
+        "margin": [
+          8,
+          8
+        ],
+        "padding": [
+          16,
+          16
+        ]
+      },
+      "style": {
+        "gridColor": "rgba(255,255,255,0.06)",
+        "themePreset": "system"
+      },
+      "globalWidgetStyle": {
+        "borderRadius": 8
+      }
+    },
+    "monitor": {
+      "rows": [
+        {
+          "id": "row-1773416401723",
+          "title": "\u5168\u90E8\u88C5\u7F6E",
+          "sortOrder": 0,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "panelGapPx": 12,
+          "displayAs": "tabs",
+          "tabLabel": "\u5168\u90E8\u88C5\u7F6E",
+          "gridPos": {
+            "x": 0,
+            "y": 0,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          },
+          "style": {
+            "backgroundOpacity": 1
+          }
+        },
+        {
+          "id": "row-1773476025810",
+          "title": "\u5176\u4ED6",
+          "sortOrder": 1,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "panelGapPx": 12,
+          "displayAs": "tabs",
+          "tabLabel": "\u5176\u4ED6",
+          "gridPos": {
+            "x": 0,
+            "y": 20,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          },
+          "style": {
+            "backgroundOpacity": 1
+          }
+        },
+        {
+          "id": "row-1773486163932",
+          "title": "\u6570\u636E\u5206\u6790",
+          "sortOrder": 12,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "panelGapPx": 12,
+          "displayAs": "tabs",
+          "tabLabel": "\u6570\u636E\u5206\u6790",
+          "gridPos": {
+            "x": 0,
+            "y": 13,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          },
+          "style": {
+            "backgroundOpacity": 1
+          }
+        },
+        {
+          "id": "row-1773503994858",
+          "title": "New Row",
+          "sortOrder": 29,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "gridPos": {
+            "x": 0,
+            "y": 40,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          }
+        }
+      ],
+      "layoutModel": "fixed-grid",
+      "rowHeight": "auto",
+      "rowGapPx": 16,
+      "panelGapPx": 12
+    },
+    "headerSettings": {
+      "visible": false,
+      "showTimeRange": true,
+      "showFilters": true,
+      "showVariables": true,
+      "showRefreshControls": true,
+      "collapsible": true,
+      "defaultCollapsed": false
+    }
+  },
+  "widgets": [
+    {
+      "id": "widget-1773416380013",
+      "type": "chart",
+      "title": "Rainfall",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "zIndex": 1
+      },
+      "templateId": "3",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 3,
+          "w": 11,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773416421376",
+      "type": "chart",
+      "title": "Large scale area chart",
+      "layout": {
+        "x": 6,
+        "y": 1,
+        "w": 6,
+        "h": 12,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "4",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 11,
+          "y": 17,
+          "w": 12,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 1,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773416424095",
+      "type": "chart",
+      "title": "Gradient Stacked Area Chart",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "5",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 17,
+          "w": 11,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 2,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773476066204",
+      "type": "chart",
+      "title": "Rainfall",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "3",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 0,
+          "y": 14,
+          "w": 9,
+          "h": 6,
+          "zIndex": 0
+        },
+        "order": 3,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773476083873",
+      "type": "chart",
+      "title": "Stacked Area Chart",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "6",
+      "monitor": {
+        "rowId": "row-1773476025810",
+        "gridPos": {
+          "x": 0,
+          "y": 21,
+          "w": 9,
+          "h": 7,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503505607",
+      "type": "chart",
+      "title": "Stat (Sparkline)",
+      "layout": {
+        "x": 0,
+        "y": 11,
+        "w": 2,
+        "h": 2,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1331",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 3,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503814776-b6wr9koub",
+      "type": "chart",
+      "title": "Stat (Sparkline) (Copy)",
+      "layout": {
+        "x": 2,
+        "y": 13,
+        "w": 2,
+        "h": 2,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1331",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 15,
+          "w": 23,
+          "h": 2,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503516363",
+      "type": "chart",
+      "title": "Business Text",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "325",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 6,
+          "y": 0,
+          "w": 5,
+          "h": 3,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "grafana-businesstext-options.json",
+      "dataFileName": "grafana-businesstext-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503524663",
+      "type": "chart",
+      "title": "Stat (Basic)",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1330",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 11,
+          "y": 0,
+          "w": 5,
+          "h": 3,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503581760",
+      "type": "chart",
+      "title": "Stat (Basic)",
+      "layout": {
+        "x": 17,
+        "y": 0,
+        "w": 2,
+        "h": 2,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1330",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 16,
+          "y": 0,
+          "w": 7,
+          "h": 3,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503781755",
+      "type": "chart",
+      "title": "SBC Event Timeline",
+      "layout": {
+        "x": 10,
+        "y": 16,
+        "w": 6,
+        "h": 4,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1368",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 10,
+          "y": 16,
+          "w": 6,
+          "h": 4,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "grafana-businesstext-options.json",
+      "dataFileName": "grafana-businesstext-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503786811",
+      "type": "chart",
+      "title": "SBC Metric Card",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1369",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 9,
+          "y": 16,
+          "w": 6,
+          "h": 4,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "grafana-businesstext-options.json",
+      "dataFileName": "grafana-businesstext-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503793132",
+      "type": "chart",
+      "title": "Stat (Sparkline)",
+      "layout": {
+        "x": 12,
+        "y": 16,
+        "w": 2,
+        "h": 2,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1331",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 12,
+          "y": 16,
+          "w": 2,
+          "h": 2,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503801181",
+      "type": "chart",
+      "title": "Stat (Sparkline)",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1331",
+      "monitor": {
+        "rowId": "row-1773476025810",
+        "gridPos": {
+          "x": 1,
+          "y": 27,
+          "w": 2,
+          "h": 2,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773503987025",
+      "type": "chart",
+      "title": "Stacked Area Chart",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "6",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 11,
+          "y": 17,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773504005007",
+      "type": "chart",
+      "title": "Stacked Area Chart",
+      "layout": {
+        "x": 11,
+        "y": 17,
+        "w": 6,
+        "h": 12,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "6",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 11,
+          "y": 17,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "widget-1773504009680",
+      "type": "chart",
+      "title": "Stacked Area Chart",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "6",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 11,
+          "y": 29,
+          "w": 12,
+          "h": 11,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    }
+  ],
+  "templates": [],
+  "variables": [
+    {
+      "id": "var-1773452823214",
+      "name": "City",
+      "type": "custom",
+      "label": "",
+      "description": "",
+      "hide": 0,
+      "skipUrlSync": false,
+      "index": 0,
+      "query": "1",
+      "sort": 0,
+      "refresh": 0,
+      "options": [
+        {
+          "text": "1",
+          "value": "1",
+          "selected": false
+        }
+      ],
+      "current": {
+        "value": "",
+        "text": ""
+      },
+      "multi": false,
+      "includeAll": false
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-03-13T15:41:18.244Z",
+    "savedAt": "2026-03-15T03:19:11.8875076Z",
+    "dbVersion": 1,
+    "isStale": false
+  }
+}

@@ -18,47 +18,6 @@
       "dataType": "timeseries",
       "pointCount": 50
     },
-    "previewData": {
-      "series": [
-        {
-          "data": [
-            165,
-            170,
-            30
-          ],
-          "index": 0,
-          "name": "City Alpha",
-          "type": "bar"
-        },
-        {
-          "data": [
-            150,
-            105,
-            110
-          ],
-          "index": 1,
-          "name": "City Beta",
-          "type": "bar"
-        },
-        {
-          "data": [
-            220,
-            82,
-            63
-          ],
-          "index": 2,
-          "name": "City Gamma",
-          "type": "bar"
-        }
-      ],
-      "yAxis": {
-        "data": [
-          "Sunny",
-          "Cloudy",
-          "Showers"
-        ]
-      }
-    },
     "refreshMode": "interval",
     "refreshIntervalMs": 5000
   },

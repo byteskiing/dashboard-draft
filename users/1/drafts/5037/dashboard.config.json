@@ -1,0 +1,72 @@
+{
+  "$schema": "./draft-schema.json",
+  "version": "1.0",
+  "dashboard": {
+    "id": "5037",
+    "name": "\u5C3E\u6C14\u6025\u51B7",
+    "description": "",
+    "category": "Production",
+    "mode": "monitor",
+    "canvas": {
+      "gridSettings": {
+        "cols": 24,
+        "rowHeight": 30,
+        "margin": [
+          8,
+          8
+        ],
+        "padding": [
+          16,
+          16
+        ]
+      }
+    },
+    "monitor": {
+      "rows": [
+        {
+          "id": "row-1773476304973",
+          "title": "New Row",
+          "sortOrder": 0,
+          "showTitle": true,
+          "rowHeight": "auto"
+        }
+      ],
+      "rowHeight": "auto",
+      "rowGapPx": 16,
+      "panelGapPx": 12
+    }
+  },
+  "widgets": [
+    {
+      "id": "widget-1773476312404",
+      "type": "chart",
+      "title": "line aqi",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 4,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "134",
+      "monitor": {
+        "rowId": "row-1773476304973",
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    }
+  ],
+  "templates": [],
+  "variables": [],
+  "metadata": {
+    "createdAt": "2026-03-14T08:18:36.256Z",
+    "savedAt": "2026-03-14T08:18:36.2712747Z",
+    "dbVersion": 1,
+    "isStale": false
+  }
+}

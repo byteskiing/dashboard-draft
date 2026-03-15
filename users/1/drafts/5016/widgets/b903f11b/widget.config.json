@@ -1,0 +1,32 @@
+{
+  "id": "b903f11b",
+  "type": "echarts",
+  "title": "Rainfall Trend",
+  "layout": {
+    "x": 0,
+    "y": 8,
+    "w": 6,
+    "h": 4,
+    "zIndex": 0
+  },
+  "templateId": "3",
+  "dataSource": {
+    "type": "mock"
+  },
+  "monitor": {
+    "rowId": "row-74306e61",
+    "gridPos": {
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 8,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

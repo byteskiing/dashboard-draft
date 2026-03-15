@@ -1,0 +1,89 @@
+{
+  "$schema": "./draft-schema.json",
+  "version": "1.0",
+  "dashboard": {
+    "id": "5039",
+    "name": "ModeTester",
+    "description": "",
+    "category": "Production",
+    "mode": "monitor",
+    "canvas": {
+      "gridSettings": {
+        "cols": 24,
+        "rowHeight": 30,
+        "margin": [
+          8,
+          8
+        ],
+        "padding": [
+          16,
+          16
+        ]
+      },
+      "style": {
+        "backgroundColor": "#fbfbfb",
+        "gridColor": "rgba(128,128,128,0.1)",
+        "themePreset": "system"
+      },
+      "globalWidgetStyle": {
+        "borderColor": "#ffffff",
+        "borderRadius": 8
+      }
+    },
+    "monitor": {
+      "rows": [],
+      "layoutModel": "fixed-grid",
+      "rowHeight": "auto",
+      "rowGapPx": 16,
+      "panelGapPx": 12
+    },
+    "headerSettings": {
+      "visible": false,
+      "showTimeRange": true,
+      "showFilters": true,
+      "showVariables": true,
+      "showRefreshControls": true,
+      "collapsible": true,
+      "defaultCollapsed": false
+    }
+  },
+  "widgets": [
+    {
+      "id": "widget-1773495257904",
+      "type": "chart",
+      "title": "Rainfall",
+      "layout": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 12,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "3",
+      "monitor": {
+        "gridPos": {
+          "x": 1,
+          "y": 0,
+          "w": 11,
+          "h": 6,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    }
+  ],
+  "templates": [],
+  "variables": [],
+  "metadata": {
+    "createdAt": "2026-03-14T13:34:51.841Z",
+    "savedAt": "2026-03-14T14:06:37.9044355Z",
+    "dbVersion": 1,
+    "isStale": false
+  }
+}

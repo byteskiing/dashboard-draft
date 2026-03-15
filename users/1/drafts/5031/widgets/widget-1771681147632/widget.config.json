@@ -1,0 +1,19 @@
+{
+  "id": "widget-1771681147632",
+  "type": "chart",
+  "title": "map usa",
+  "layout": {
+    "x": 1,
+    "y": 17,
+    "w": 12,
+    "h": 6,
+    "minW": 1,
+    "minH": 1,
+    "zIndex": 1
+  },
+  "templateId": "166",
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

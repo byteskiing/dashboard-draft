@@ -18,64 +18,6 @@
       "dataType": "timeseries",
       "pointCount": 50
     },
-    "previewData": {
-      "series": [
-        {
-          "data": [
-            {
-              "name": "A"
-            },
-            {
-              "name": "B"
-            },
-            {
-              "name": "C"
-            },
-            {
-              "name": "D"
-            }
-          ],
-          "index": 0,
-          "type": "chord"
-        },
-        {
-          "data": [
-            {
-              "name": "A"
-            },
-            {
-              "name": "B"
-            },
-            {
-              "name": "C"
-            },
-            {
-              "name": "D"
-            }
-          ],
-          "index": 1,
-          "type": "chord"
-        },
-        {
-          "data": [
-            {
-              "name": "A"
-            },
-            {
-              "name": "B"
-            },
-            {
-              "name": "C"
-            },
-            {
-              "name": "D"
-            }
-          ],
-          "index": 2,
-          "type": "chord"
-        }
-      ]
-    },
     "refreshMode": "interval",
     "refreshIntervalMs": 5000
   },

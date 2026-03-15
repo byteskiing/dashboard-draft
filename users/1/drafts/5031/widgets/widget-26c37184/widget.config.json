@@ -1,0 +1,25 @@
+{
+  "id": "widget-26c37184",
+  "type": "chart",
+  "title": "Rainfall Chart",
+  "layout": {
+    "x": 15,
+    "y": 8,
+    "w": 12,
+    "h": 8,
+    "minW": 2,
+    "minH": 1,
+    "zIndex": 0
+  },
+  "templateId": "3",
+  "dataSource": {
+    "type": "mock",
+    "config": {},
+    "refreshMode": "interval",
+    "refreshIntervalMs": 5000
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

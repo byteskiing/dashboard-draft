@@ -8,9 +8,13 @@
     "category": "Production",
     "mode": "canvas",
     "canvas": {
+      "pageSize": {
+        "width": 800,
+        "height": 600
+      },
       "gridSettings": {
-        "cols": 12,
-        "rowHeight": 100,
+        "cols": 48,
+        "rowHeight": 32,
         "margin": [
           0,
           0
@@ -22,10 +26,45 @@
       }
     }
   },
-  "widgets": [],
+  "widgets": [
+    {
+      "id": "6b6a6a84",
+      "type": "echarts",
+      "title": "Line Chart (Area)",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 16,
+        "zIndex": 0
+      },
+      "templateId": "7",
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false
+    },
+    {
+      "id": "e1d64531",
+      "type": "threejs",
+      "title": "Three.js 3D Cube",
+      "layout": {
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 16,
+        "zIndex": 0
+      },
+      "configFileName": "three-scene.json",
+      "dataFileName": "three-data.json",
+      "codeFileName": "scene-logic.js",
+      "isCodeDriven": false
+    }
+  ],
   "templates": [],
+  "variables": [],
   "metadata": {
-    "savedAt": "2026-01-28T11:06:24.0249864Z",
+    "createdAt": "2026-02-17T14:59:13.688Z",
+    "savedAt": "2026-02-18T07:32:39.5173304Z",
     "dbVersion": 1,
     "isStale": false
   }

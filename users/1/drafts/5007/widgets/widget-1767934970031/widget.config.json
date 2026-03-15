@@ -37,7 +37,7 @@
         "id": "transform-1767935120887-xk5nhqayr",
         "type": "custom",
         "options": {
-          "code": "// v2.2 - Multi-series support\n// Extract all items from API response as separate series\nconst apiData = frames[0].fields[0].values[0];\nconsole.log(\u0027[Transform v2.2] Input frames:\u0027, frames);\nconsole.log(\u0027[Transform v2.2] Raw API data:\u0027, apiData);\n\nconst items = apiData?.data?.items || [];\nconsole.log(\u0027[Transform v2.2] Items count:\u0027, items.length);\n\n// Create one TDataFrame for each item (each becomes a series)\nconst result = items.map((item, index) =\u003E {\n  const intervals = item.intervals || [];\n  const seriesName = item.p || \u0060Series ${index \u002B 1}\u0060; // Use path as series name\n  \n  console.log(\u0060[Transform v2.2] Series ${index \u002B 1} (${seriesName}): ${intervals.length} points\u0060);\n  \n  return {\n    name: seriesName,\n    fields: [\n      {\n        name: \u0027time\u0027,\n        type: \u0027time\u0027,\n        config: {},\n        values: intervals.map(pt =\u003E pt.T)\n      },\n      {\n        name: \u0027value\u0027,\n        type: \u0027number\u0027,\n        config: {},\n        values: intervals.map(pt =\u003E pt.V)\n      }\n    ],\n    length: intervals.length\n  };\n});\n\nconsole.log(\u0027[Transform v2.2] Output:\u0027, result.length, \u0027series\u0027);\nreturn result;"
+          "scriptFile": "transform-1767935120887-xk5nhqayr.js"
         },
         "disabled": false
       }
