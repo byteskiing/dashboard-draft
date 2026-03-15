@@ -89,20 +89,6 @@
           "style": {
             "backgroundOpacity": 1
           }
-        },
-        {
-          "id": "row-1773503994858",
-          "title": "New Row",
-          "sortOrder": 29,
-          "showTitle": true,
-          "rowHeight": "auto",
-          "gridPos": {
-            "x": 0,
-            "y": 40,
-            "w": 24,
-            "h": 1,
-            "zIndex": 0
-          }
         }
       ],
       "layoutModel": "fixed-grid",
@@ -130,6 +116,8 @@
         "y": 0,
         "w": 4,
         "h": 3,
+        "minW": 2,
+        "minH": 2,
         "zIndex": 1
       },
       "templateId": "3",
@@ -137,7 +125,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 3,
+          "y": 17,
           "w": 11,
           "h": 12,
           "zIndex": 0
@@ -147,7 +135,8 @@
       },
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     },
     {
       "id": "widget-1773416421376",
@@ -167,7 +156,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 11,
-          "y": 17,
+          "y": 31,
           "w": 12,
           "h": 12,
           "zIndex": 0
@@ -177,7 +166,8 @@
       },
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     },
     {
       "id": "widget-1773416424095",
@@ -197,7 +187,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 17,
+          "y": 31,
           "w": 11,
           "h": 12,
           "zIndex": 0
@@ -207,97 +197,30 @@
       },
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773476066204",
-      "type": "chart",
-      "title": "Rainfall",
-      "layout": {
-        "x": 0,
-        "y": 0,
-        "w": 4,
-        "h": 3,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "3",
-      "monitor": {
-        "rowId": "row-1773486163932",
-        "gridPos": {
-          "x": 0,
-          "y": 14,
-          "w": 9,
-          "h": 6,
-          "zIndex": 0
-        },
-        "order": 3,
-        "flex": 1
-      },
-      "configFileName": "echarts-options.json",
-      "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773476083873",
-      "type": "chart",
-      "title": "Stacked Area Chart",
-      "layout": {
-        "x": 0,
-        "y": 0,
-        "w": 4,
-        "h": 3,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "6",
-      "monitor": {
-        "rowId": "row-1773476025810",
-        "gridPos": {
-          "x": 0,
-          "y": 21,
-          "w": 9,
-          "h": 7,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "echarts-options.json",
-      "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     },
     {
       "id": "widget-1773503505607",
       "type": "chart",
-      "title": "Stat (Sparkline)",
+      "title": "Stat (Basic)",
       "layout": {
         "x": 0,
         "y": 11,
         "w": 2,
         "h": 2,
-        "minW": 2,
-        "minH": 2,
         "zIndex": 1
       },
-      "templateId": "1331",
+      "templateId": "1330",
       "monitor": {
         "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 0,
-          "y": 0,
-          "w": 6,
-          "h": 3,
-          "zIndex": 0
-        },
         "order": 0,
         "flex": 1
       },
       "configFileName": "stat-options.json",
       "dataFileName": "stat-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "stat"
     },
     {
       "id": "widget-1773503814776-b6wr9koub",
@@ -317,7 +240,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 15,
+          "y": 29,
           "w": 23,
           "h": 2,
           "zIndex": 0
@@ -327,37 +250,8 @@
       },
       "configFileName": "stat-options.json",
       "dataFileName": "stat-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773503516363",
-      "type": "chart",
-      "title": "Business Text",
-      "layout": {
-        "x": 0,
-        "y": 0,
-        "w": 4,
-        "h": 3,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "325",
-      "monitor": {
-        "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 6,
-          "y": 0,
-          "w": 5,
-          "h": 3,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "grafana-businesstext-options.json",
-      "dataFileName": "grafana-businesstext-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "stat"
     },
     {
       "id": "widget-1773503524663",
@@ -376,10 +270,10 @@
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 11,
+          "x": 12,
           "y": 0,
-          "w": 5,
-          "h": 3,
+          "w": 6,
+          "h": 4,
           "zIndex": 0
         },
         "order": 0,
@@ -387,7 +281,39 @@
       },
       "configFileName": "stat-options.json",
       "dataFileName": "stat-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "stat"
+    },
+    {
+      "id": "widget-1773555831096-090nz1q3m",
+      "type": "chart",
+      "title": "Stat (Basic) (Copy)",
+      "layout": {
+        "x": 2,
+        "y": 2,
+        "w": 4,
+        "h": 3,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1330",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 6,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "stat"
     },
     {
       "id": "widget-1773503581760",
@@ -406,38 +332,8 @@
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 16,
+          "x": 18,
           "y": 0,
-          "w": 7,
-          "h": 3,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "stat-options.json",
-      "dataFileName": "stat-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773503781755",
-      "type": "chart",
-      "title": "SBC Event Timeline",
-      "layout": {
-        "x": 10,
-        "y": 16,
-        "w": 6,
-        "h": 4,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "1368",
-      "monitor": {
-        "rowId": "row-1773486163932",
-        "gridPos": {
-          "x": 10,
-          "y": 16,
           "w": 6,
           "h": 4,
           "zIndex": 0
@@ -445,159 +341,10 @@
         "order": 0,
         "flex": 1
       },
-      "configFileName": "grafana-businesstext-options.json",
-      "dataFileName": "grafana-businesstext-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773503786811",
-      "type": "chart",
-      "title": "SBC Metric Card",
-      "layout": {
-        "x": 0,
-        "y": 0,
-        "w": 4,
-        "h": 3,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "1369",
-      "monitor": {
-        "rowId": "row-1773486163932",
-        "gridPos": {
-          "x": 9,
-          "y": 16,
-          "w": 6,
-          "h": 4,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "grafana-businesstext-options.json",
-      "dataFileName": "grafana-businesstext-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773503793132",
-      "type": "chart",
-      "title": "Stat (Sparkline)",
-      "layout": {
-        "x": 12,
-        "y": 16,
-        "w": 2,
-        "h": 2,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "1331",
-      "monitor": {
-        "rowId": "row-1773486163932",
-        "gridPos": {
-          "x": 12,
-          "y": 16,
-          "w": 2,
-          "h": 2,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
       "configFileName": "stat-options.json",
       "dataFileName": "stat-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773503801181",
-      "type": "chart",
-      "title": "Stat (Sparkline)",
-      "layout": {
-        "x": 0,
-        "y": 0,
-        "w": 4,
-        "h": 3,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "1331",
-      "monitor": {
-        "rowId": "row-1773476025810",
-        "gridPos": {
-          "x": 1,
-          "y": 27,
-          "w": 2,
-          "h": 2,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "stat-options.json",
-      "dataFileName": "stat-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773503987025",
-      "type": "chart",
-      "title": "Stacked Area Chart",
-      "layout": {
-        "x": 0,
-        "y": 0,
-        "w": 4,
-        "h": 3,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "6",
-      "monitor": {
-        "rowId": "row-1773486163932",
-        "gridPos": {
-          "x": 11,
-          "y": 17,
-          "w": 6,
-          "h": 12,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "echarts-options.json",
-      "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
-    },
-    {
-      "id": "widget-1773504005007",
-      "type": "chart",
-      "title": "Stacked Area Chart",
-      "layout": {
-        "x": 11,
-        "y": 17,
-        "w": 6,
-        "h": 12,
-        "minW": 2,
-        "minH": 2,
-        "zIndex": 1
-      },
-      "templateId": "6",
-      "monitor": {
-        "rowId": "row-1773486163932",
-        "gridPos": {
-          "x": 11,
-          "y": 17,
-          "w": 6,
-          "h": 12,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "echarts-options.json",
-      "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "stat"
     },
     {
       "id": "widget-1773504009680",
@@ -617,7 +364,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 11,
-          "y": 29,
+          "y": 43,
           "w": 12,
           "h": 11,
           "zIndex": 0
@@ -627,7 +374,70 @@
       },
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1773556075827",
+      "type": "chart",
+      "title": "Animation Delay",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 12,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "8",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 4,
+          "w": 23,
+          "h": 13,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1773557878382",
+      "type": "chart",
+      "title": "Basic area chart",
+      "layout": {
+        "x": 12,
+        "y": 17,
+        "w": 6,
+        "h": 12,
+        "minW": 2,
+        "minH": 2,
+        "zIndex": 1
+      },
+      "templateId": "1",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 12,
+          "y": 17,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     }
   ],
   "templates": [],
@@ -661,7 +471,7 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-03-15T03:19:11.8875076Z",
+    "savedAt": "2026-03-15T11:32:02.3586938Z",
     "dbVersion": 1,
     "isStale": false
   }

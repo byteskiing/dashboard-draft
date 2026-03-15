@@ -1,0 +1,48 @@
+{
+  "title": {
+    "text": "Bar Animation Delay"
+  },
+  "legend": {
+    "data": [
+      "bar",
+      "bar2"
+    ]
+  },
+  "toolbox": {
+    "feature": {
+      "magicType": {
+        "type": [
+          "stack"
+        ]
+      },
+      "dataView": {},
+      "saveAsImage": {
+        "pixelRatio": 2
+      }
+    }
+  },
+  "tooltip": {},
+  "xAxis": {
+    "splitLine": {
+      "show": false
+    }
+  },
+  "yAxis": {},
+  "series": [
+    {
+      "name": "bar",
+      "type": "bar",
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "bar2",
+      "type": "bar",
+      "emphasis": {
+        "focus": "series"
+      }
+    }
+  ],
+  "animationEasing": "elasticOut"
+}

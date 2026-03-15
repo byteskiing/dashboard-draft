@@ -43,7 +43,8 @@
       "templateId": "204",
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     },
     {
       "id": "widget-44bea356",
@@ -61,7 +62,8 @@
       "templateId": "204",
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     },
     {
       "id": "widget-347b9c2c",
@@ -79,7 +81,8 @@
       "templateId": "204",
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     },
     {
       "id": "widget-1773477146261",
@@ -97,14 +100,32 @@
       "templateId": "3",
       "configFileName": "echarts-options.json",
       "dataFileName": "echarts-data.json",
-      "isCodeDriven": false
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-2a56942a",
+      "type": "echarts",
+      "title": "Texture on Pie Chart",
+      "layout": {
+        "x": 2,
+        "y": 8,
+        "w": 12,
+        "h": 8,
+        "zIndex": 0
+      },
+      "templateId": "204",
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     }
   ],
   "templates": [],
   "variables": [],
   "metadata": {
     "createdAt": "2026-03-14T03:34:37.702Z",
-    "savedAt": "2026-03-14T08:35:13.7437689Z",
+    "savedAt": "2026-03-15T11:35:49.2068532Z",
     "dbVersion": 1,
     "isStale": false
   }

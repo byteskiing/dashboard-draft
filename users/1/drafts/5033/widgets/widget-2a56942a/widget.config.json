@@ -1,0 +1,20 @@
+{
+  "id": "widget-2a56942a",
+  "type": "echarts",
+  "title": "Texture on Pie Chart",
+  "layout": {
+    "x": 2,
+    "y": 8,
+    "w": 12,
+    "h": 8,
+    "zIndex": 0
+  },
+  "templateId": "204",
+  "dataSource": {
+    "type": "mock"
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

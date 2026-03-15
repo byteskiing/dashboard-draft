@@ -1,17 +1,17 @@
 {
-  "id": "widget-1773503801181",
+  "id": "widget-1773555831096-090nz1q3m",
   "type": "chart",
-  "title": "Stat (Sparkline)",
+  "title": "Stat (Basic) (Copy)",
   "layout": {
-    "x": 0,
-    "y": 0,
+    "x": 2,
+    "y": 2,
     "w": 4,
     "h": 3,
     "minW": 2,
     "minH": 2,
     "zIndex": 1
   },
-  "templateId": "1331",
+  "templateId": "1330",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -22,12 +22,12 @@
     "refreshIntervalMs": 5000
   },
   "monitor": {
-    "rowId": "row-1773476025810",
+    "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 1,
-      "y": 27,
-      "w": 2,
-      "h": 2,
+      "x": 6,
+      "y": 0,
+      "w": 6,
+      "h": 4,
       "zIndex": 0
     },
     "order": 0,

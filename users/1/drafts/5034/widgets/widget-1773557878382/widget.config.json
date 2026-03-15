@@ -1,17 +1,17 @@
 {
-  "id": "widget-1773476083873",
+  "id": "widget-1773557878382",
   "type": "chart",
-  "title": "Stacked Area Chart",
+  "title": "Basic area chart",
   "layout": {
-    "x": 0,
-    "y": 0,
-    "w": 4,
-    "h": 3,
+    "x": 12,
+    "y": 17,
+    "w": 6,
+    "h": 12,
     "minW": 2,
     "minH": 2,
     "zIndex": 1
   },
-  "templateId": "6",
+  "templateId": "1",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -22,12 +22,12 @@
     "refreshIntervalMs": 5000
   },
   "monitor": {
-    "rowId": "row-1773476025810",
+    "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 0,
-      "y": 21,
-      "w": 9,
-      "h": 7,
+      "x": 12,
+      "y": 17,
+      "w": 6,
+      "h": 12,
       "zIndex": 0
     },
     "order": 0,
