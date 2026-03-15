@@ -13,13 +13,23 @@
   },
   "templateId": "1330",
   "dataSource": {
-    "type": "mock",
+    "type": "api",
     "config": {
-      "dataType": "timeseries",
-      "pointCount": 50
+      "url": "https://localhost:49603/api/v1/sbc/overview",
+      "method": "GET",
+      "headers": {}
     },
-    "refreshMode": "interval",
-    "refreshIntervalMs": 5000
+    "refreshIntervalMs": 5000,
+    "transformations": [
+      {
+        "id": "transform-1773574180435-6b15ffz1a",
+        "type": "custom",
+        "options": {
+          "scriptFile": "transform-transform-1773574180435-6b15ffz1a.js"
+        },
+        "disabled": false
+      }
+    ]
   },
   "monitor": {
     "rowId": "row-1773416401723",

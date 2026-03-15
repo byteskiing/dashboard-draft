@@ -4,5 +4,7 @@
   "graphMode": "area",
   "justifyMode": "center",
   "textMode": "auto",
-  "decimals": 2
+  "decimals": 2,
+  "fieldName": "avgPerformance",
+  "displayName": "Performance"
 }
