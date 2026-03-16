@@ -49966,6 +49966,570 @@
         "name": "Item 2",
         "value": "200"
       }
+    ],
+    "widget-1773579642053": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773579657930": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773583674983": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773583937802": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773584492313": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773584499608": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706313600000,
+              1706400000000,
+              1706486400000,
+              1706572800000,
+              1706659200000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              10,
+              25,
+              18,
+              30,
+              42
+            ]
+          }
+        ],
+        "length": 5,
+        "name": "Trend"
+      }
+    ],
+    "widget-1773584528512": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773584535873": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773584711381": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773584741072": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773585480754": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773585510113": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773585532327": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773586166837": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773586174535": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773586199286": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773586267377": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773586911607": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773587128174": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773588318032": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773588830430": [
+      {
+        "range": "\u003C60",
+        "count": 5
+      },
+      {
+        "range": "60-70",
+        "count": 12
+      },
+      {
+        "range": "70-80",
+        "count": 28
+      },
+      {
+        "range": "80-90",
+        "count": 42
+      },
+      {
+        "range": "90-100",
+        "count": 18
+      }
+    ],
+    "widget-1773589182747": {
+      "title": "Phase Performance",
+      "overallScore": 87,
+      "metrics": [
+        {
+          "label": "Performance",
+          "value": 88,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A590",
+          "mean": 85,
+          "high": 92,
+          "low": 78,
+          "tirTarget": 90
+        },
+        {
+          "label": "Resilience",
+          "value": 76,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A580",
+          "mean": 74,
+          "high": 80,
+          "low": 68,
+          "tirTarget": 80
+        },
+        {
+          "label": "Skill",
+          "value": 70,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A575",
+          "mean": 69,
+          "high": 74,
+          "low": 64,
+          "tirTarget": 75
+        }
+      ]
+    },
+    "widget-1773589187066": {
+      "title": "Phase Performance",
+      "overallScore": 87,
+      "metrics": [
+        {
+          "label": "Performance",
+          "value": 88,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A590",
+          "mean": 85,
+          "high": 92,
+          "low": 78,
+          "tirTarget": 90
+        },
+        {
+          "label": "Resilience",
+          "value": 76,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A580",
+          "mean": 74,
+          "high": 80,
+          "low": 68,
+          "tirTarget": 80
+        },
+        {
+          "label": "Skill",
+          "value": 70,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A575",
+          "mean": 69,
+          "high": 74,
+          "low": 64,
+          "tirTarget": 75
+        }
+      ]
+    },
+    "widget-1773589204295": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773589864474": {
+      "series": [
+        {
+          "data": [
+            820,
+            932,
+            901,
+            934,
+            1290,
+            1330,
+            1320
+          ],
+          "index": 0,
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    },
+    "widget-1773590127619": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773590136941": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
     ]
   }
 }

@@ -240,7 +240,7 @@
         "gridPos": {
           "x": 0,
           "y": 4,
-          "w": 17,
+          "w": 24,
           "h": 2,
           "zIndex": 0
         },
@@ -249,6 +249,222 @@
       },
       "isCodeDriven": false,
       "libraryCode": "grafana-businesstext"
+    },
+    {
+      "id": "widget-1773587121274",
+      "type": "chart",
+      "title": "Panel",
+      "layout": {
+        "x": 2,
+        "y": 7,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1342",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 6,
+          "w": 9,
+          "h": 10,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "children": [
+        {
+          "id": "widget-1773587128174",
+          "type": "chart",
+          "title": "Stat (Basic)",
+          "layout": {
+            "x": 2,
+            "y": 0,
+            "w": 7,
+            "h": 1,
+            "zIndex": 0
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 2,
+              "y": 1,
+              "w": 6,
+              "h": 4,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1773588318032",
+          "type": "chart",
+          "title": "Stat (Basic)",
+          "layout": {
+            "x": 6,
+            "y": 1,
+            "w": 2,
+            "h": 1,
+            "zIndex": 0
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 7,
+              "y": 5,
+              "w": 6,
+              "h": 4,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        }
+      ],
+      "isCodeDriven": false,
+      "libraryCode": "panel"
+    },
+    {
+      "id": "widget-1773589182747",
+      "type": "chart",
+      "title": "SBC Metric Card",
+      "layout": {
+        "x": 13,
+        "y": 9,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1369",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 13,
+          "y": 6,
+          "w": 6,
+          "h": 4,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "isCodeDriven": false,
+      "libraryCode": "grafana-businesstext"
+    },
+    {
+      "id": "widget-1773589864474",
+      "type": "chart",
+      "title": "Basic area chart",
+      "layout": {
+        "x": 10,
+        "y": 12,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "1",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 10,
+          "y": 19,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1773590117584",
+      "type": "chart",
+      "title": "Panel",
+      "layout": {
+        "x": 0,
+        "y": 17,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1342",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 10,
+          "y": 10,
+          "w": 9,
+          "h": 9,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "children": [
+        {
+          "id": "widget-1773590127619",
+          "type": "chart",
+          "title": "Stat (Basic)",
+          "layout": {
+            "x": 3,
+            "y": 0,
+            "w": 6,
+            "h": 4,
+            "zIndex": 0
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 3,
+              "y": 1,
+              "w": 6,
+              "h": 4,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1773590136941",
+          "type": "chart",
+          "title": "Stat (Basic)",
+          "layout": {
+            "x": 6,
+            "y": 4,
+            "w": 6,
+            "h": 4,
+            "zIndex": 0
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 12,
+              "y": 3,
+              "w": 6,
+              "h": 4,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        }
+      ],
+      "isCodeDriven": false,
+      "libraryCode": "panel"
     }
   ],
   "templates": [],
@@ -282,7 +498,7 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-03-15T12:32:58.2197458Z",
+    "savedAt": "2026-03-16T02:23:58.1508025Z",
     "dbVersion": 1,
     "isStale": false
   }

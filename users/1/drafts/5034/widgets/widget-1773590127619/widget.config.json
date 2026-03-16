@@ -1,0 +1,33 @@
+{
+  "id": "widget-1773590127619",
+  "type": "chart",
+  "title": "Stat (Basic)",
+  "layout": {
+    "x": 3,
+    "y": 0,
+    "w": 6,
+    "h": 4,
+    "zIndex": 0
+  },
+  "templateId": "1330",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 3,
+      "y": 1,
+      "w": 6,
+      "h": 4,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "isCodeDriven": false,
+  "libraryCode": "stat"
+}
