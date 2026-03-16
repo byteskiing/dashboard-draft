@@ -1,0 +1,34 @@
+{
+  "id": "widget-1773676038304-xt9je84zi",
+  "type": "chart",
+  "title": "Panel (Copy) (Copy)",
+  "layout": {
+    "x": 6,
+    "y": 11,
+    "w": 6,
+    "h": 4,
+    "zIndex": 1
+  },
+  "templateId": "1342",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 0,
+      "y": 7,
+      "w": 12,
+      "h": 14,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "isCodeDriven": false,
+  "libraryCode": "panel"
+}

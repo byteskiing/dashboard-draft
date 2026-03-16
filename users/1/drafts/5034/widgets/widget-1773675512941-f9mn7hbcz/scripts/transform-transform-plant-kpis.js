@@ -1,10 +1,19 @@
 // Plant KPI transform — PlantSummaryDto[] -> 3 compact rows for Business Text allRows mode.
-// Supports both API wrapper-object frames and array-to-dataframe mapped responses.
+// Supports three input shapes:
+// 1. Wrapped API object frame: frames[0].fields[0].values[0] === PlantSummaryDto[]
+// 2. DataFrame rows: frames[0].fields -> toRows(frames[0])
+// 3. Passthrough mapper result: frames === PlantSummaryDto[]
 
 const wrappedValue = frames?.[0]?.fields?.[0]?.values?.[0];
+const looksLikePlantRow = (item) => item && typeof item === 'object' && (
+  'plantId' in item || 'performance' in item || 'resilience' in item || 'skill' in item
+);
+
 const plants = Array.isArray(wrappedValue)
   ? wrappedValue
-  : (Array.isArray(frames) && frames[0]?.fields?.length ? toRows(frames[0]) : []);
+  : (Array.isArray(frames) && frames[0]?.fields?.length
+      ? toRows(frames[0])
+      : (Array.isArray(frames) && frames.every(looksLikePlantRow) ? frames : []));
 
 const normalizedPlants = plants.filter((item) => item && typeof item === 'object');
 

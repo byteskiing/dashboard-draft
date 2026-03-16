@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773587121274",
+  "id": "widget-1773676038304-y82sdq7v7",
   "type": "chart",
-  "title": "Panel",
+  "title": "Basic Radar Chart",
   "layout": {
-    "x": 2,
-    "y": 7,
-    "w": 6,
-    "h": 4,
-    "zIndex": 1
+    "x": 14,
+    "y": 0,
+    "w": 10,
+    "h": 6,
+    "zIndex": 0
   },
-  "templateId": "1342",
+  "templateId": "214",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -18,17 +18,16 @@
     }
   },
   "monitor": {
-    "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 0,
-      "y": 7,
-      "w": 12,
-      "h": 14,
+      "x": 16,
+      "y": 0,
+      "w": 6,
+      "h": 3,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
   "isCodeDriven": false,
-  "libraryCode": "panel"
+  "libraryCode": "echarts"
 }

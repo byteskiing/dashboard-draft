@@ -16,7 +16,12 @@ const sorted = [...rawAlerts].sort((a, b) => {
 const hasAlerts     = sorted.length > 0;
 const criticalCount = sorted.filter(a => a.level === 'critical').length;
 const warningCount  = sorted.filter(a => a.level === 'warning').length;
-const alertText     = sorted.map(a => a.message).join('   ·   ');
+const alertText     = sorted
+  .map(a => {
+    const timeText = typeof a.time === 'string' && a.time ? ` [${a.time}]` : '';
+    return `${a.message}${timeText}`;
+  })
+  .join('   ·   ');
 
 // Visual theme driven by highest severity level
 const topLevel   = sorted[0]?.level ?? 'info';
