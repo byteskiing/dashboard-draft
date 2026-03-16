@@ -121,6 +121,13 @@
       "templateId": "1330",
       "monitor": {
         "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 4,
+          "zIndex": 0
+        },
         "order": 0,
         "flex": 1
       },
@@ -260,40 +267,14 @@
         "gridPos": {
           "x": 0,
           "y": 7,
-          "w": 24,
-          "h": 19,
+          "w": 12,
+          "h": 14,
           "zIndex": 0
         },
         "order": 0,
         "flex": 1
       },
       "children": [
-        {
-          "id": "widget-1773634989661",
-          "type": "chart",
-          "title": "Business Text",
-          "layout": {
-            "x": 0,
-            "y": 0,
-            "w": 7,
-            "h": 3,
-            "zIndex": 0
-          },
-          "templateId": "325",
-          "monitor": {
-            "gridPos": {
-              "x": 3,
-              "y": 1,
-              "w": 6,
-              "h": 1,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "isCodeDriven": false,
-          "libraryCode": "grafana-businesstext"
-        },
         {
           "id": "widget-1773635147711",
           "type": "chart",
@@ -321,21 +302,21 @@
           "libraryCode": "echarts"
         },
         {
-          "id": "widget-1773668105415",
+          "id": "widget-1773671312062",
           "type": "chart",
-          "title": "Tooltip and DataZoom on Mobile",
+          "title": "Temperature Change in the Coming Week",
           "layout": {
             "x": 0,
-            "y": 9,
+            "y": 8,
             "w": 24,
-            "h": 8,
+            "h": 6,
             "zIndex": 0
           },
-          "templateId": "155",
+          "templateId": "143",
           "monitor": {
             "gridPos": {
-              "x": 1,
-              "y": 9,
+              "x": 2,
+              "y": 8,
               "w": 6,
               "h": 3,
               "zIndex": 0
@@ -345,6 +326,56 @@
           },
           "isCodeDriven": false,
           "libraryCode": "echarts"
+        },
+        {
+          "id": "widget-1773673498151",
+          "type": "chart",
+          "title": "Label",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "w": 8,
+            "h": 1,
+            "zIndex": 0
+          },
+          "templateId": "1320",
+          "monitor": {
+            "rowId": "",
+            "order": 0,
+            "flex": 1
+          },
+          "configFileName": "text-options.json",
+          "dataFileName": "",
+          "isCodeDriven": false,
+          "libraryCode": "text"
+        },
+        {
+          "id": "widget-1773673558073",
+          "type": "chart",
+          "title": "Business Text",
+          "layout": {
+            "x": 1,
+            "y": 1,
+            "w": 12,
+            "h": 5,
+            "zIndex": 0
+          },
+          "templateId": "325",
+          "monitor": {
+            "gridPos": {
+              "x": 1,
+              "y": 1,
+              "w": 6,
+              "h": 1,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "configFileName": "businesstext-options.json",
+          "dataFileName": "businesstext-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "grafana-businesstext"
         }
       ],
       "isCodeDriven": false,
@@ -382,7 +413,7 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-03-16T14:19:59.4056651Z",
+    "savedAt": "2026-03-16T15:06:33.3510665Z",
     "dbVersion": 1,
     "isStale": false
   }

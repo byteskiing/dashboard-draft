@@ -35,6 +35,13 @@
   },
   "monitor": {
     "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 0,
+      "y": 0,
+      "w": 6,
+      "h": 4,
+      "zIndex": 0
+    },
     "order": 0,
     "flex": 1
   },

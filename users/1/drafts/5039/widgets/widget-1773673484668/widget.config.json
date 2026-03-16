@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773660897675",
+  "id": "widget-1773673484668",
   "type": "chart",
-  "title": "Basic area chart",
+  "title": "Label",
   "layout": {
-    "x": 5,
-    "y": 15,
-    "w": 6,
-    "h": 12,
+    "x": 16,
+    "y": 3,
+    "w": 4,
+    "h": 4,
     "zIndex": 1
   },
-  "templateId": "1",
+  "templateId": "1320",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -19,15 +19,17 @@
   },
   "monitor": {
     "gridPos": {
-      "x": 5,
-      "y": 13,
-      "w": 6,
-      "h": 12,
+      "x": 16,
+      "y": 3,
+      "w": 4,
+      "h": 4,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
+  "configFileName": "text-options.json",
+  "dataFileName": "",
   "isCodeDriven": false,
-  "libraryCode": "echarts"
+  "libraryCode": "text"
 }

@@ -50745,6 +50745,165 @@
           "type": "line"
         }
       ]
-    }
+    },
+    "widget-1773671312062": {
+      "series": [
+        {
+          "data": [
+            10,
+            11,
+            13,
+            11,
+            12,
+            12,
+            9
+          ],
+          "index": 0,
+          "name": "Highest",
+          "type": "line"
+        },
+        {
+          "data": [
+            1,
+            -2,
+            2,
+            5,
+            3,
+            2,
+            0
+          ],
+          "index": 1,
+          "name": "Lowest",
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    },
+    "widget-1773671414027-kqql3ssu8": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773671414027-5tg20bxhe": {
+      "series": [
+        {
+          "data": [
+            {
+              "value": [
+                4200,
+                3000,
+                20000,
+                35000,
+                50000,
+                18000
+              ],
+              "name": "Allocated Budget"
+            },
+            {
+              "value": [
+                5000,
+                14000,
+                28000,
+                26000,
+                42000,
+                21000
+              ],
+              "name": "Actual Spending"
+            }
+          ],
+          "index": 0,
+          "name": "Budget vs spending",
+          "type": "radar"
+        }
+      ]
+    },
+    "widget-1773671414027-46qc0ch0n": {
+      "series": [
+        {
+          "data": [
+            10,
+            11,
+            13,
+            11,
+            12,
+            12,
+            9
+          ],
+          "index": 0,
+          "name": "Highest",
+          "type": "line"
+        },
+        {
+          "data": [
+            1,
+            -2,
+            2,
+            5,
+            3,
+            2,
+            0
+          ],
+          "index": 1,
+          "name": "Lowest",
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    },
+    "widget-1773671997648": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773672147345": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773673558073": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ]
   }
 }

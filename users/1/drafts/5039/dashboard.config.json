@@ -91,69 +91,99 @@
           },
           "isCodeDriven": false,
           "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1773672104591",
+          "type": "chart",
+          "title": "Heading",
+          "layout": {
+            "x": 13,
+            "y": 1,
+            "w": 4,
+            "h": 1,
+            "zIndex": 0
+          },
+          "templateId": "1322",
+          "monitor": {
+            "gridPos": {
+              "x": 13,
+              "y": 1,
+              "w": 4,
+              "h": 1,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "isCodeDriven": false,
+          "libraryCode": "text"
+        },
+        {
+          "id": "widget-1773672980894",
+          "type": "chart",
+          "title": "Business Text",
+          "layout": {
+            "x": 14,
+            "y": 6,
+            "w": 8,
+            "h": 3,
+            "zIndex": 0
+          },
+          "templateId": "325",
+          "monitor": {
+            "gridPos": {
+              "x": 14,
+              "y": 6,
+              "w": 6,
+              "h": 1,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "configFileName": "businesstext-options.json",
+          "dataFileName": "businesstext-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "grafana-businesstext"
         }
       ],
       "isCodeDriven": false,
       "libraryCode": "panel"
     },
     {
-      "id": "widget-1773660897675",
+      "id": "widget-1773673484668",
       "type": "chart",
-      "title": "Basic area chart",
+      "title": "Label",
       "layout": {
-        "x": 5,
-        "y": 15,
-        "w": 6,
-        "h": 12,
+        "x": 16,
+        "y": 3,
+        "w": 4,
+        "h": 4,
         "zIndex": 1
       },
-      "templateId": "1",
-      "monitor": {
-        "gridPos": {
-          "x": 5,
-          "y": 13,
-          "w": 6,
-          "h": 12,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "isCodeDriven": false,
-      "libraryCode": "echarts"
-    },
-    {
-      "id": "widget-1773660996440",
-      "type": "chart",
-      "title": "Stat (Basic)",
-      "layout": {
-        "x": 14,
-        "y": 15,
-        "w": 2,
-        "h": 2,
-        "zIndex": 1
-      },
-      "templateId": "1330",
+      "templateId": "1320",
       "monitor": {
         "gridPos": {
           "x": 16,
-          "y": 13,
-          "w": 3,
-          "h": 5,
+          "y": 3,
+          "w": 4,
+          "h": 4,
           "zIndex": 0
         },
         "order": 0,
         "flex": 1
       },
+      "configFileName": "text-options.json",
+      "dataFileName": "",
       "isCodeDriven": false,
-      "libraryCode": "stat"
+      "libraryCode": "text"
     }
   ],
   "templates": [],
   "variables": [],
   "metadata": {
     "createdAt": "2026-03-14T13:34:51.841Z",
-    "savedAt": "2026-03-16T14:19:59.402309Z",
+    "savedAt": "2026-03-16T15:04:45.495946Z",
     "dbVersion": 1,
     "isStale": false
   }

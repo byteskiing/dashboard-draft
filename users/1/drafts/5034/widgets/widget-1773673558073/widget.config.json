@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773668105415",
+  "id": "widget-1773673558073",
   "type": "chart",
-  "title": "Tooltip and DataZoom on Mobile",
+  "title": "Business Text",
   "layout": {
-    "x": 0,
-    "y": 9,
-    "w": 24,
-    "h": 8,
+    "x": 1,
+    "y": 1,
+    "w": 12,
+    "h": 5,
     "zIndex": 0
   },
-  "templateId": "155",
+  "templateId": "325",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -20,14 +20,16 @@
   "monitor": {
     "gridPos": {
       "x": 1,
-      "y": 9,
+      "y": 1,
       "w": 6,
-      "h": 3,
+      "h": 1,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
+  "configFileName": "businesstext-options.json",
+  "dataFileName": "businesstext-data.json",
   "isCodeDriven": false,
-  "libraryCode": "echarts"
+  "libraryCode": "grafana-businesstext"
 }
