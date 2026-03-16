@@ -50904,6 +50904,198 @@
         "name": "Item 2",
         "value": "200"
       }
+    ],
+    "widget-1773675525860-kmuy5iedt": {
+      "series": [
+        {
+          "data": [
+            {
+              "value": [
+                4200,
+                3000,
+                20000,
+                35000,
+                50000,
+                18000
+              ],
+              "name": "Allocated Budget"
+            },
+            {
+              "value": [
+                5000,
+                14000,
+                28000,
+                26000,
+                42000,
+                21000
+              ],
+              "name": "Actual Spending"
+            }
+          ],
+          "index": 0,
+          "name": "Budget vs spending",
+          "type": "radar"
+        }
+      ]
+    },
+    "widget-1773675525860-fxf9l1xpp": {
+      "series": [
+        {
+          "data": [
+            10,
+            11,
+            13,
+            11,
+            12,
+            12,
+            9
+          ],
+          "index": 0,
+          "name": "Highest",
+          "type": "line"
+        },
+        {
+          "data": [
+            1,
+            -2,
+            2,
+            5,
+            3,
+            2,
+            0
+          ],
+          "index": 1,
+          "name": "Lowest",
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    },
+    "widget-1773675525860-bft416nzu": [
+      {
+        "label": "\u64CD\u4F5C\u7EE9\u6548",
+        "score": "92.4",
+        "target": "\u003E85\u5206",
+        "tone": "good"
+      },
+      {
+        "label": "\u64CD\u4F5C\u5F39\u6027",
+        "score": "84.7",
+        "target": "\u003E80\u5206",
+        "tone": "warn"
+      },
+      {
+        "label": "\u64CD\u4F5C\u6280\u80FD",
+        "score": "88.9",
+        "target": "\u003E85\u5206",
+        "tone": "warn"
+      }
+    ],
+    "widget-1773675512941-w0dtk7lhl": {
+      "series": [
+        {
+          "data": [
+            {
+              "value": [
+                4200,
+                3000,
+                20000,
+                35000,
+                50000,
+                18000
+              ],
+              "name": "Allocated Budget"
+            },
+            {
+              "value": [
+                5000,
+                14000,
+                28000,
+                26000,
+                42000,
+                21000
+              ],
+              "name": "Actual Spending"
+            }
+          ],
+          "index": 0,
+          "name": "Budget vs spending",
+          "type": "radar"
+        }
+      ]
+    },
+    "widget-1773675512941-wc474xs5s": {
+      "series": [
+        {
+          "data": [
+            10,
+            11,
+            13,
+            11,
+            12,
+            12,
+            9
+          ],
+          "index": 0,
+          "name": "Highest",
+          "type": "line"
+        },
+        {
+          "data": [
+            1,
+            -2,
+            2,
+            5,
+            3,
+            2,
+            0
+          ],
+          "index": 1,
+          "name": "Lowest",
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    },
+    "widget-1773675512941-f9mn7hbcz": [
+      {
+        "label": "\u64CD\u4F5C\u7EE9\u6548",
+        "score": "92.4",
+        "target": "\u003E85\u5206",
+        "tone": "good"
+      },
+      {
+        "label": "\u64CD\u4F5C\u5F39\u6027",
+        "score": "84.7",
+        "target": "\u003E80\u5206",
+        "tone": "warn"
+      },
+      {
+        "label": "\u64CD\u4F5C\u6280\u80FD",
+        "score": "88.9",
+        "target": "\u003E85\u5206",
+        "tone": "warn"
+      }
     ]
   }
 }

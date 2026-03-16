@@ -1,0 +1,32 @@
+{
+  "id": "widget-1773675525860-3wbfycx2o",
+  "type": "chart",
+  "title": "Label",
+  "layout": {
+    "x": 0,
+    "y": 0,
+    "w": 8,
+    "h": 1,
+    "zIndex": 0
+  },
+  "templateId": "1320",
+  "content": {
+    "text": "\u6295\u8FD0\u5355\u5143: X/Y"
+  },
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "rowId": "",
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "text-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "text"
+}
