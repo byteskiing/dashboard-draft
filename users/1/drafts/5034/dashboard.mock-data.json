@@ -50530,6 +50530,221 @@
         "length": 1,
         "name": "Sample"
       }
-    ]
+    ],
+    "widget-1773634989661": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773635011745": {
+      "title": "Phase Performance",
+      "overallScore": 87,
+      "metrics": [
+        {
+          "label": "Performance",
+          "value": 88,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A590",
+          "mean": 85,
+          "high": 92,
+          "low": 78,
+          "tirTarget": 90
+        },
+        {
+          "label": "Resilience",
+          "value": 76,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A580",
+          "mean": 74,
+          "high": 80,
+          "low": 68,
+          "tirTarget": 80
+        },
+        {
+          "label": "Skill",
+          "value": 70,
+          "unit": "",
+          "standard": "\u00E2\u2030\u00A575",
+          "mean": 69,
+          "high": 74,
+          "low": 64,
+          "tirTarget": 75
+        }
+      ]
+    },
+    "widget-1773635147711": {
+      "series": [
+        {
+          "data": [
+            {
+              "value": [
+                4200,
+                3000,
+                20000,
+                35000,
+                50000,
+                18000
+              ],
+              "name": "Allocated Budget"
+            },
+            {
+              "value": [
+                5000,
+                14000,
+                28000,
+                26000,
+                42000,
+                21000
+              ],
+              "name": "Actual Spending"
+            }
+          ],
+          "index": 0,
+          "name": "Budget vs spending",
+          "type": "radar"
+        }
+      ]
+    },
+    "widget-1773660868863-39d7ya8ls": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773660921460-jnb764mjn": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773667715955": null,
+    "widget-1773667816144": null,
+    "widget-1773668105415": {
+      "series": [
+        {
+          "data": [
+            [
+              "2016-10-4",
+              180
+            ],
+            [
+              "2016-10-5",
+              190
+            ],
+            [
+              "2016-10-6",
+              180
+            ],
+            [
+              "2016-10-7",
+              188
+            ],
+            [
+              "2016-10-8",
+              180
+            ],
+            [
+              "2016-10-9",
+              187
+            ],
+            [
+              "2016-10-10",
+              179
+            ],
+            [
+              "2016-10-11",
+              179
+            ],
+            [
+              "2016-10-12",
+              177
+            ]
+          ],
+          "index": 0,
+          "name": "Fake Data",
+          "type": "line"
+        },
+        {
+          "data": [
+            [
+              "2016-10-4",
+              13.954523186368428
+            ],
+            [
+              "2016-10-5",
+              13
+            ],
+            [
+              "2016-10-6",
+              21
+            ],
+            [
+              "2016-10-7",
+              25
+            ],
+            [
+              "2016-10-8",
+              23
+            ],
+            [
+              "2016-10-9",
+              31
+            ],
+            [
+              "2016-10-10",
+              33
+            ],
+            [
+              "2016-10-11",
+              37
+            ],
+            [
+              "2016-10-12",
+              31
+            ]
+          ],
+          "index": 1,
+          "name": "Fake Data",
+          "type": "line"
+        }
+      ]
+    }
   }
 }

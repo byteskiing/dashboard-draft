@@ -1,7 +1,7 @@
 {
   "id": "widget-1773503505607",
   "type": "chart",
-  "title": "Stat (Basic)",
+  "title": "Stat (Basic)2",
   "layout": {
     "x": 0,
     "y": 11,
@@ -10,6 +10,7 @@
     "zIndex": 1
   },
   "style": {
+    "backgroundOpacity": 0.3,
     "showTitle": false
   },
   "templateId": "1330",
@@ -34,13 +35,6 @@
   },
   "monitor": {
     "rowId": "row-1773416401723",
-    "gridPos": {
-      "x": 0,
-      "y": 0,
-      "w": 6,
-      "h": 4,
-      "zIndex": 0
-    },
     "order": 0,
     "flex": 1
   },

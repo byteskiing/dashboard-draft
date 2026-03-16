@@ -1,7 +1,7 @@
 {
   "reducer": "last",
   "colorMode": "background",
-  "graphMode": "area",
+  "graphMode": "line",
   "justifyMode": "center",
   "textMode": "auto",
   "decimals": 2,

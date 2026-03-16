@@ -9415,6 +9415,133 @@
         "length": 1,
         "name": "Sample"
       }
+    ],
+    "widget-1773635286575": {
+      "series": [
+        {
+          "data": [
+            {
+              "value": [
+                4200,
+                3000,
+                20000,
+                35000,
+                50000,
+                18000
+              ],
+              "name": "Allocated Budget"
+            },
+            {
+              "value": [
+                5000,
+                14000,
+                28000,
+                26000,
+                42000,
+                21000
+              ],
+              "name": "Actual Spending"
+            }
+          ],
+          "index": 0,
+          "name": "Budget vs spending",
+          "type": "radar"
+        }
+      ]
+    },
+    "widget-1773635379005": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773636689073": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773660897675": {
+      "series": [
+        {
+          "data": [
+            820,
+            932,
+            901,
+            934,
+            1290,
+            1330,
+            1320
+          ],
+          "index": 0,
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    },
+    "widget-1773660996440": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
     ]
   }
 }

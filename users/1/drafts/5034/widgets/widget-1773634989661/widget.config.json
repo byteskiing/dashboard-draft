@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773590117584",
+  "id": "widget-1773634989661",
   "type": "chart",
-  "title": "Panel",
+  "title": "Business Text",
   "layout": {
     "x": 0,
-    "y": 17,
-    "w": 6,
-    "h": 4,
-    "zIndex": 1
+    "y": 0,
+    "w": 7,
+    "h": 3,
+    "zIndex": 0
   },
-  "templateId": "1342",
+  "templateId": "325",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -18,17 +18,16 @@
     }
   },
   "monitor": {
-    "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 10,
-      "y": 10,
-      "w": 9,
-      "h": 9,
+      "x": 3,
+      "y": 1,
+      "w": 6,
+      "h": 1,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
   "isCodeDriven": false,
-  "libraryCode": "panel"
+  "libraryCode": "grafana-businesstext"
 }

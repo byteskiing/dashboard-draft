@@ -1,12 +1,12 @@
 {
-  "id": "widget-1773588318032",
+  "id": "widget-1773636689073",
   "type": "chart",
   "title": "Stat (Basic)",
   "layout": {
-    "x": 6,
-    "y": 1,
-    "w": 2,
-    "h": 1,
+    "x": 2,
+    "y": 0,
+    "w": 8,
+    "h": 8,
     "zIndex": 0
   },
   "templateId": "1330",
@@ -15,16 +15,18 @@
     "config": {
       "dataType": "timeseries",
       "pointCount": 50
-    }
+    },
+    "transformations": [
+      {
+        "id": "transform-1773660761477-tusu55v6e",
+        "type": "custom",
+        "options": {},
+        "disabled": false
+      }
+    ]
   },
   "monitor": {
-    "gridPos": {
-      "x": 7,
-      "y": 5,
-      "w": 6,
-      "h": 4,
-      "zIndex": 0
-    },
+    "rowId": "",
     "order": 0,
     "flex": 1
   },

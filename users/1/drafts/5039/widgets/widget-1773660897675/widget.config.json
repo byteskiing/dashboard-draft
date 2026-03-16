@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773587128174",
+  "id": "widget-1773660897675",
   "type": "chart",
-  "title": "Stat (Basic)",
+  "title": "Basic area chart",
   "layout": {
-    "x": 2,
-    "y": 0,
-    "w": 7,
-    "h": 1,
-    "zIndex": 0
+    "x": 5,
+    "y": 15,
+    "w": 6,
+    "h": 12,
+    "zIndex": 1
   },
-  "templateId": "1330",
+  "templateId": "1",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -19,15 +19,15 @@
   },
   "monitor": {
     "gridPos": {
-      "x": 2,
-      "y": 1,
+      "x": 5,
+      "y": 13,
       "w": 6,
-      "h": 4,
+      "h": 12,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
   "isCodeDriven": false,
-  "libraryCode": "stat"
+  "libraryCode": "echarts"
 }

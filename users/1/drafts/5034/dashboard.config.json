@@ -110,7 +110,7 @@
     {
       "id": "widget-1773503505607",
       "type": "chart",
-      "title": "Stat (Basic)",
+      "title": "Stat (Basic)2",
       "layout": {
         "x": 0,
         "y": 11,
@@ -121,13 +121,6 @@
       "templateId": "1330",
       "monitor": {
         "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 0,
-          "y": 0,
-          "w": 6,
-          "h": 4,
-          "zIndex": 0
-        },
         "order": 0,
         "flex": 1
       },
@@ -266,9 +259,9 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 6,
-          "w": 9,
-          "h": 10,
+          "y": 7,
+          "w": 24,
+          "h": 19,
           "zIndex": 0
         },
         "order": 0,
@@ -276,191 +269,82 @@
       },
       "children": [
         {
-          "id": "widget-1773587128174",
+          "id": "widget-1773634989661",
           "type": "chart",
-          "title": "Stat (Basic)",
+          "title": "Business Text",
           "layout": {
-            "x": 2,
+            "x": 0,
             "y": 0,
             "w": 7,
-            "h": 1,
+            "h": 3,
             "zIndex": 0
           },
-          "templateId": "1330",
-          "monitor": {
-            "gridPos": {
-              "x": 2,
-              "y": 1,
-              "w": 6,
-              "h": 4,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "isCodeDriven": false,
-          "libraryCode": "stat"
-        },
-        {
-          "id": "widget-1773588318032",
-          "type": "chart",
-          "title": "Stat (Basic)",
-          "layout": {
-            "x": 6,
-            "y": 1,
-            "w": 2,
-            "h": 1,
-            "zIndex": 0
-          },
-          "templateId": "1330",
-          "monitor": {
-            "gridPos": {
-              "x": 7,
-              "y": 5,
-              "w": 6,
-              "h": 4,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "isCodeDriven": false,
-          "libraryCode": "stat"
-        }
-      ],
-      "isCodeDriven": false,
-      "libraryCode": "panel"
-    },
-    {
-      "id": "widget-1773589182747",
-      "type": "chart",
-      "title": "SBC Metric Card",
-      "layout": {
-        "x": 13,
-        "y": 9,
-        "w": 6,
-        "h": 4,
-        "zIndex": 1
-      },
-      "templateId": "1369",
-      "monitor": {
-        "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 13,
-          "y": 6,
-          "w": 6,
-          "h": 4,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "isCodeDriven": false,
-      "libraryCode": "grafana-businesstext"
-    },
-    {
-      "id": "widget-1773589864474",
-      "type": "chart",
-      "title": "Basic area chart",
-      "layout": {
-        "x": 10,
-        "y": 12,
-        "w": 6,
-        "h": 12,
-        "zIndex": 1
-      },
-      "templateId": "1",
-      "monitor": {
-        "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 10,
-          "y": 19,
-          "w": 6,
-          "h": 12,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "isCodeDriven": false,
-      "libraryCode": "echarts"
-    },
-    {
-      "id": "widget-1773590117584",
-      "type": "chart",
-      "title": "Panel",
-      "layout": {
-        "x": 0,
-        "y": 17,
-        "w": 6,
-        "h": 4,
-        "zIndex": 1
-      },
-      "templateId": "1342",
-      "monitor": {
-        "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 10,
-          "y": 10,
-          "w": 9,
-          "h": 9,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "children": [
-        {
-          "id": "widget-1773590127619",
-          "type": "chart",
-          "title": "Stat (Basic)",
-          "layout": {
-            "x": 3,
-            "y": 0,
-            "w": 6,
-            "h": 4,
-            "zIndex": 0
-          },
-          "templateId": "1330",
+          "templateId": "325",
           "monitor": {
             "gridPos": {
               "x": 3,
               "y": 1,
               "w": 6,
-              "h": 4,
+              "h": 1,
               "zIndex": 0
             },
             "order": 0,
             "flex": 1
           },
           "isCodeDriven": false,
-          "libraryCode": "stat"
+          "libraryCode": "grafana-businesstext"
         },
         {
-          "id": "widget-1773590136941",
+          "id": "widget-1773635147711",
           "type": "chart",
-          "title": "Stat (Basic)",
+          "title": "Basic Radar Chart",
           "layout": {
-            "x": 6,
-            "y": 4,
-            "w": 6,
-            "h": 4,
+            "x": 14,
+            "y": 0,
+            "w": 10,
+            "h": 8,
             "zIndex": 0
           },
-          "templateId": "1330",
+          "templateId": "214",
           "monitor": {
             "gridPos": {
-              "x": 12,
-              "y": 3,
+              "x": 16,
+              "y": 0,
               "w": 6,
-              "h": 4,
+              "h": 3,
               "zIndex": 0
             },
             "order": 0,
             "flex": 1
           },
           "isCodeDriven": false,
-          "libraryCode": "stat"
+          "libraryCode": "echarts"
+        },
+        {
+          "id": "widget-1773668105415",
+          "type": "chart",
+          "title": "Tooltip and DataZoom on Mobile",
+          "layout": {
+            "x": 0,
+            "y": 9,
+            "w": 24,
+            "h": 8,
+            "zIndex": 0
+          },
+          "templateId": "155",
+          "monitor": {
+            "gridPos": {
+              "x": 1,
+              "y": 9,
+              "w": 6,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "isCodeDriven": false,
+          "libraryCode": "echarts"
         }
       ],
       "isCodeDriven": false,
@@ -498,7 +382,7 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-03-16T02:23:58.1508025Z",
+    "savedAt": "2026-03-16T14:19:59.4056651Z",
     "dbVersion": 1,
     "isStale": false
   }

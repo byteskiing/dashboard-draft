@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773589182747",
+  "id": "widget-1773668105415",
   "type": "chart",
-  "title": "SBC Metric Card",
+  "title": "Tooltip and DataZoom on Mobile",
   "layout": {
-    "x": 13,
+    "x": 0,
     "y": 9,
-    "w": 6,
-    "h": 4,
-    "zIndex": 1
+    "w": 24,
+    "h": 8,
+    "zIndex": 0
   },
-  "templateId": "1369",
+  "templateId": "155",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -18,17 +18,16 @@
     }
   },
   "monitor": {
-    "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 13,
-      "y": 6,
+      "x": 1,
+      "y": 9,
       "w": 6,
-      "h": 4,
+      "h": 3,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
   "isCodeDriven": false,
-  "libraryCode": "grafana-businesstext"
+  "libraryCode": "echarts"
 }
