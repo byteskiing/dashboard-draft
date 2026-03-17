@@ -1,0 +1,58 @@
+{
+  "id": "widget-1773755665709-cz4ftupor",
+  "type": "chart",
+  "title": "Business Text",
+  "layout": {
+    "x": 2,
+    "y": 2,
+    "w": 9,
+    "h": 3,
+    "zIndex": 0
+  },
+  "templateId": "325",
+  "content": {
+    "panelType": "businesstext",
+    "content": "\u003Cdiv class=\u0022sbc-kpi-list\u0022\u003E{{#each data}}\u003Cdiv class=\u0022sbc-kpi-row\u0022\u003E\u003Cdiv class=\u0022sbc-kpi-label\u0022\u003E{{label}}\u003C/div\u003E\u003Cdiv class=\u0022sbc-kpi-meta\u0022\u003E\u003Cspan class=\u0022sbc-kpi-value sbc-kpi-value--{{tone}}\u0022\u003E{{score}}\u003C/span\u003E\u003Cspan class=\u0022sbc-kpi-target\u0022\u003E{{target}}\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E{{/each}}\u003C/div\u003E",
+    "contentMode": "handlebars",
+    "renderMode": "allRows",
+    "defaultContent": "No KPI data available",
+    "wrapInParagraphs": false,
+    "helpers": [],
+    "styles": ".sbc-kpi-list { display: flex; flex-direction: column; gap: 8px; padding: 0; font-family: \u0027Segoe UI\u0027, \u0027Microsoft YaHei\u0027, sans-serif; } .sbc-kpi-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: baseline; column-gap: 10px; min-height: 26px; } .sbc-kpi-label { color: #64748b; font-size: 12px; font-weight: 600; letter-spacing: 0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .sbc-kpi-meta { display: contents; } .sbc-kpi-value { font-size: 15px; line-height: 1; font-weight: 700; color: #475569; white-space: nowrap; } .sbc-kpi-value--normal { color: #64748b; } .sbc-kpi-value--warn { color: #d97706; } .sbc-kpi-value--good { color: #2563eb; } .sbc-kpi-target { color: #94a3b8; font-size: 11px; font-weight: 600; white-space: nowrap; }",
+    "formatting": "disabled"
+  },
+  "dataSource": {
+    "type": "api",
+    "config": {
+      "url": "https://localhost:49603/api/v1/sbc/plants",
+      "method": "GET",
+      "mapperKey": "passthrough"
+    },
+    "refreshIntervalMs": 10000,
+    "transformations": [
+      {
+        "id": "transform-plant-kpis",
+        "type": "custom",
+        "options": {
+          "scriptFile": "transform-transform-plant-kpis.js"
+        },
+        "disabled": false
+      }
+    ]
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 1,
+      "y": 1,
+      "w": 6,
+      "h": 3,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "businesstext-options.json",
+  "dataFileName": "businesstext-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "grafana-businesstext"
+}

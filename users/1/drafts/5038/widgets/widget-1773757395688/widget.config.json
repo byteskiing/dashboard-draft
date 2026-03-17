@@ -1,18 +1,15 @@
 {
-  "id": "widget-1773676038304-z399epexy",
+  "id": "widget-1773757395688",
   "type": "chart",
   "title": "Label",
   "layout": {
     "x": 0,
     "y": 0,
-    "w": 8,
-    "h": 1,
-    "zIndex": 0
+    "w": 4,
+    "h": 4,
+    "zIndex": 1
   },
   "templateId": "1320",
-  "content": {
-    "text": "\u6295\u8FD0\u5355\u5143: X/Y"
-  },
   "dataSource": {
     "type": "mock",
     "config": {
@@ -21,7 +18,13 @@
     }
   },
   "monitor": {
-    "rowId": "",
+    "gridPos": {
+      "x": 0,
+      "y": 0,
+      "w": 7,
+      "h": 2,
+      "zIndex": 0
+    },
     "order": 0,
     "flex": 1
   },

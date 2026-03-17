@@ -1,0 +1,166 @@
+{
+  "title": {
+    "text": "Les Miserables",
+    "subtext": "Circular layout",
+    "top": "bottom",
+    "left": "right"
+  },
+  "tooltip": {},
+  "legend": [
+    {
+      "data": [
+        "Category A",
+        "Category B",
+        "Category C"
+      ]
+    }
+  ],
+  "animationDurationUpdate": 1500,
+  "animationEasingUpdate": "quinticInOut",
+  "series": [
+    {
+      "name": "Les Miserables",
+      "type": "graph",
+      "layout": "circular",
+      "circular": {
+        "rotateLabel": true
+      },
+      "data": [
+        {
+          "id": "0",
+          "name": "Node A",
+          "symbolSize": 50,
+          "category": 0,
+          "label": {
+            "show": true
+          }
+        },
+        {
+          "id": "1",
+          "name": "Node B",
+          "symbolSize": 40,
+          "category": 0,
+          "label": {
+            "show": true
+          }
+        },
+        {
+          "id": "2",
+          "name": "Node C",
+          "symbolSize": 30,
+          "category": 1,
+          "label": {
+            "show": false
+          }
+        },
+        {
+          "id": "3",
+          "name": "Node D",
+          "symbolSize": 35,
+          "category": 1,
+          "label": {
+            "show": true
+          }
+        },
+        {
+          "id": "4",
+          "name": "Node E",
+          "symbolSize": 25,
+          "category": 2,
+          "label": {
+            "show": false
+          }
+        },
+        {
+          "id": "5",
+          "name": "Node F",
+          "symbolSize": 45,
+          "category": 2,
+          "label": {
+            "show": true
+          }
+        },
+        {
+          "id": "6",
+          "name": "Node G",
+          "symbolSize": 20,
+          "category": 0,
+          "label": {
+            "show": false
+          }
+        },
+        {
+          "id": "7",
+          "name": "Node H",
+          "symbolSize": 30,
+          "category": 1,
+          "label": {
+            "show": false
+          }
+        }
+      ],
+      "links": [
+        {
+          "source": "0",
+          "target": "1"
+        },
+        {
+          "source": "0",
+          "target": "2"
+        },
+        {
+          "source": "1",
+          "target": "3"
+        },
+        {
+          "source": "2",
+          "target": "3"
+        },
+        {
+          "source": "3",
+          "target": "4"
+        },
+        {
+          "source": "4",
+          "target": "5"
+        },
+        {
+          "source": "5",
+          "target": "6"
+        },
+        {
+          "source": "6",
+          "target": "7"
+        },
+        {
+          "source": "0",
+          "target": "5"
+        },
+        {
+          "source": "2",
+          "target": "7"
+        }
+      ],
+      "categories": [
+        {
+          "name": "Category A"
+        },
+        {
+          "name": "Category B"
+        },
+        {
+          "name": "Category C"
+        }
+      ],
+      "roam": true,
+      "label": {
+        "position": "right",
+        "formatter": "{b}"
+      },
+      "lineStyle": {
+        "color": "source",
+        "curveness": 0.3
+      }
+    }
+  ]
+}

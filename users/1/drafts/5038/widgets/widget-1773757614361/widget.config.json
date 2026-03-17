@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773676038304-xt9je84zi",
+  "id": "widget-1773757614361",
   "type": "chart",
-  "title": "Panel (Copy) (Copy)",
+  "title": "Line Gradient",
   "layout": {
-    "x": 6,
-    "y": 11,
-    "w": 6,
-    "h": 4,
-    "zIndex": 1
+    "x": 0,
+    "y": 3,
+    "w": 17,
+    "h": 10,
+    "zIndex": 0
   },
-  "templateId": "1342",
+  "templateId": "139",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -18,17 +18,18 @@
     }
   },
   "monitor": {
-    "rowId": "row-1773416401723",
     "gridPos": {
       "x": 0,
       "y": 7,
-      "w": 12,
-      "h": 14,
+      "w": 6,
+      "h": 3,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
   "isCodeDriven": false,
-  "libraryCode": "panel"
+  "libraryCode": "echarts"
 }

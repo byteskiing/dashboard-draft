@@ -1,0 +1,35 @@
+{
+  "id": "widget-1773757518940",
+  "type": "chart",
+  "title": "Basic Radar Chart",
+  "layout": {
+    "x": 17,
+    "y": 0,
+    "w": 7,
+    "h": 11,
+    "zIndex": 0
+  },
+  "templateId": "214",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 18,
+      "y": 0,
+      "w": 6,
+      "h": 3,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

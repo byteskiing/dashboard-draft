@@ -1,0 +1,20 @@
+[
+  {
+    "label": "\u64CD\u4F5C\u7EE9\u6548",
+    "score": "92.4",
+    "target": "\u003E85\u5206",
+    "tone": "good"
+  },
+  {
+    "label": "\u64CD\u4F5C\u5F39\u6027",
+    "score": "84.7",
+    "target": "\u003E80\u5206",
+    "tone": "warn"
+  },
+  {
+    "label": "\u64CD\u4F5C\u6280\u80FD",
+    "score": "88.9",
+    "target": "\u003E85\u5206",
+    "tone": "warn"
+  }
+]

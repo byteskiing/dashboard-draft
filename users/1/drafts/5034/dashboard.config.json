@@ -513,7 +513,7 @@
       "libraryCode": "panel"
     },
     {
-      "id": "widget-1773676038304-xt9je84zi",
+      "id": "widget-1773755665709-6c4i4djbj",
       "type": "chart",
       "title": "Panel (Copy) (Copy)",
       "layout": {
@@ -538,7 +538,7 @@
       },
       "children": [
         {
-          "id": "widget-1773676038304-y82sdq7v7",
+          "id": "widget-1773755665709-l3ludyrwm",
           "type": "chart",
           "title": "Basic Radar Chart",
           "layout": {
@@ -564,7 +564,7 @@
           "libraryCode": "echarts"
         },
         {
-          "id": "widget-1773676038304-seztz9g13",
+          "id": "widget-1773755665709-987tfgwnd",
           "type": "chart",
           "title": "Temperature Change in the Coming Week",
           "layout": {
@@ -590,7 +590,7 @@
           "libraryCode": "echarts"
         },
         {
-          "id": "widget-1773676038304-z399epexy",
+          "id": "widget-1773755665709-99wo69she",
           "type": "chart",
           "title": "Label",
           "layout": {
@@ -610,10 +610,96 @@
           "dataFileName": "",
           "isCodeDriven": false,
           "libraryCode": "text"
+        },
+        {
+          "id": "widget-1773755665709-cz4ftupor",
+          "type": "chart",
+          "title": "Business Text",
+          "layout": {
+            "x": 2,
+            "y": 2,
+            "w": 9,
+            "h": 3,
+            "zIndex": 0
+          },
+          "templateId": "325",
+          "monitor": {
+            "gridPos": {
+              "x": 1,
+              "y": 1,
+              "w": 6,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "configFileName": "businesstext-options.json",
+          "dataFileName": "businesstext-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "grafana-businesstext"
         }
       ],
       "isCodeDriven": false,
       "libraryCode": "panel"
+    },
+    {
+      "id": "widget-1773756415364",
+      "type": "chart",
+      "title": "graph circular layout",
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "115",
+      "monitor": {
+        "rowId": "row-1773476025810",
+        "gridPos": {
+          "x": 6,
+          "y": 2,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": true,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1773756433465",
+      "type": "chart",
+      "title": "Basic area chart",
+      "layout": {
+        "x": 0,
+        "y": 1,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "1",
+      "monitor": {
+        "rowId": "row-1773476025810",
+        "gridPos": {
+          "x": 0,
+          "y": 1,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
     }
   ],
   "templates": [],
@@ -647,7 +733,7 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-03-16T23:22:07.1460574Z",
+    "savedAt": "2026-03-17T14:09:56.3486199Z",
     "dbVersion": 1,
     "isStale": false
   }
