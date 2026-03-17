@@ -1,0 +1,81 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "name": "正常运行",
+      "x": 0,
+      "y": 0,
+      "category": 0,
+      "value": 1
+    },
+    {
+      "id": "n2",
+      "name": "升/降负荷",
+      "x": 0,
+      "y": 90,
+      "category": 1,
+      "value": 1
+    },
+    {
+      "id": "n3",
+      "name": "计划停车",
+      "x": -120,
+      "y": 180,
+      "category": 2,
+      "value": 1
+    },
+    {
+      "id": "n4",
+      "name": "故障停车",
+      "x": 120,
+      "y": 180,
+      "category": 3,
+      "value": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "label": "切换"
+    },
+    {
+      "source": "n2",
+      "target": "n3",
+      "label": "计划停机"
+    },
+    {
+      "source": "n2",
+      "target": "n4",
+      "label": "故障触发"
+    },
+    {
+      "source": "n3",
+      "target": "n1",
+      "label": "开车"
+    },
+    {
+      "source": "n2",
+      "target": "n1",
+      "label": "回稳"
+    }
+  ],
+  "categories": [
+    {
+      "name": "运行",
+      "color": "#2563EB"
+    },
+    {
+      "name": "过渡",
+      "color": "#0EA5E9"
+    },
+    {
+      "name": "计划停机",
+      "color": "#6B7280"
+    },
+    {
+      "name": "故障停机",
+      "color": "#DC2626"
+    }
+  ]
+}

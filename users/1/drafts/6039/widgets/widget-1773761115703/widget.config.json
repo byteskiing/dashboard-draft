@@ -1,0 +1,35 @@
+{
+  "id": "widget-1773761115703",
+  "type": "chart",
+  "title": "Panel",
+  "layout": {
+    "x": 14,
+    "y": 4,
+    "w": 6,
+    "h": 4,
+    "zIndex": 1
+  },
+  "templateId": "1342",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 14,
+      "y": 4,
+      "w": 10,
+      "h": 5,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "panel-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "panel"
+}

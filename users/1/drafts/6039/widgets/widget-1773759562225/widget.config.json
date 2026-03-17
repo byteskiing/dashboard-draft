@@ -1,0 +1,58 @@
+{
+  "id": "widget-1773759562225",
+  "type": "chart",
+  "title": "Unit Header Card",
+  "layout": {
+    "x": 0,
+    "y": 0,
+    "w": 24,
+    "h": 4,
+    "zIndex": 1
+  },
+  "templateId": "325",
+  "content": {
+    "panelType": "businesstext",
+    "content": "\u003Cdiv style=\u0022display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:#fff;border-bottom:1px solid #E2E8F0;height:100%;box-sizing:border-box;\u0022\u003E\u003Cdiv\u003E\u003Cdiv style=\u0022font-size:16px;font-weight:700;color:#1E293B;\u0022\u003E{{#if name}}{{name}}{{else}}\u5355\u5143\u8BE6\u60C5\u9884\u89C8{{/if}}\u003C/div\u003E\u003Cdiv style=\u0022font-size:12px;color:#64748B;margin-top:2px;\u0022\u003E{{#if (eq status \u0027normal\u0027)}}\u003Cspan style=\u0022color:#10B981;\u0022\u003E\u25CF \u6B63\u5E38\u8FD0\u884C\u003C/span\u003E{{else if (eq status \u0027warning\u0027)}}\u003Cspan style=\u0022color:#F59E0B;\u0022\u003E\u25CF \u544A\u8B66\u003C/span\u003E{{else}}\u003Cspan style=\u0022color:#DC2626;\u0022\u003E\u25CF \u5F02\u5E38\u003C/span\u003E{{/if}}\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022text-align:center;\u0022\u003E\u003Cdiv style=\u0022font-size:11px;color:#94A3B8;margin-bottom:2px;\u0022\u003E\u7EFC\u5408\u72B6\u6001\u8BC4\u5206\u003C/div\u003E\u003Cdiv style=\u0022font-size:36px;font-weight:700;color:{{#if (gt overallScore 89)}}#10B981{{else if (gt overallScore 74)}}#F59E0B{{else if (gt overallScore 59)}}#EA580C{{else}}#DC2626{{/if}};\u0022\u003E{{formatNumber overallScore 1}}\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
+    "contentMode": "handlebars",
+    "renderMode": "everyRow",
+    "defaultContent": "\u003Cdiv style=\u0022display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:#fff;border-bottom:1px solid #E2E8F0;height:100%;box-sizing:border-box;\u0022\u003E\u003Cdiv\u003E\u003Cdiv style=\u0022font-size:16px;font-weight:700;color:#1E293B;\u0022\u003E\u5355\u5143\u8BE6\u60C5\u9884\u89C8\u003C/div\u003E\u003Cdiv style=\u0022font-size:12px;color:#64748B;margin-top:2px;\u0022\u003E\u52A0\u8F7D\u4E2D...\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022text-align:center;\u0022\u003E\u003Cdiv style=\u0022font-size:11px;color:#94A3B8;margin-bottom:2px;\u0022\u003E\u7EFC\u5408\u72B6\u6001\u8BC4\u5206\u003C/div\u003E\u003Cdiv style=\u0022font-size:36px;font-weight:700;color:#94A3B8;\u0022\u003E--\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
+    "wrapInParagraphs": false,
+    "helpers": [],
+    "styles": ".business-text { padding: 0; margin: 0; height: 100%; }",
+    "formatting": "disabled"
+  },
+  "dataSource": {
+    "type": "api",
+    "config": {
+      "url": "https://localhost:49603/api/v1/sbc/plants/ethylene/units",
+      "method": "GET",
+      "mapperKey": "passthrough"
+    },
+    "refreshIntervalMs": 10000,
+    "transformations": [
+      {
+        "id": "transform-unit-header-card",
+        "type": "custom",
+        "options": {
+          "scriptFile": "transform-transform-unit-header-card.js"
+        },
+        "disabled": false
+      }
+    ]
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 0,
+      "y": 0,
+      "w": 8,
+      "h": 4,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "businesstext-options.json",
+  "dataFileName": "businesstext-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "grafana-businesstext"
+}

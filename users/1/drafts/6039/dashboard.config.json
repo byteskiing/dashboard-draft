@@ -12,12 +12,12 @@
         "cols": 24,
         "rowHeight": 30,
         "margin": [
-          0,
-          0
+          8,
+          8
         ],
         "padding": [
-          12,
-          12
+          16,
+          16
         ]
       }
     },
@@ -27,13 +27,136 @@
       "rowHeight": "auto",
       "rowGapPx": 16,
       "panelGapPx": 12
+    },
+    "headerSettings": {
+      "visible": true,
+      "showTimeRange": true,
+      "showFilters": true,
+      "showVariables": true,
+      "showRefreshControls": true,
+      "collapsible": true,
+      "defaultCollapsed": false
     }
   },
-  "widgets": [],
+  "widgets": [
+    {
+      "id": "widget-1773759562225",
+      "type": "chart",
+      "title": "Unit Header Card",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "325",
+      "monitor": {
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 8,
+          "h": 4,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "businesstext-options.json",
+      "dataFileName": "businesstext-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "grafana-businesstext"
+    },
+    {
+      "id": "widget-1773761019059",
+      "type": "chart",
+      "title": "Bar Chart",
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 8,
+        "zIndex": 1
+      },
+      "templateId": "1312",
+      "monitor": {
+        "gridPos": {
+          "x": 0,
+          "y": 4,
+          "w": 8,
+          "h": 16,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "d3-config.json",
+      "dataFileName": "d3-data.json",
+      "isCodeDriven": true,
+      "libraryCode": "d3"
+    },
+    {
+      "id": "widget-1773761080870",
+      "type": "chart",
+      "title": "Business Text",
+      "layout": {
+        "x": 12,
+        "y": 4,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "325",
+      "monitor": {
+        "gridPos": {
+          "x": 8,
+          "y": 4,
+          "w": 6,
+          "h": 16,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "businesstext-options.json",
+      "dataFileName": "businesstext-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "grafana-businesstext"
+    },
+    {
+      "id": "widget-1773761115703",
+      "type": "chart",
+      "title": "Panel",
+      "layout": {
+        "x": 14,
+        "y": 4,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1342",
+      "monitor": {
+        "gridPos": {
+          "x": 14,
+          "y": 4,
+          "w": 10,
+          "h": 5,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "panel-options.json",
+      "dataFileName": "",
+      "isCodeDriven": false,
+      "libraryCode": "panel"
+    }
+  ],
   "templates": [],
   "variables": [],
   "metadata": {
-    "savedAt": "2026-03-17T14:37:25.6566226Z",
+    "createdAt": "2026-03-17T15:25:21.769Z",
+    "savedAt": "2026-03-17T15:59:34.32903Z",
     "dbVersion": 1,
     "isStale": false
   }

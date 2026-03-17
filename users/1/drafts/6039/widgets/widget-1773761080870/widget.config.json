@@ -1,0 +1,35 @@
+{
+  "id": "widget-1773761080870",
+  "type": "chart",
+  "title": "Business Text",
+  "layout": {
+    "x": 12,
+    "y": 4,
+    "w": 6,
+    "h": 4,
+    "zIndex": 1
+  },
+  "templateId": "325",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 8,
+      "y": 4,
+      "w": 6,
+      "h": 16,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "businesstext-options.json",
+  "dataFileName": "businesstext-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "grafana-businesstext"
+}
