@@ -1,20 +1,13 @@
 {
-  "id": "widget-1773840458640",
+  "id": "widget-1773846163817",
   "type": "chart",
-  "title": "Performance Metric Panel",
+  "title": "Panel",
   "layout": {
-    "x": 15,
-    "y": 4,
-    "w": 9,
-    "h": 15,
+    "x": 1,
+    "y": 1,
+    "w": 6,
+    "h": 4,
     "zIndex": 1
-  },
-  "style": {
-    "theme": "light",
-    "backgroundColor": "#FFFFFF",
-    "borderWidth": 0,
-    "borderRadius": 0,
-    "padding": 0
   },
   "templateId": "1342",
   "dataSource": {
@@ -26,10 +19,10 @@
   },
   "monitor": {
     "gridPos": {
-      "x": 14,
-      "y": 4,
-      "w": 10,
-      "h": 19,
+      "x": 1,
+      "y": 1,
+      "w": 9,
+      "h": 9,
       "zIndex": 0
     },
     "order": 0,

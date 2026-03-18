@@ -1,0 +1,35 @@
+{
+  "id": "widget-1773846820374",
+  "type": "chart",
+  "title": "Tabs",
+  "layout": {
+    "x": 6,
+    "y": 18,
+    "w": 3,
+    "h": 1,
+    "zIndex": 0
+  },
+  "templateId": "1370",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 6,
+      "y": 18,
+      "w": 3,
+      "h": 1,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "control-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "control"
+}

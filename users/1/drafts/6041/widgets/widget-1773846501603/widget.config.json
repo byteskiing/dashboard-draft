@@ -1,0 +1,61 @@
+{
+  "id": "widget-1773846501603",
+  "type": "control",
+  "title": "Tabs",
+  "layout": {
+    "x": 7,
+    "y": 13,
+    "w": 3,
+    "h": 1,
+    "zIndex": 1
+  },
+  "templateId": "1370",
+  "content": {
+    "controlType": "tabs",
+    "defaultValue": "tab1",
+    "styleMode": "segmented",
+    "options": [
+      {
+        "label": "Tab 1",
+        "value": "tab1"
+      },
+      {
+        "label": "Tab 2",
+        "value": "tab2"
+      },
+      {
+        "label": "Tab 3",
+        "value": "tab3"
+      }
+    ],
+    "tabsAppearance": {
+      "align": "left",
+      "height": 38,
+      "groupPadding": 8,
+      "tabPaddingX": 14,
+      "tabPaddingY": 0,
+      "radius": 8,
+      "groupBackgroundColor": "#F1F5F9",
+      "activeBackgroundColor": "#FFFFFF",
+      "activeTextColor": "#0F5EA8",
+      "inactiveTextColor": "#94A3B8",
+      "fontSize": 12,
+      "fontWeight": 700
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 7,
+      "y": 13,
+      "w": 3,
+      "h": 1,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "control-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "control"
+}

@@ -1,0 +1,126 @@
+{
+  "$schema": "./draft-schema.json",
+  "version": "1.0",
+  "dashboard": {
+    "id": "6041",
+    "name": "paneltest2",
+    "description": "",
+    "category": "Production",
+    "mode": "monitor",
+    "canvas": {
+      "gridSettings": {
+        "cols": 24,
+        "rowHeight": 30,
+        "margin": [
+          8,
+          8
+        ],
+        "padding": [
+          16,
+          16
+        ]
+      }
+    },
+    "monitor": {
+      "rows": [],
+      "layoutModel": "fixed-grid",
+      "rowHeight": "auto",
+      "rowGapPx": 16,
+      "panelGapPx": 12
+    }
+  },
+  "widgets": [
+    {
+      "id": "widget-1773846163817",
+      "type": "chart",
+      "title": "Panel",
+      "layout": {
+        "x": 1,
+        "y": 1,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1342",
+      "monitor": {
+        "gridPos": {
+          "x": 1,
+          "y": 1,
+          "w": 9,
+          "h": 9,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "children": [],
+      "configFileName": "panel-options.json",
+      "dataFileName": "",
+      "isCodeDriven": false,
+      "libraryCode": "panel"
+    },
+    {
+      "id": "widget-1773846174191",
+      "type": "chart",
+      "title": "Stat (Basic)",
+      "layout": {
+        "x": 18,
+        "y": 4,
+        "w": 2,
+        "h": 2,
+        "zIndex": 1
+      },
+      "templateId": "1330",
+      "monitor": {
+        "gridPos": {
+          "x": 14,
+          "y": 5,
+          "w": 2,
+          "h": 2,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "stat"
+    },
+    {
+      "id": "widget-1773846501603",
+      "type": "control",
+      "title": "Tabs",
+      "layout": {
+        "x": 7,
+        "y": 13,
+        "w": 3,
+        "h": 1,
+        "zIndex": 1
+      },
+      "templateId": "1370",
+      "monitor": {
+        "gridPos": {
+          "x": 7,
+          "y": 13,
+          "w": 3,
+          "h": 1,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "control-options.json",
+      "dataFileName": "",
+      "isCodeDriven": false,
+      "libraryCode": "control"
+    }
+  ],
+  "templates": [],
+  "variables": [],
+  "metadata": {
+    "savedAt": "2026-03-18T15:16:25.6321514Z",
+    "dbVersion": 1,
+    "isStale": false
+  }
+}
