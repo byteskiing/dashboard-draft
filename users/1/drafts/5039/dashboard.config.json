@@ -49,141 +49,39 @@
   },
   "widgets": [
     {
-      "id": "widget-1773618290807",
+      "id": "widget-1773790191241",
       "type": "chart",
-      "title": "Panel",
+      "title": "Temperature Change in the Coming Week",
       "layout": {
         "x": 0,
         "y": 1,
         "w": 6,
-        "h": 4,
+        "h": 12,
         "zIndex": 1
       },
-      "templateId": "1342",
+      "templateId": "143",
       "monitor": {
         "gridPos": {
-          "x": 3,
-          "y": 2,
-          "w": 12,
-          "h": 11,
+          "x": 0,
+          "y": 1,
+          "w": 16,
+          "h": 20,
           "zIndex": 0
         },
         "order": 0,
         "flex": 1
       },
-      "children": [
-        {
-          "id": "widget-1773636689073",
-          "type": "chart",
-          "title": "Stat (Basic)",
-          "layout": {
-            "x": 2,
-            "y": 0,
-            "w": 8,
-            "h": 8,
-            "zIndex": 0
-          },
-          "templateId": "1330",
-          "monitor": {
-            "rowId": "",
-            "order": 0,
-            "flex": 1
-          },
-          "isCodeDriven": false,
-          "libraryCode": "stat"
-        },
-        {
-          "id": "widget-1773672104591",
-          "type": "chart",
-          "title": "Heading",
-          "layout": {
-            "x": 13,
-            "y": 1,
-            "w": 4,
-            "h": 1,
-            "zIndex": 0
-          },
-          "templateId": "1322",
-          "monitor": {
-            "gridPos": {
-              "x": 13,
-              "y": 1,
-              "w": 4,
-              "h": 1,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "isCodeDriven": false,
-          "libraryCode": "text"
-        },
-        {
-          "id": "widget-1773672980894",
-          "type": "chart",
-          "title": "Business Text",
-          "layout": {
-            "x": 14,
-            "y": 6,
-            "w": 8,
-            "h": 3,
-            "zIndex": 0
-          },
-          "templateId": "325",
-          "monitor": {
-            "gridPos": {
-              "x": 14,
-              "y": 6,
-              "w": 6,
-              "h": 1,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "configFileName": "businesstext-options.json",
-          "dataFileName": "businesstext-data.json",
-          "isCodeDriven": false,
-          "libraryCode": "grafana-businesstext"
-        }
-      ],
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
       "isCodeDriven": false,
-      "libraryCode": "panel"
-    },
-    {
-      "id": "widget-1773673484668",
-      "type": "chart",
-      "title": "Label",
-      "layout": {
-        "x": 16,
-        "y": 3,
-        "w": 4,
-        "h": 4,
-        "zIndex": 1
-      },
-      "templateId": "1320",
-      "monitor": {
-        "gridPos": {
-          "x": 16,
-          "y": 3,
-          "w": 4,
-          "h": 4,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "text-options.json",
-      "dataFileName": "",
-      "isCodeDriven": false,
-      "libraryCode": "text"
+      "libraryCode": "echarts"
     }
   ],
   "templates": [],
   "variables": [],
   "metadata": {
     "createdAt": "2026-03-14T13:34:51.841Z",
-    "savedAt": "2026-03-16T16:08:02.1310055Z",
+    "savedAt": "2026-03-18T10:17:27.3332354Z",
     "dbVersion": 1,
     "isStale": false
   }

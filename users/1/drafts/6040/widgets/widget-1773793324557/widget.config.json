@@ -1,15 +1,15 @@
 {
-  "id": "widget-1773675525860-kmuy5iedt",
+  "id": "widget-1773793324557",
   "type": "chart",
-  "title": "Basic Radar Chart",
+  "title": "Basic area chart",
   "layout": {
-    "x": 14,
-    "y": 0,
-    "w": 10,
-    "h": 6,
+    "x": 1,
+    "y": 5,
+    "w": 23,
+    "h": 38,
     "zIndex": 0
   },
-  "templateId": "214",
+  "templateId": "1",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -19,15 +19,17 @@
   },
   "monitor": {
     "gridPos": {
-      "x": 16,
-      "y": 0,
+      "x": 4,
+      "y": 7,
       "w": 6,
-      "h": 3,
+      "h": 12,
       "zIndex": 0
     },
     "order": 0,
     "flex": 1
   },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
   "isCodeDriven": false,
   "libraryCode": "echarts"
 }

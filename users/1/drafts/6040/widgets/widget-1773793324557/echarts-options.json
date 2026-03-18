@@ -1,0 +1,15 @@
+{
+  "xAxis": {
+    "type": "category",
+    "boundaryGap": false
+  },
+  "yAxis": {
+    "type": "value"
+  },
+  "series": [
+    {
+      "type": "line",
+      "areaStyle": {}
+    }
+  ]
+}

@@ -1,81 +1,111 @@
-{
-  "nodes": [
-    {
-      "id": "n1",
-      "name": "正常运行",
-      "x": 0,
-      "y": 0,
-      "category": 0,
-      "value": 1
-    },
-    {
-      "id": "n2",
-      "name": "升/降负荷",
-      "x": 0,
-      "y": 90,
-      "category": 1,
-      "value": 1
-    },
-    {
-      "id": "n3",
-      "name": "计划停车",
-      "x": -120,
-      "y": 180,
-      "category": 2,
-      "value": 1
-    },
-    {
-      "id": "n4",
-      "name": "故障停车",
-      "x": 120,
-      "y": 180,
-      "category": 3,
-      "value": 1
-    }
-  ],
-  "links": [
-    {
-      "source": "n1",
-      "target": "n2",
-      "label": "切换"
-    },
-    {
-      "source": "n2",
-      "target": "n3",
-      "label": "计划停机"
-    },
-    {
-      "source": "n2",
-      "target": "n4",
-      "label": "故障触发"
-    },
-    {
-      "source": "n3",
-      "target": "n1",
-      "label": "开车"
-    },
-    {
-      "source": "n2",
-      "target": "n1",
-      "label": "回稳"
-    }
-  ],
-  "categories": [
-    {
-      "name": "运行",
-      "color": "#2563EB"
-    },
-    {
-      "name": "过渡",
-      "color": "#0EA5E9"
-    },
-    {
-      "name": "计划停机",
-      "color": "#6B7280"
-    },
-    {
-      "name": "故障停机",
-      "color": "#DC2626"
-    }
-  ]
-}
+[
+  {
+    "name": "SFC Topology",
+    "fields": [
+      {
+        "name": "nodes",
+        "type": "other",
+        "config": {},
+        "values": [
+          [
+            {
+              "id": "n1",
+              "name": "进料预热",
+              "x": 100,
+              "y": 80,
+              "category": 0,
+              "value": "13min"
+            },
+            {
+              "id": "n2",
+              "name": "裂解反应",
+              "x": 280,
+              "y": 80,
+              "category": 2,
+              "value": "queued 2m"
+            },
+            {
+              "id": "n3",
+              "name": "急冷换热",
+              "x": 460,
+              "y": 80,
+              "category": 3,
+              "value": "standby"
+            },
+            {
+              "id": "n4",
+              "name": "压缩分离",
+              "x": 280,
+              "y": 200,
+              "category": 3,
+              "value": "standby"
+            },
+            {
+              "id": "n5",
+              "name": "产品精制",
+              "x": 460,
+              "y": 200,
+              "category": 3,
+              "value": "standby"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "links",
+        "type": "other",
+        "config": {},
+        "values": [
+          [
+            {
+              "source": "n1",
+              "target": "n2",
+              "label": "→ 13min"
+            },
+            {
+              "source": "n2",
+              "target": "n3",
+              "label": "pending"
+            },
+            {
+              "source": "n3",
+              "target": "n4",
+              "label": "standby"
+            },
+            {
+              "source": "n4",
+              "target": "n5",
+              "label": "standby"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "categories",
+        "type": "other",
+        "config": {},
+        "values": [
+          [
+            {
+              "name": "Active",
+              "color": "#3B82F6"
+            },
+            {
+              "name": "Completed",
+              "color": "#93C5FD"
+            },
+            {
+              "name": "Pending",
+              "color": "#9CA3AF"
+            },
+            {
+              "name": "Standby",
+              "color": "#D1D5DB"
+            }
+          ]
+        ]
+      }
+    ],
+    "length": 1
+  }
+]

@@ -69,8 +69,8 @@
     },
     {
       "id": "widget-1773761019059",
-      "type": "chart",
-      "title": "Bar Chart",
+      "type": "d3",
+      "title": "SFC Topology",
       "layout": {
         "x": 0,
         "y": 4,
@@ -92,6 +92,7 @@
       },
       "configFileName": "d3-config.json",
       "dataFileName": "d3-data.json",
+      "codeFileName": "d3-logic.js",
       "isCodeDriven": true,
       "libraryCode": "d3"
     },
@@ -153,10 +154,51 @@
     }
   ],
   "templates": [],
-  "variables": [],
+  "variables": [
+    {
+      "id": "var-1773830874527",
+      "name": "plantId",
+      "type": "textbox",
+      "label": "plantId",
+      "description": "",
+      "hide": 2,
+      "skipUrlSync": false,
+      "index": 0,
+      "query": "",
+      "sort": 0,
+      "refresh": 0,
+      "options": [],
+      "current": {
+        "text": "ethylene",
+        "value": "ethylene"
+      },
+      "multi": false,
+      "includeAll": false
+    },
+    {
+      "id": "var-1773830927375",
+      "name": "unitId",
+      "type": "textbox",
+      "label": "unitId",
+      "description": "",
+      "hide": 2,
+      "skipUrlSync": false,
+      "index": 0,
+      "query": "",
+      "sort": 0,
+      "refresh": 0,
+      "options": [],
+      "current": {
+        "text": "e-101",
+        "value": "e-101"
+      },
+      "multi": false,
+      "includeAll": false
+    }
+  ],
   "metadata": {
     "createdAt": "2026-03-17T15:25:21.769Z",
-    "savedAt": "2026-03-17T15:59:34.32903Z",
+    "savedAt": "2026-03-18T11:18:29.0294592Z",
     "dbVersion": 1,
     "isStale": false
   }

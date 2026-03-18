@@ -1,0 +1,59 @@
+{
+  "id": "widget-1773793159607",
+  "type": "chart",
+  "title": "Panel",
+  "layout": {
+    "x": 1,
+    "y": 3,
+    "w": 6,
+    "h": 4,
+    "zIndex": 1
+  },
+  "templateId": "1342",
+  "content": {
+    "title": "Group Panel",
+    "showTitle": false,
+    "collapsed": false,
+    "borderWidth": 1,
+    "borderColor": "rgba(255, 255, 255, 0.2)",
+    "backgroundColor": "transparent",
+    "padding": 8,
+    "headerHeight": 32,
+    "childGrid": {
+      "cols": 24,
+      "rowHeight": 10,
+      "margin": [
+        4,
+        4
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "squareCells": false,
+      "overflow": "hidden"
+    }
+  },
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 0,
+      "y": 0,
+      "w": 10,
+      "h": 17,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "panel-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "panel"
+}

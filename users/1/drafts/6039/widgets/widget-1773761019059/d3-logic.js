@@ -41,6 +41,24 @@ function extractTopology(input) {
     return input;
   }
 
+  if (input.fields && Array.isArray(input.fields)) {
+    var nodesField = input.fields.find(function(field) { return field && field.name === 'nodes'; });
+    var linksField = input.fields.find(function(field) { return field && field.name === 'links'; });
+    var categoriesField = input.fields.find(function(field) { return field && field.name === 'categories'; });
+
+    if (nodesField && Array.isArray(nodesField.values) && nodesField.values.length > 0) {
+      var topologyFromFields = {
+        nodes: nodesField.values[0] || [],
+        links: linksField && Array.isArray(linksField.values) ? (linksField.values[0] || []) : [],
+        categories: categoriesField && Array.isArray(categoriesField.values) ? (categoriesField.values[0] || []) : [],
+      };
+
+      if (Array.isArray(topologyFromFields.nodes)) {
+        return topologyFromFields;
+      }
+    }
+  }
+
   if (input.fields && input.fields[0] && input.fields[0].values && input.fields[0].values.length > 0) {
     return extractTopology(tryParseJson(input.fields[0].values[0]));
   }
