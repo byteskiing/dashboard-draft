@@ -1,0 +1,10 @@
+{
+  "title": "U-101压缩单元",
+  "backgroundColor": "transparent",
+  "borderColor": "transparent",
+  "borderWidth": 0,
+  "padding": 18,
+  "headerHeight": 32,
+  "collapsed": false,
+  "showTitle": false
+}

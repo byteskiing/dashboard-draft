@@ -1,0 +1,42 @@
+{
+  "id": "widget-1773844529933",
+  "type": "chart",
+  "title": "综合评分雷达",
+  "layout": {
+    "x": 17,
+    "y": 2,
+    "w": 6,
+    "h": 12,
+    "zIndex": 0
+  },
+  "style": {
+    "theme": "light",
+    "backgroundColor": "transparent",
+    "borderColor": "transparent",
+    "borderWidth": 0,
+    "padding": 0
+  },
+  "templateId": "214",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 17,
+      "y": 2,
+      "w": 6,
+      "h": 12,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

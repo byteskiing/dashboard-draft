@@ -279,6 +279,175 @@
         "name": "Item 2",
         "value": "200"
       }
-    ]
+    ],
+    "widget-1773842860720": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773842866918-sv52wmylq": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773842868784-a4unckfh8": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773842874492-e5nnstox3": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1706400000000
+            ]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "values": [
+              42
+            ]
+          }
+        ],
+        "length": 1,
+        "name": "Sample"
+      }
+    ],
+    "widget-1773844018516-6rztctb19": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773844517331": [
+      {
+        "name": "Item 1",
+        "value": "100"
+      },
+      {
+        "name": "Item 2",
+        "value": "200"
+      }
+    ],
+    "widget-1773844529933": {
+      "series": [
+        {
+          "data": [
+            {
+              "value": [
+                4200,
+                3000,
+                20000,
+                35000,
+                50000,
+                18000
+              ],
+              "name": "Allocated Budget"
+            },
+            {
+              "value": [
+                5000,
+                14000,
+                28000,
+                26000,
+                42000,
+                21000
+              ],
+              "name": "Actual Spending"
+            }
+          ],
+          "index": 0,
+          "name": "Budget vs spending",
+          "type": "radar"
+        }
+      ]
+    },
+    "widget-1773844543876": {
+      "series": [
+        {
+          "data": [
+            820,
+            932,
+            901,
+            934,
+            1290,
+            1330,
+            1320
+          ],
+          "index": 0,
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    }
   }
 }

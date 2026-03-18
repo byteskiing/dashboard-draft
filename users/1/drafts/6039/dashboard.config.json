@@ -150,7 +150,7 @@
       "children": [
         {
           "id": "widget-1773840492651",
-          "type": "chart",
+          "type": "control",
           "title": "Performance Metric Tabs",
           "layout": {
             "x": 8,
@@ -171,10 +171,10 @@
             "order": 0,
             "flex": 1
           },
-          "configFileName": "businesstext-options.json",
-          "dataFileName": "businesstext-data.json",
+          "configFileName": "control-options.json",
+          "dataFileName": "",
           "isCodeDriven": false,
-          "libraryCode": "grafana-businesstext"
+          "libraryCode": "control"
         },
         {
           "id": "widget-1773840482383",
@@ -182,21 +182,90 @@
           "title": "Performance Trend",
           "layout": {
             "x": 8,
-            "y": 6,
+            "y": 3,
             "w": 16,
-            "h": 8,
+            "h": 12,
             "zIndex": 0
           },
           "templateId": "151",
+          "visibilityRule": {
+            "variable": "metricView",
+            "operator": "equals",
+            "value": "trend"
+          },
           "monitor": {
             "gridPos": {
               "x": 8,
-              "y": 6,
+              "y": 3,
               "w": 16,
-              "h": 9,
+              "h": 12,
               "zIndex": 0
             },
             "order": 1,
+            "flex": 1
+          },
+          "configFileName": "echarts-options.json",
+          "dataFileName": "echarts-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "echarts"
+        },
+        {
+          "id": "widget-1773841494101",
+          "type": "chart",
+          "title": "Performance Distribution",
+          "layout": {
+            "x": 8,
+            "y": 3,
+            "w": 16,
+            "h": 12,
+            "zIndex": 0
+          },
+          "visibilityRule": {
+            "variable": "metricView",
+            "operator": "equals",
+            "value": "distribution"
+          },
+          "monitor": {
+            "gridPos": {
+              "x": 8,
+              "y": 3,
+              "w": 16,
+              "h": 12,
+              "zIndex": 0
+            },
+            "order": 2,
+            "flex": 1
+          },
+          "configFileName": "echarts-options.json",
+          "dataFileName": "echarts-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "echarts"
+        },
+        {
+          "id": "widget-1773841494102",
+          "type": "chart",
+          "title": "Correlation Analysis",
+          "layout": {
+            "x": 8,
+            "y": 3,
+            "w": 16,
+            "h": 12,
+            "zIndex": 0
+          },
+          "visibilityRule": {
+            "variable": "metricView",
+            "operator": "equals",
+            "value": "correlation"
+          },
+          "monitor": {
+            "gridPos": {
+              "x": 8,
+              "y": 3,
+              "w": 16,
+              "h": 12,
+              "zIndex": 0
+            },
+            "order": 3,
             "flex": 1
           },
           "configFileName": "echarts-options.json",
@@ -280,11 +349,47 @@
       },
       "multi": false,
       "includeAll": false
+    },
+    {
+      "id": "var-1773841494000",
+      "name": "metricView",
+      "type": "custom",
+      "label": "metricView",
+      "description": "",
+      "hide": 2,
+      "skipUrlSync": false,
+      "index": 0,
+      "query": "trend,distribution,correlation",
+      "sort": 0,
+      "refresh": 0,
+      "options": [
+        {
+          "text": "\u65F6\u5E8F\u8D8B\u52BF",
+          "value": "trend",
+          "selected": true
+        },
+        {
+          "text": "\u5206\u5E03\u7EDF\u8BA1",
+          "value": "distribution",
+          "selected": false
+        },
+        {
+          "text": "\u5173\u8054\u5206\u6790",
+          "value": "correlation",
+          "selected": false
+        }
+      ],
+      "current": {
+        "text": "\u65F6\u5E8F\u8D8B\u52BF",
+        "value": "trend"
+      },
+      "multi": false,
+      "includeAll": false
     }
   ],
   "metadata": {
     "createdAt": "2026-03-17T15:25:21.769Z",
-    "savedAt": "2026-03-18T13:41:05.9263252Z",
+    "savedAt": "2026-03-18T14:06:23.6417131Z",
     "dbVersion": 1,
     "isStale": false
   }

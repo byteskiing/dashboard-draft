@@ -1,0 +1,22 @@
+[
+  {
+    "fields": [
+      {
+        "name": "time",
+        "type": "time",
+        "values": [
+          1710720000000
+        ]
+      },
+      {
+        "name": "score",
+        "type": "number",
+        "values": [
+          95
+        ]
+      }
+    ],
+    "length": 1,
+    "name": "Plant KPI"
+  }
+]

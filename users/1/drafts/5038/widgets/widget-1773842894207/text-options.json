@@ -1,0 +1,11 @@
+{
+  "text": "单元性能看板   ·   4个单元",
+  "fontSize": 14,
+  "fontWeight": "bold",
+  "fontFamily": "'Segoe UI', 'Microsoft YaHei', sans-serif",
+  "textAlign": "left",
+  "verticalAlign": "middle",
+  "lineHeight": 1.1,
+  "color": "#0F172A",
+  "backgroundColor": "transparent"
+}

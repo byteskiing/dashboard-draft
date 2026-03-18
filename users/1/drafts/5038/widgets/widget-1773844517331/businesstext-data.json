@@ -1,0 +1,13 @@
+[
+  {
+    "unitName": "U-101压缩单元",
+    "recentState": "近期状态切换：检修 -> 正常运行",
+    "grade": "优秀",
+    "metricTitle": "操作绩效指数",
+    "score": "98",
+    "primaryLabel": "SBC投用率",
+    "primaryValue": "97.2% (>95%)",
+    "secondaryLabel": "过程报警率",
+    "secondaryValue": "2次/h (<6次/h)"
+  }
+]

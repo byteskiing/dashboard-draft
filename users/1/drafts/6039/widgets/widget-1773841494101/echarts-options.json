@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "transparent",
+  "tooltip": {
+    "trigger": "axis",
+    "backgroundColor": "rgba(255,255,255,0.96)",
+    "borderColor": "#E2E8F0",
+    "borderWidth": 1,
+    "textStyle": {
+      "color": "#334155"
+    }
+  },
+  "grid": {
+    "top": 16,
+    "bottom": 28,
+    "left": 36,
+    "right": 10
+  },
+  "xAxis": {
+    "type": "category",
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "fontSize": 10,
+      "color": "#94A3B8"
+    }
+  },
+  "yAxis": {
+    "type": "value",
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "fontSize": 10,
+      "color": "#CBD5E1"
+    },
+    "splitLine": {
+      "lineStyle": {
+        "color": "#EEF3F8"
+      }
+    }
+  },
+  "series": [
+    {
+      "type": "bar",
+      "barWidth": "42%",
+      "itemStyle": {
+        "borderRadius": [
+          6,
+          6,
+          0,
+          0
+        ],
+        "color": "#2F73FF"
+      }
+    }
+  ]
+}

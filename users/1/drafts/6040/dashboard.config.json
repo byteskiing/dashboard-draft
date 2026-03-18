@@ -31,12 +31,12 @@
   },
   "widgets": [
     {
-      "id": "widget-1773793159607",
+      "id": "widget-1773844758804",
       "type": "chart",
       "title": "Panel",
       "layout": {
         "x": 1,
-        "y": 3,
+        "y": 1,
         "w": 6,
         "h": 4,
         "zIndex": 1
@@ -44,56 +44,55 @@
       "templateId": "1342",
       "monitor": {
         "gridPos": {
-          "x": 0,
-          "y": 0,
-          "w": 10,
-          "h": 17,
+          "x": 2,
+          "y": 2,
+          "w": 8,
+          "h": 8,
           "zIndex": 0
         },
         "order": 0,
         "flex": 1
       },
-      "children": [
-        {
-          "id": "widget-1773793324557",
-          "type": "chart",
-          "title": "Basic area chart",
-          "layout": {
-            "x": 1,
-            "y": 5,
-            "w": 23,
-            "h": 38,
-            "zIndex": 0
-          },
-          "templateId": "1",
-          "monitor": {
-            "gridPos": {
-              "x": 4,
-              "y": 7,
-              "w": 6,
-              "h": 12,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "configFileName": "echarts-options.json",
-          "dataFileName": "echarts-data.json",
-          "isCodeDriven": false,
-          "libraryCode": "echarts"
-        }
-      ],
+      "children": [],
       "configFileName": "panel-options.json",
       "dataFileName": "",
       "isCodeDriven": false,
       "libraryCode": "panel"
+    },
+    {
+      "id": "widget-1773844774566",
+      "type": "chart",
+      "title": "Stat (Basic)",
+      "layout": {
+        "x": 13,
+        "y": 2,
+        "w": 2,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1330",
+      "monitor": {
+        "gridPos": {
+          "x": 22,
+          "y": 6,
+          "w": 2,
+          "h": 4,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "stat"
     }
   ],
   "templates": [],
   "variables": [],
   "metadata": {
     "createdAt": "2026-03-18T00:20:02.371Z",
-    "savedAt": "2026-03-18T10:18:46.3678099Z",
+    "savedAt": "2026-03-18T14:41:09.8766621Z",
     "dbVersion": 1,
     "isStale": false
   }

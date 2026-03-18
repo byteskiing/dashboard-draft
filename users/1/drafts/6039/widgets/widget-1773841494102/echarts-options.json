@@ -1,0 +1,72 @@
+{
+  "backgroundColor": "transparent",
+  "tooltip": {
+    "trigger": "item",
+    "backgroundColor": "rgba(255,255,255,0.96)",
+    "borderColor": "#E2E8F0",
+    "borderWidth": 1,
+    "textStyle": {
+      "color": "#334155"
+    }
+  },
+  "grid": {
+    "top": 16,
+    "bottom": 24,
+    "left": 34,
+    "right": 12
+  },
+  "xAxis": {
+    "type": "value",
+    "name": "Load",
+    "nameTextStyle": {
+      "color": "#64748B"
+    },
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "fontSize": 10,
+      "color": "#94A3B8"
+    },
+    "splitLine": {
+      "lineStyle": {
+        "color": "#EEF3F8"
+      }
+    }
+  },
+  "yAxis": {
+    "type": "value",
+    "name": "Efficiency",
+    "nameTextStyle": {
+      "color": "#64748B"
+    },
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "fontSize": 10,
+      "color": "#94A3B8"
+    },
+    "splitLine": {
+      "lineStyle": {
+        "color": "#EEF3F8"
+      }
+    }
+  },
+  "series": [
+    {
+      "type": "scatter",
+      "symbolSize": 12,
+      "itemStyle": {
+        "color": "#0F5EA8",
+        "opacity": 0.8
+      }
+    }
+  ]
+}

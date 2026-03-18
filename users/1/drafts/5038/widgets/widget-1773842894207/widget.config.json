@@ -1,0 +1,42 @@
+{
+  "id": "widget-1773842894207",
+  "type": "chart",
+  "title": "单元性能看板",
+  "layout": {
+    "x": 0,
+    "y": 4,
+    "w": 4,
+    "h": 4,
+    "zIndex": 1
+  },
+  "style": {
+    "theme": "light",
+    "backgroundColor": "transparent",
+    "borderColor": "transparent",
+    "borderWidth": 0,
+    "padding": 0
+  },
+  "templateId": "1320",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 0,
+      "y": 3,
+      "w": 4,
+      "h": 2,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "text-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "text"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "widget-1773844119003",
+  "type": "chart",
+  "title": "U-101压缩单元",
+  "layout": {
+    "x": 0,
+    "y": 6,
+    "w": 6,
+    "h": 4,
+    "zIndex": 1
+  },
+  "style": {
+    "theme": "light",
+    "backgroundColor": "#FFFFFF",
+    "borderColor": "rgba(15, 23, 42, 0.04)",
+    "borderWidth": 1,
+    "borderRadius": 22,
+    "padding": 0
+  },
+  "templateId": "1342",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 0,
+      "y": 6,
+      "w": 23,
+      "h": 14,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "panel-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "panel"
+}

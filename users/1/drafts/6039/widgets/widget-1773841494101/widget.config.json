@@ -1,7 +1,7 @@
 {
-  "id": "widget-1773840482383",
+  "id": "widget-1773841494101",
   "type": "chart",
-  "title": "Performance Trend",
+  "title": "Performance Distribution",
   "layout": {
     "x": 8,
     "y": 3,
@@ -16,29 +16,16 @@
     "borderRadius": 0,
     "padding": 0
   },
-  "templateId": "151",
   "visibilityRule": {
     "variable": "metricView",
     "operator": "equals",
-    "value": "trend"
+    "value": "distribution"
   },
   "dataSource": {
-    "type": "api",
+    "type": "mock",
     "config": {
-      "url": "/api/v1/sbc/units/${unitId}/trends",
-      "method": "GET"
-    },
-    "refreshIntervalMs": 10000,
-    "transformations": [
-      {
-        "id": "transform-performance-trend",
-        "type": "custom",
-        "options": {
-          "scriptFile": "transform-transform-performance-trend.js"
-        },
-        "disabled": false
-      }
-    ]
+      "dataType": "category"
+    }
   },
   "monitor": {
     "gridPos": {
@@ -48,7 +35,7 @@
       "h": 12,
       "zIndex": 0
     },
-    "order": 1,
+    "order": 2,
     "flex": 1
   },
   "configFileName": "echarts-options.json",

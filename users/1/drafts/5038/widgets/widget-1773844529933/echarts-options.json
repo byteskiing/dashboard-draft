@@ -1,0 +1,117 @@
+{
+  "backgroundColor": "transparent",
+  "tooltip": {
+    "trigger": "item"
+  },
+  "legend": {
+    "bottom": 0,
+    "left": "center",
+    "icon": "roundRect",
+    "itemWidth": 10,
+    "itemHeight": 10,
+    "textStyle": {
+      "color": "#64748B",
+      "fontSize": 11
+    },
+    "data": [
+      "当前状态",
+      "正常边界"
+    ]
+  },
+  "radar": {
+    "center": [
+      "42%",
+      "43%"
+    ],
+    "radius": "50%",
+    "startAngle": 90,
+    "splitNumber": 4,
+    "axisName": {
+      "color": "#475569",
+      "fontSize": 12
+    },
+    "splitLine": {
+      "lineStyle": {
+        "color": [
+          "rgba(148, 163, 184, 0.12)"
+        ]
+      }
+    },
+    "splitArea": {
+      "areaStyle": {
+        "color": [
+          "rgba(255,255,255,0)",
+          "rgba(148,163,184,0.02)"
+        ]
+      }
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(148,163,184,0.28)"
+      }
+    },
+    "indicator": [
+      {
+        "name": "绩效",
+        "max": 100
+      },
+      {
+        "name": "弹性",
+        "max": 100
+      },
+      {
+        "name": "技能",
+        "max": 100
+      }
+    ]
+  },
+  "series": [
+    {
+      "name": "当前状态",
+      "type": "radar",
+      "symbol": "none",
+      "lineStyle": {
+        "width": 2,
+        "color": "#3B82F6"
+      },
+      "areaStyle": {
+        "color": "rgba(59,130,246,0.16)"
+      }
+    },
+    {
+      "name": "正常边界",
+      "type": "radar",
+      "symbol": "none",
+      "lineStyle": {
+        "width": 2,
+        "type": "dashed",
+        "color": "#10B981"
+      },
+      "areaStyle": {
+        "color": "rgba(16,185,129,0.08)"
+      }
+    }
+  ],
+  "graphic": [
+    {
+      "type": "text",
+      "right": 8,
+      "top": "34%",
+      "style": {
+        "text": "94",
+        "fill": "#0F172A",
+        "font": "700 34px 'Segoe UI', 'Microsoft YaHei', sans-serif"
+      }
+    },
+    {
+      "type": "text",
+      "right": 8,
+      "top": "47%",
+      "style": {
+        "text": "综合评分",
+        "fill": "#94A3B8",
+        "font": "600 12px 'Segoe UI', 'Microsoft YaHei', sans-serif"
+      }
+    }
+  ]
+}

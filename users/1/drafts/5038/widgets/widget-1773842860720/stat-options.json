@@ -1,0 +1,21 @@
+{
+  "reducer": "last",
+  "colorMode": "none",
+  "graphMode": "none",
+  "justifyMode": "center",
+  "textMode": "value_and_name",
+  "orientation": "vertical",
+  "wideLayout": false,
+  "titleSize": 16,
+  "valueSize": 50,
+  "displayName": "↗ 装置绩效均值",
+  "unit": "分",
+  "decimals": 1,
+  "noValue": "--",
+  "thresholds": [
+    {
+      "value": -Infinity,
+      "color": "green"
+    }
+  ]
+}
