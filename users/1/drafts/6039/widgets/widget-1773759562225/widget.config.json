@@ -6,16 +6,23 @@
     "x": 0,
     "y": 0,
     "w": 24,
-    "h": 4,
+    "h": 3,
     "zIndex": 1
+  },
+  "style": {
+    "theme": "light",
+    "backgroundColor": "#FFFFFF",
+    "borderWidth": 0,
+    "borderRadius": 0,
+    "padding": 0
   },
   "templateId": "325",
   "content": {
     "panelType": "businesstext",
-    "content": "\u003Cdiv style=\u0022display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:#fff;border-bottom:1px solid #E2E8F0;height:100%;box-sizing:border-box;\u0022\u003E\u003Cdiv\u003E\u003Cdiv style=\u0022font-size:16px;font-weight:700;color:#1E293B;\u0022\u003E{{#if name}}{{name}}{{else}}\u5355\u5143\u8BE6\u60C5\u9884\u89C8{{/if}}\u003C/div\u003E\u003Cdiv style=\u0022font-size:12px;color:#64748B;margin-top:2px;\u0022\u003E{{#if (eq status \u0027normal\u0027)}}\u003Cspan style=\u0022color:#10B981;\u0022\u003E\u25CF \u6B63\u5E38\u8FD0\u884C\u003C/span\u003E{{else if (eq status \u0027warning\u0027)}}\u003Cspan style=\u0022color:#F59E0B;\u0022\u003E\u25CF \u544A\u8B66\u003C/span\u003E{{else}}\u003Cspan style=\u0022color:#DC2626;\u0022\u003E\u25CF \u5F02\u5E38\u003C/span\u003E{{/if}}\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022text-align:center;\u0022\u003E\u003Cdiv style=\u0022font-size:11px;color:#94A3B8;margin-bottom:2px;\u0022\u003E\u7EFC\u5408\u72B6\u6001\u8BC4\u5206\u003C/div\u003E\u003Cdiv style=\u0022font-size:36px;font-weight:700;color:{{#if (gt overallScore 89)}}#10B981{{else if (gt overallScore 74)}}#F59E0B{{else if (gt overallScore 59)}}#EA580C{{else}}#DC2626{{/if}};\u0022\u003E{{formatNumber overallScore 1}}\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
+    "content": "\u003Cdiv style=\u0022height:100%;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:0 32px;box-sizing:border-box;\u0022\u003E\u003Cdiv style=\u0022display:flex;flex-direction:column;justify-content:center;min-width:280px;padding-left:18px;border-left:4px solid #0F5EA8;\u0022\u003E\u003Cdiv style=\u0022font-size:18px;font-weight:800;color:#0F172A;letter-spacing:0.01em;\u0022\u003E\u5355\u5143\u8BE6\u60C5\u9884\u89C8\u003C/div\u003E\u003Cdiv style=\u0022display:flex;align-items:center;gap:10px;margin-top:10px;font-size:12px;font-weight:600;color:#475569;\u0022\u003E\u003Cspan style=\u0022font-size:14px;line-height:1;color:{{#if (eq status \u0027normal\u0027)}}#10B981{{else if (eq status \u0027warning\u0027)}}#F59E0B{{else}}#DC2626{{/if}};\u0022\u003E\u25CF\u003C/span\u003E\u003Cspan style=\u0022color:{{#if (eq status \u0027normal\u0027)}}#1F7A5C{{else if (eq status \u0027warning\u0027)}}#B45309{{else}}#B91C1C{{/if}};\u0022\u003E{{#if (eq status \u0027normal\u0027)}}\u6B63\u5E38\u8FD0\u884C{{else if (eq status \u0027warning\u0027)}}\u544A\u8B66{{else}}\u5F02\u5E38{{/if}}\u003C/span\u003E\u003Cspan style=\u0022color:#475569;\u0022\u003E\u00B7 \u5DF2\u505C\u7559 12h\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022display:flex;flex:1;justify-content:center;\u0022\u003E\u003Cdiv style=\u0022text-align:center;\u0022\u003E\u003Cdiv style=\u0022font-size:12px;font-weight:700;color:#94A3B8;letter-spacing:0.02em;\u0022\u003E\u7EFC\u5408\u72B6\u6001\u8BC4\u5206\u003C/div\u003E\u003Cdiv style=\u0022display:flex;align-items:flex-end;justify-content:center;gap:14px;margin-top:6px;\u0022\u003E\u003Cdiv style=\u0022font-size:52px;line-height:0.9;font-weight:800;color:#64748B;\u0022\u003E{{formatNumber overallScore 1}}\u003C/div\u003E\u003Cdiv style=\u0022margin-bottom:8px;color:#10B981;font-size:12px;font-weight:700;white-space:nowrap;\u0022\u003E\u2191 1.5\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022display:flex;align-items:center;justify-content:flex-end;gap:28px;min-width:320px;\u0022\u003E\u003Cdiv style=\u0022text-align:right;\u0022\u003E\u003Cdiv style=\u0022font-size:12px;font-weight:700;color:#94A3B8;\u0022\u003ECycleID\u003C/div\u003E\u003Cdiv style=\u0022margin-top:4px;font-size:14px;font-weight:800;color:#0F172A;white-space:nowrap;\u0022\u003E##CYC-88204\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022color:#1E3A5F;font-size:13px;font-weight:700;white-space:nowrap;\u0022\u003E\u21E9 \u5BFC\u51FA\u672C\u6BB5\u5206\u6790\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
     "contentMode": "handlebars",
     "renderMode": "everyRow",
-    "defaultContent": "\u003Cdiv style=\u0022display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:#fff;border-bottom:1px solid #E2E8F0;height:100%;box-sizing:border-box;\u0022\u003E\u003Cdiv\u003E\u003Cdiv style=\u0022font-size:16px;font-weight:700;color:#1E293B;\u0022\u003E\u5355\u5143\u8BE6\u60C5\u9884\u89C8\u003C/div\u003E\u003Cdiv style=\u0022font-size:12px;color:#64748B;margin-top:2px;\u0022\u003E\u52A0\u8F7D\u4E2D...\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022text-align:center;\u0022\u003E\u003Cdiv style=\u0022font-size:11px;color:#94A3B8;margin-bottom:2px;\u0022\u003E\u7EFC\u5408\u72B6\u6001\u8BC4\u5206\u003C/div\u003E\u003Cdiv style=\u0022font-size:36px;font-weight:700;color:#94A3B8;\u0022\u003E--\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
+    "defaultContent": "\u003Cdiv style=\u0022height:100%;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:0 32px;box-sizing:border-box;\u0022\u003E\u003Cdiv style=\u0022display:flex;flex-direction:column;justify-content:center;min-width:280px;padding-left:18px;border-left:4px solid #0F5EA8;\u0022\u003E\u003Cdiv style=\u0022font-size:18px;font-weight:800;color:#0F172A;letter-spacing:0.01em;\u0022\u003E\u5355\u5143\u8BE6\u60C5\u9884\u89C8\u003C/div\u003E\u003Cdiv style=\u0022display:flex;align-items:center;gap:10px;margin-top:10px;font-size:12px;font-weight:600;color:#475569;\u0022\u003E\u003Cspan style=\u0022font-size:14px;line-height:1;color:#10B981;\u0022\u003E\u25CF\u003C/span\u003E\u003Cspan style=\u0022color:#1F7A5C;\u0022\u003E\u6B63\u5E38\u8FD0\u884C\u003C/span\u003E\u003Cspan style=\u0022color:#475569;\u0022\u003E\u00B7 \u5DF2\u505C\u7559 12h\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022display:flex;flex:1;justify-content:center;\u0022\u003E\u003Cdiv style=\u0022text-align:center;\u0022\u003E\u003Cdiv style=\u0022font-size:12px;font-weight:700;color:#94A3B8;letter-spacing:0.02em;\u0022\u003E\u7EFC\u5408\u72B6\u6001\u8BC4\u5206\u003C/div\u003E\u003Cdiv style=\u0022display:flex;align-items:flex-end;justify-content:center;gap:14px;margin-top:6px;\u0022\u003E\u003Cdiv style=\u0022font-size:52px;line-height:0.9;font-weight:800;color:#64748B;\u0022\u003E--\u003C/div\u003E\u003Cdiv style=\u0022margin-bottom:8px;color:#10B981;font-size:12px;font-weight:700;white-space:nowrap;\u0022\u003E\u2191 1.5\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022display:flex;align-items:center;justify-content:flex-end;gap:28px;min-width:320px;\u0022\u003E\u003Cdiv style=\u0022text-align:right;\u0022\u003E\u003Cdiv style=\u0022font-size:12px;font-weight:700;color:#94A3B8;\u0022\u003ECycleID\u003C/div\u003E\u003Cdiv style=\u0022margin-top:4px;font-size:14px;font-weight:800;color:#0F172A;white-space:nowrap;\u0022\u003E##CYC-88204\u003C/div\u003E\u003C/div\u003E\u003Cdiv style=\u0022color:#1E3A5F;font-size:13px;font-weight:700;white-space:nowrap;\u0022\u003E\u21E9 \u5BFC\u51FA\u672C\u6BB5\u5206\u6790\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
     "wrapInParagraphs": false,
     "helpers": [],
     "styles": ".business-text { padding: 0; margin: 0; height: 100%; }",
@@ -24,7 +31,7 @@
   "dataSource": {
     "type": "api",
     "config": {
-      "url": "https://localhost:49603/api/v1/sbc/plants/ethylene/units",
+      "url": "/api/v1/sbc/plants/${plantId}/units",
       "method": "GET",
       "mapperKey": "passthrough"
     },
@@ -44,8 +51,8 @@
     "gridPos": {
       "x": 0,
       "y": 0,
-      "w": 8,
-      "h": 4,
+      "w": 24,
+      "h": 3,
       "zIndex": 0
     },
     "order": 0,

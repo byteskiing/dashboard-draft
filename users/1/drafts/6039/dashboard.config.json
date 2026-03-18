@@ -47,7 +47,7 @@
         "x": 0,
         "y": 0,
         "w": 24,
-        "h": 4,
+        "h": 3,
         "zIndex": 1
       },
       "templateId": "325",
@@ -55,8 +55,8 @@
         "gridPos": {
           "x": 0,
           "y": 0,
-          "w": 8,
-          "h": 4,
+          "w": 24,
+          "h": 3,
           "zIndex": 0
         },
         "order": 0,
@@ -99,12 +99,12 @@
     {
       "id": "widget-1773761080870",
       "type": "chart",
-      "title": "Business Text",
+      "title": "State History Log",
       "layout": {
-        "x": 12,
-        "y": 4,
-        "w": 6,
-        "h": 4,
+        "x": 0,
+        "y": 20,
+        "w": 8,
+        "h": 12,
         "zIndex": 1
       },
       "templateId": "325",
@@ -125,14 +125,14 @@
       "libraryCode": "grafana-businesstext"
     },
     {
-      "id": "widget-1773761115703",
+      "id": "widget-1773840458640",
       "type": "chart",
-      "title": "Panel",
+      "title": "Performance Metric Panel",
       "layout": {
-        "x": 14,
+        "x": 15,
         "y": 4,
-        "w": 6,
-        "h": 4,
+        "w": 9,
+        "h": 15,
         "zIndex": 1
       },
       "templateId": "1342",
@@ -141,12 +141,98 @@
           "x": 14,
           "y": 4,
           "w": 10,
-          "h": 5,
+          "h": 11,
           "zIndex": 0
         },
         "order": 0,
         "flex": 1
       },
+      "children": [
+        {
+          "id": "widget-1773840492651",
+          "type": "chart",
+          "title": "Performance Metric Tabs",
+          "layout": {
+            "x": 8,
+            "y": 0,
+            "w": 16,
+            "h": 3,
+            "zIndex": 0
+          },
+          "templateId": "325",
+          "monitor": {
+            "gridPos": {
+              "x": 8,
+              "y": 0,
+              "w": 16,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "configFileName": "businesstext-options.json",
+          "dataFileName": "businesstext-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "grafana-businesstext"
+        },
+        {
+          "id": "widget-1773840482383",
+          "type": "chart",
+          "title": "Performance Trend",
+          "layout": {
+            "x": 8,
+            "y": 6,
+            "w": 16,
+            "h": 8,
+            "zIndex": 0
+          },
+          "templateId": "151",
+          "monitor": {
+            "gridPos": {
+              "x": 8,
+              "y": 6,
+              "w": 16,
+              "h": 9,
+              "zIndex": 0
+            },
+            "order": 1,
+            "flex": 1
+          },
+          "configFileName": "echarts-options.json",
+          "dataFileName": "echarts-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "echarts"
+        },
+        {
+          "id": "widget-1773840798589",
+          "type": "chart",
+          "title": "Performance Metric Left",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "w": 8,
+            "h": 15,
+            "zIndex": 0
+          },
+          "templateId": "325",
+          "monitor": {
+            "gridPos": {
+              "x": 0,
+              "y": 0,
+              "w": 8,
+              "h": 15,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "configFileName": "businesstext-options.json",
+          "dataFileName": "businesstext-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "grafana-businesstext"
+        }
+      ],
       "configFileName": "panel-options.json",
       "dataFileName": "",
       "isCodeDriven": false,
@@ -198,7 +284,7 @@
   ],
   "metadata": {
     "createdAt": "2026-03-17T15:25:21.769Z",
-    "savedAt": "2026-03-18T11:18:29.0294592Z",
+    "savedAt": "2026-03-18T13:41:05.9263252Z",
     "dbVersion": 1,
     "isStale": false
   }
