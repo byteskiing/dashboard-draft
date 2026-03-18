@@ -1,12 +1,12 @@
 {
   "id": "widget-1773844543876",
   "type": "chart",
-  "title": "绩效趋势",
+  "title": "\u7EE9\u6548\u8D8B\u52BF",
   "layout": {
     "x": 1,
-    "y": 8,
+    "y": 11,
     "w": 16,
-    "h": 12,
+    "h": 8,
     "zIndex": 0
   },
   "style": {

@@ -5,18 +5,18 @@
         "name": "time",
         "type": "time",
         "values": [
-          1710720000000
+          1706400000000
         ]
       },
       {
-        "name": "score",
+        "name": "value",
         "type": "number",
         "values": [
-          95
+          42
         ]
       }
     ],
     "length": 1,
-    "name": "Plant KPI"
+    "name": "Sample"
   }
 ]

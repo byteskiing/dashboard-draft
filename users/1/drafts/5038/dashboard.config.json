@@ -46,7 +46,7 @@
     {
       "id": "widget-1773842860720",
       "type": "chart",
-      "title": "Stat (Basic)",
+      "title": "\u88C5\u7F6E\u7EE9\u6548\u5747\u503C",
       "layout": {
         "x": 2,
         "y": 21,
@@ -74,7 +74,7 @@
     {
       "id": "widget-1773842894207",
       "type": "chart",
-      "title": "Label",
+      "title": "\u5355\u5143\u6027\u80FD\u770B\u677F",
       "layout": {
         "x": 0,
         "y": 4,
@@ -102,7 +102,7 @@
     {
       "id": "widget-1773844119003",
       "type": "chart",
-      "title": "Panel",
+      "title": "U-101\u538B\u7F29\u5355\u5143",
       "layout": {
         "x": 0,
         "y": 6,
@@ -124,37 +124,9 @@
       },
       "children": [
         {
-          "id": "widget-1773844517331",
-          "type": "chart",
-          "title": "Business Text",
-          "layout": {
-            "x": 3,
-            "y": 1,
-            "w": 6,
-            "h": 4,
-            "zIndex": 0
-          },
-          "templateId": "325",
-          "monitor": {
-            "gridPos": {
-              "x": 0,
-              "y": 1,
-              "w": 6,
-              "h": 4,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "configFileName": "businesstext-options.json",
-          "dataFileName": "businesstext-data.json",
-          "isCodeDriven": false,
-          "libraryCode": "grafana-businesstext"
-        },
-        {
           "id": "widget-1773844529933",
           "type": "chart",
-          "title": "Basic Radar Chart",
+          "title": "\u7EFC\u5408\u8BC4\u5206\u96F7\u8FBE",
           "layout": {
             "x": 17,
             "y": 2,
@@ -182,12 +154,12 @@
         {
           "id": "widget-1773844543876",
           "type": "chart",
-          "title": "Smoothed Line Chart",
+          "title": "\u7EE9\u6548\u8D8B\u52BF",
           "layout": {
             "x": 1,
-            "y": 8,
+            "y": 11,
             "w": 16,
-            "h": 12,
+            "h": 8,
             "zIndex": 0
           },
           "templateId": "151",
@@ -206,6 +178,34 @@
           "dataFileName": "echarts-data.json",
           "isCodeDriven": false,
           "libraryCode": "echarts"
+        },
+        {
+          "id": "widget-1773844517331",
+          "type": "chart",
+          "title": "\u5355\u5143\u7EE9\u6548\u6458\u8981",
+          "layout": {
+            "x": 1,
+            "y": 1,
+            "w": 9,
+            "h": 10,
+            "zIndex": 0
+          },
+          "templateId": "325",
+          "monitor": {
+            "gridPos": {
+              "x": 3,
+              "y": 0,
+              "w": 7,
+              "h": 8,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "configFileName": "businesstext-options.json",
+          "dataFileName": "businesstext-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "grafana-businesstext"
         }
       ],
       "configFileName": "panel-options.json",
@@ -218,7 +218,7 @@
   "variables": [],
   "metadata": {
     "createdAt": "2026-03-17T14:30:25.36Z",
-    "savedAt": "2026-03-18T14:35:57.7290697Z",
+    "savedAt": "2026-03-18T15:21:23.0750466Z",
     "dbVersion": 1,
     "isStale": false
   }

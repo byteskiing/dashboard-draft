@@ -1,23 +1,25 @@
 {
   "controlType": "tabs",
-  "defaultValue": "tab1",
+  "defaultValue": "trend",
+  "inputVariable": "metricView",
+  "outputVariable": "metricView",
   "styleMode": "segmented",
   "options": [
     {
-      "label": "Tab 1",
-      "value": "tab1"
+      "label": "\u65F6\u5E8F\u8D8B\u52BF",
+      "value": "trend"
     },
     {
-      "label": "Tab 2",
-      "value": "tab2"
+      "label": "\u5206\u5E03\u7EDF\u8BA1",
+      "value": "distribution"
     },
     {
-      "label": "Tab 3",
-      "value": "tab3"
+      "label": "\u5173\u8054\u5206\u6790",
+      "value": "correlation"
     }
   ],
   "tabsAppearance": {
-    "align": "left",
+    "align": "space-between",
     "height": 38,
     "groupPadding": 8,
     "tabPaddingX": 14,
@@ -27,7 +29,16 @@
     "activeBackgroundColor": "#FFFFFF",
     "activeTextColor": "#0F5EA8",
     "inactiveTextColor": "#94A3B8",
+    "borderColor": "transparent",
+    "shadow": "0 1px 2px rgba(15, 23, 42, 0.08)",
     "fontSize": 12,
     "fontWeight": 700
+  },
+  "auxiliaryText": {
+    "mode": "static",
+    "text": "\u2197 1.5",
+    "color": "#10B981",
+    "fontSize": 18,
+    "fontWeight": 800
   }
 }

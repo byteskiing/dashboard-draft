@@ -3,26 +3,33 @@
   "type": "chart",
   "title": "Tabs",
   "layout": {
-    "x": 6,
-    "y": 18,
-    "w": 3,
-    "h": 1,
+    "x": 8,
+    "y": 0,
+    "w": 16,
+    "h": 3,
     "zIndex": 0
+  },
+  "style": {
+    "theme": "light",
+    "backgroundColor": "transparent",
+    "borderWidth": 0,
+    "borderRadius": 0,
+    "padding": 0
   },
   "templateId": "1370",
   "dataSource": {
     "type": "mock",
     "config": {
       "dataType": "timeseries",
-      "pointCount": 50
+      "pointCount": 1
     }
   },
   "monitor": {
     "gridPos": {
-      "x": 6,
-      "y": 18,
-      "w": 3,
-      "h": 1,
+      "x": 8,
+      "y": 0,
+      "w": 16,
+      "h": 3,
       "zIndex": 0
     },
     "order": 0,

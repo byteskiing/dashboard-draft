@@ -14,8 +14,8 @@
       "fontSize": 11
     },
     "data": [
-      "当前状态",
-      "正常边界"
+      "\u5F53\u524D\u72B6\u6001",
+      "\u6B63\u5E38\u8FB9\u754C"
     ]
   },
   "radar": {
@@ -52,22 +52,22 @@
     },
     "indicator": [
       {
-        "name": "绩效",
+        "name": "\u7EE9\u6548",
         "max": 100
       },
       {
-        "name": "弹性",
+        "name": "\u5F39\u6027",
         "max": 100
       },
       {
-        "name": "技能",
+        "name": "\u6280\u80FD",
         "max": 100
       }
     ]
   },
   "series": [
     {
-      "name": "当前状态",
+      "name": "\u5F53\u524D\u72B6\u6001",
       "type": "radar",
       "symbol": "none",
       "lineStyle": {
@@ -79,7 +79,7 @@
       }
     },
     {
-      "name": "正常边界",
+      "name": "\u6B63\u5E38\u8FB9\u754C",
       "type": "radar",
       "symbol": "none",
       "lineStyle": {
@@ -100,7 +100,7 @@
       "style": {
         "text": "94",
         "fill": "#0F172A",
-        "font": "700 34px 'Segoe UI', 'Microsoft YaHei', sans-serif"
+        "font": "700 34px \u0027Segoe UI\u0027, \u0027Microsoft YaHei\u0027, sans-serif"
       }
     },
     {
@@ -108,9 +108,9 @@
       "right": 8,
       "top": "47%",
       "style": {
-        "text": "综合评分",
+        "text": "\u7EFC\u5408\u8BC4\u5206",
         "fill": "#94A3B8",
-        "font": "600 12px 'Segoe UI', 'Microsoft YaHei', sans-serif"
+        "font": "600 12px \u0027Segoe UI\u0027, \u0027Microsoft YaHei\u0027, sans-serif"
       }
     }
   ]
