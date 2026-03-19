@@ -1,15 +1,15 @@
 {
-  "id": "widget-2a56942a",
+  "id": "widget-6268ca76",
   "type": "echarts",
-  "title": "Texture on Pie Chart",
+  "title": "Doughnut Chart",
   "layout": {
-    "x": 2,
-    "y": 8,
+    "x": 0,
+    "y": 0,
     "w": 12,
     "h": 8,
     "zIndex": 0
   },
-  "templateId": "204",
+  "templateId": "197",
   "dataSource": {
     "type": "mock"
   },

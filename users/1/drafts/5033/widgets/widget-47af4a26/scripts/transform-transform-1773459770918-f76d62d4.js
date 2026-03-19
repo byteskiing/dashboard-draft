@@ -1,1 +1,0 @@
-const rows = Array.isArray(frames[0]?.fields[0]?.values[0]?.rows) ? frames[0].fields[0].values[0].rows : []; return [fromRows(rows.map(row => ({ category: row.group, value: row.count })))];
