@@ -10,7 +10,8 @@
     "zIndex": 1
   },
   "style": {
-    "theme": "light"
+    "theme": "light",
+    "borderRadius": 0
   },
   "templateId": "325",
   "content": {
@@ -28,7 +29,8 @@
     "type": "api",
     "config": {
       "url": "https://localhost:49603/api/v1/sbc/overview",
-      "method": "GET"
+      "method": "GET",
+      "mapperKey": "object"
     },
     "refreshIntervalMs": 10000,
     "transformations": [

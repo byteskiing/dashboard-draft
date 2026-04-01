@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "e1d64531",
   "type": "threejs",
   "title": "Three.js 3D Cube",
@@ -12,9 +12,9 @@
   "dataSource": {
     "type": "mock"
   },
-  "configFileName": "three-scene.json",
-  "dataFileName": "three-data.json",
-  "codeFileName": "scene-logic.js",
+  "configFileName": "threejs-options.json",
+  "dataFileName": "threejs-data.json",
+  "codeFileName": "threejs-logic.js",
   "code": "const scene = new THREE.Scene();\nconst camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);\nconst renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });\nrenderer.setSize(width, height);\ncontainer.appendChild(renderer.domElement);\n\nconst geometry = new THREE.BoxGeometry(2, 2, 2);\nconst material = new THREE.MeshPhongMaterial({ color: 0x00ff00 });\nconst cube = new THREE.Mesh(geometry, material);\nscene.add(cube);\n\nconst light = new THREE.DirectionalLight(0xffffff, 1);\nlight.position.set(5, 5, 5);\nscene.add(light);\nscene.add(new THREE.AmbientLight(0x404040));\n\ncamera.position.z = 5;\n\nlet animationId;\nfunction animate() {\n  animationId = requestAnimationFrame(animate);\n  cube.rotation.x \u002B= 0.01;\n  cube.rotation.y \u002B= 0.01;\n  renderer.render(scene, camera);\n}\nanimate();\n\nreturn () =\u003E {\n  cancelAnimationFrame(animationId);\n  renderer.dispose();\n  container.removeChild(renderer.domElement);\n};",
   "isCodeDriven": true,
   "libraryCode": "threejs"

@@ -9,12 +9,16 @@
     "h": 3,
     "zIndex": 1
   },
+  "style": {
+    "borderColor": "#106bea"
+  },
   "templateId": "1330",
   "dataSource": {
     "type": "api",
     "config": {
       "url": "https://localhost:49603/api/v1/sbc/overview",
       "method": "GET",
+      "mapperKey": "object",
       "headers": {}
     },
     "refreshIntervalMs": 5000,

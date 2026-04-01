@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "widget-1773759562225",
   "type": "chart",
   "title": "Unit Header Card",
@@ -58,8 +58,8 @@
     "order": 0,
     "flex": 1
   },
-  "configFileName": "businesstext-options.json",
-  "dataFileName": "businesstext-data.json",
+  "configFileName": "grafana-businesstext-options.json",
+  "dataFileName": "grafana-businesstext-data.json",
   "isCodeDriven": false,
   "libraryCode": "grafana-businesstext"
 }

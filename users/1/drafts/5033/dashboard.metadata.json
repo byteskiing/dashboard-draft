@@ -1,6 +1,14 @@
 {
   "createdAt": "2026-03-14T03:34:37.702Z",
-  "savedAt": "2026-03-19T00:23:33.200186Z",
+  "savedAt": "2026-04-01T02:42:41.2657137Z",
   "dbVersion": 1,
-  "isStale": false
+  "isStale": false,
+  "revision": 2,
+  "leaseId": "a79e19ce-b938-4fd0-b3b1-b2ac90e6ba94",
+  "leaseExpiresAt": "2026-04-01T02:52:41.2610526Z",
+  "deletedWidgetIds": [],
+  "persistedWidgetIds": [
+    "widget-6268ca76",
+    "widget-622b0192"
+  ]
 }

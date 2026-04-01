@@ -1,0 +1,67 @@
+{
+  "nodes": [
+    {
+      "id": "node_1774954469479",
+      "type": "equipment",
+      "position": {
+        "x": 448,
+        "y": 96
+      },
+      "width": 140,
+      "height": 90,
+      "data": {
+        "label": "Tank",
+        "equipmentType": "Tank"
+      }
+    },
+    {
+      "id": "node_1774954477678",
+      "type": "equipment",
+      "position": {
+        "x": 448,
+        "y": 256
+      },
+      "width": 140,
+      "height": 90,
+      "data": {
+        "label": "Tank",
+        "equipmentType": "Tank"
+      }
+    },
+    {
+      "id": "node_1774954529366",
+      "type": "shape",
+      "position": {
+        "x": 672,
+        "y": 224
+      },
+      "width": 100,
+      "height": 60,
+      "data": {
+        "label": "Rectangle",
+        "shapeType": "rect"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_1774954487015",
+      "source": "node_1774954469479",
+      "target": "node_1774954477678",
+      "type": "default"
+    }
+  ],
+  "theme": "industrial",
+  "showGrid": true,
+  "gridVariant": "dots",
+  "showMinimap": false,
+  "showControls": true,
+  "fitView": true,
+  "snapToGrid": true,
+  "bindings": [],
+  "interactivity": "pan-zoom",
+  "designSize": {
+    "width": 1478,
+    "height": 894
+  }
+}

@@ -3,11 +3,14 @@
   "type": "chart",
   "title": "Business Text",
   "layout": {
-    "x": 2,
-    "y": 2,
-    "w": 9,
-    "h": 3,
+    "x": 0,
+    "y": 0,
+    "w": 12,
+    "h": 6,
     "zIndex": 0
+  },
+  "style": {
+    "showTitle": true
   },
   "templateId": "325",
   "content": {
@@ -26,7 +29,7 @@
     "config": {
       "url": "https://localhost:49603/api/v1/sbc/plants",
       "method": "GET",
-      "mapperKey": "passthrough"
+      "mapperKey": "rows"
     },
     "refreshIntervalMs": 10000,
     "transformations": [
@@ -41,6 +44,7 @@
     ]
   },
   "monitor": {
+    "rowId": "",
     "gridPos": {
       "x": 1,
       "y": 1,
@@ -51,8 +55,8 @@
     "order": 0,
     "flex": 1
   },
-  "configFileName": "businesstext-options.json",
-  "dataFileName": "businesstext-data.json",
+  "configFileName": "grafana-businesstext-options.json",
+  "dataFileName": "grafana-businesstext-data.json",
   "isCodeDriven": false,
   "libraryCode": "grafana-businesstext"
 }

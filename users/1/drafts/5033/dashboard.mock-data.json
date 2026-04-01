@@ -9416,6 +9416,37 @@
           "type": "pie"
         }
       ]
+    },
+    "widget-622b0192": {
+      "series": [
+        {
+          "data": [
+            {
+              "value": 235,
+              "name": "Video Ads"
+            },
+            {
+              "value": 274,
+              "name": "Union Ads"
+            },
+            {
+              "value": 310,
+              "name": "Email"
+            },
+            {
+              "value": 335,
+              "name": "Direct"
+            },
+            {
+              "value": 400,
+              "name": "Search Engine"
+            }
+          ],
+          "index": 0,
+          "name": "Access From",
+          "type": "pie"
+        }
+      ]
     }
   }
 }

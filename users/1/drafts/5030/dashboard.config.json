@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "./draft-schema.json",
   "version": "1.0",
   "dashboard": {
@@ -54,9 +54,9 @@
         "h": 16,
         "zIndex": 0
       },
-      "configFileName": "three-scene.json",
-      "dataFileName": "three-data.json",
-      "codeFileName": "scene-logic.js",
+      "configFileName": "threejs-options.json",
+      "dataFileName": "threejs-data.json",
+      "codeFileName": "threejs-logic.js",
       "isCodeDriven": false
     }
   ],

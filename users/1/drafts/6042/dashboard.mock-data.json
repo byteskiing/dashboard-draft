@@ -1,0 +1,63 @@
+{
+  "widgets": {
+    "widget-1774950766339": {
+      "series": [
+        {
+          "data": [
+            820,
+            932,
+            901,
+            934,
+            1290,
+            1330,
+            1320
+          ],
+          "index": 0,
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    },
+    "widget-1774952050741": null,
+    "widget-1774953325410": null,
+    "widget-1774953763813": null,
+    "widget-1775006963220": {
+      "series": [
+        {
+          "data": [
+            820,
+            932,
+            901,
+            934,
+            1290,
+            1330,
+            1320
+          ],
+          "index": 0,
+          "type": "line"
+        }
+      ],
+      "xAxis": {
+        "data": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri",
+          "Sat",
+          "Sun"
+        ]
+      }
+    }
+  }
+}

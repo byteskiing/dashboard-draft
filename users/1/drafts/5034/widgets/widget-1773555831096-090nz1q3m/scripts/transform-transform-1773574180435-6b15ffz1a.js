@@ -1,4 +1,30 @@
-const apiData = frames?.[0]?.fields?.[0]?.values?.[0];
+const frame = frames?.[0];
+const apiData = (() => {
+  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {
+    return null;
+  }
+
+  const wrappedValue = frame.fields[0]?.name === 'data'
+    ? frame.fields[0]?.values?.[0]
+    : null;
+
+  if (wrappedValue && typeof wrappedValue === 'object' && !Array.isArray(wrappedValue)) {
+    return wrappedValue;
+  }
+
+  if (frame.length === 1) {
+    return frame.fields.reduce((result, field) => {
+      if (!field?.name || !Array.isArray(field.values)) {
+        return result;
+      }
+
+      result[field.name] = field.values[0];
+      return result;
+    }, {});
+  }
+
+  return null;
+})();
 
 if (!apiData || typeof apiData !== 'object') {
   return frames;

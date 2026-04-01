@@ -1,0 +1,20 @@
+{
+  "id": "widget-622b0192",
+  "type": "echarts",
+  "title": "Customized Pie",
+  "layout": {
+    "x": 12,
+    "y": 0,
+    "w": 12,
+    "h": 8,
+    "zIndex": 0
+  },
+  "templateId": "196",
+  "dataSource": {
+    "type": "mock"
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

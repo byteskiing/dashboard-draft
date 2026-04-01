@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "widget-1765727423745",
   "type": "Data",
   "title": "Ranked List",
@@ -31,7 +31,7 @@
     "refreshMode": "interval",
     "refreshIntervalMs": 5000
   },
-  "configFileName": "list-config.json",
+  "configFileName": "list-options.json",
   "isCodeDriven": false,
   "libraryCode": "list"
 }

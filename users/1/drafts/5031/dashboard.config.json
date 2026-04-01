@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "./draft-schema.json",
   "version": "1.0",
   "dashboard": {
@@ -73,8 +73,8 @@
         "minH": 1,
         "zIndex": 1
       },
-      "configFileName": "svg-content.json",
-      "dataFileName": "attributes.json",
+      "configFileName": "svg-options.json",
+      "dataFileName": "svg-data.json",
       "isCodeDriven": false
     },
     {

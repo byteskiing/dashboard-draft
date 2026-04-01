@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "./draft-schema.json",
   "version": "1.0",
   "dashboard": {
@@ -162,7 +162,7 @@
         "minH": 1,
         "zIndex": 0
       },
-      "configFileName": "list-config.json",
+      "configFileName": "list-options.json",
       "isCodeDriven": false
     },
     {
@@ -230,9 +230,9 @@
         "zIndex": 0
       },
       "templateId": "1319",
-      "configFileName": "three-scene.json",
-      "dataFileName": "three-data.json",
-      "codeFileName": "scene-logic.js",
+      "configFileName": "threejs-options.json",
+      "dataFileName": "threejs-data.json",
+      "codeFileName": "threejs-logic.js",
       "isCodeDriven": false
     },
     {

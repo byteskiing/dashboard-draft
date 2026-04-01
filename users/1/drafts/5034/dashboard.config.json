@@ -97,7 +97,7 @@
       "panelGapPx": 12
     },
     "headerSettings": {
-      "visible": false,
+      "visible": true,
       "showTimeRange": true,
       "showFilters": true,
       "showVariables": true,
@@ -266,7 +266,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 7,
+          "y": 6,
           "w": 12,
           "h": 14,
           "zIndex": 0
@@ -276,40 +276,14 @@
       },
       "children": [
         {
-          "id": "widget-1773755665709-l3ludyrwm",
-          "type": "chart",
-          "title": "Basic Radar Chart",
-          "layout": {
-            "x": 14,
-            "y": 0,
-            "w": 10,
-            "h": 9,
-            "zIndex": 0
-          },
-          "templateId": "214",
-          "monitor": {
-            "gridPos": {
-              "x": 16,
-              "y": 0,
-              "w": 6,
-              "h": 3,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "isCodeDriven": false,
-          "libraryCode": "echarts"
-        },
-        {
           "id": "widget-1773755665709-987tfgwnd",
           "type": "chart",
           "title": "Temperature Change in the Coming Week",
           "layout": {
-            "x": 1,
-            "y": 9,
-            "w": 23,
-            "h": 12,
+            "x": 0,
+            "y": 6,
+            "w": 24,
+            "h": 6,
             "zIndex": 0
           },
           "templateId": "143",
@@ -324,44 +298,24 @@
             "order": 0,
             "flex": 1
           },
+          "childSortOrder": 0,
           "isCodeDriven": false,
           "libraryCode": "echarts"
-        },
-        {
-          "id": "widget-1773755665709-99wo69she",
-          "type": "chart",
-          "title": "Label",
-          "layout": {
-            "x": 0,
-            "y": 0,
-            "w": 8,
-            "h": 1,
-            "zIndex": 0
-          },
-          "templateId": "1320",
-          "monitor": {
-            "rowId": "",
-            "order": 0,
-            "flex": 1
-          },
-          "configFileName": "text-options.json",
-          "dataFileName": "",
-          "isCodeDriven": false,
-          "libraryCode": "text"
         },
         {
           "id": "widget-1773755665709-cz4ftupor",
           "type": "chart",
           "title": "Business Text",
           "layout": {
-            "x": 2,
-            "y": 2,
-            "w": 9,
-            "h": 3,
+            "x": 0,
+            "y": 0,
+            "w": 12,
+            "h": 6,
             "zIndex": 0
           },
           "templateId": "325",
           "monitor": {
+            "rowId": "",
             "gridPos": {
               "x": 1,
               "y": 1,
@@ -372,43 +326,155 @@
             "order": 0,
             "flex": 1
           },
-          "configFileName": "businesstext-options.json",
-          "dataFileName": "businesstext-data.json",
+          "childSortOrder": 1,
+          "configFileName": "grafana-businesstext-options.json",
+          "dataFileName": "grafana-businesstext-data.json",
           "isCodeDriven": false,
           "libraryCode": "grafana-businesstext"
+        },
+        {
+          "id": "widget-1773755665709-l3ludyrwm",
+          "type": "chart",
+          "title": "Basic Radar Chart",
+          "layout": {
+            "x": 13,
+            "y": 0,
+            "w": 11,
+            "h": 6,
+            "zIndex": 0
+          },
+          "templateId": "214",
+          "monitor": {
+            "gridPos": {
+              "x": 13,
+              "y": 0,
+              "w": 8,
+              "h": 6,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 2,
+          "isCodeDriven": false,
+          "libraryCode": "echarts"
         }
       ],
       "isCodeDriven": false,
       "libraryCode": "panel"
     },
     {
-      "id": "widget-1773756415364",
+      "id": "widget-1775012667042-2ks9yfusm",
       "type": "chart",
-      "title": "graph circular layout",
+      "title": "Panel (Copy) (Copy) (Copy)",
       "layout": {
-        "x": 6,
-        "y": 2,
+        "x": 8,
+        "y": 13,
         "w": 6,
-        "h": 12,
+        "h": 4,
         "zIndex": 1
       },
-      "templateId": "115",
+      "templateId": "1342",
       "monitor": {
-        "rowId": "row-1773476025810",
+        "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 6,
-          "y": 2,
-          "w": 6,
-          "h": 12,
+          "x": 12,
+          "y": 6,
+          "w": 12,
+          "h": 14,
           "zIndex": 0
         },
         "order": 0,
         "flex": 1
       },
-      "configFileName": "echarts-options.json",
-      "dataFileName": "echarts-data.json",
-      "isCodeDriven": true,
-      "libraryCode": "echarts"
+      "children": [
+        {
+          "id": "widget-1775012667042-n0x2ksyqb",
+          "type": "chart",
+          "title": "Temperature Change in the Coming Week",
+          "layout": {
+            "x": 0,
+            "y": 6,
+            "w": 24,
+            "h": 6,
+            "zIndex": 0
+          },
+          "templateId": "143",
+          "monitor": {
+            "gridPos": {
+              "x": 2,
+              "y": 8,
+              "w": 6,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 0,
+          "isCodeDriven": false,
+          "libraryCode": "echarts"
+        },
+        {
+          "id": "widget-1775012667042-ww38ayvtd",
+          "type": "chart",
+          "title": "Business Text",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "w": 12,
+            "h": 6,
+            "zIndex": 0
+          },
+          "templateId": "325",
+          "monitor": {
+            "rowId": "",
+            "gridPos": {
+              "x": 1,
+              "y": 1,
+              "w": 6,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 1,
+          "configFileName": "grafana-businesstext-options.json",
+          "dataFileName": "grafana-businesstext-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "grafana-businesstext"
+        },
+        {
+          "id": "widget-1775012667042-nexh0g3hk",
+          "type": "chart",
+          "title": "Basic Radar Chart",
+          "layout": {
+            "x": 13,
+            "y": 0,
+            "w": 11,
+            "h": 6,
+            "zIndex": 0
+          },
+          "templateId": "214",
+          "monitor": {
+            "gridPos": {
+              "x": 13,
+              "y": 0,
+              "w": 8,
+              "h": 6,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 2,
+          "isCodeDriven": false,
+          "libraryCode": "echarts"
+        }
+      ],
+      "isCodeDriven": false,
+      "libraryCode": "panel"
     },
     {
       "id": "widget-1773756433465",
@@ -429,6 +495,64 @@
           "y": 1,
           "w": 6,
           "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1774194816706",
+      "type": "chart",
+      "title": "Rainfall",
+      "layout": {
+        "x": 6,
+        "y": 21,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "3",
+      "monitor": {
+        "rowId": "row-1773476025810",
+        "gridPos": {
+          "x": 6,
+          "y": 21,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1a00908b",
+      "type": "echarts",
+      "title": "Texture on Pie Chart",
+      "layout": {
+        "x": 0,
+        "y": 33,
+        "w": 6,
+        "h": 4,
+        "zIndex": 0
+      },
+      "templateId": "204",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 8,
           "zIndex": 0
         },
         "order": 0,
@@ -471,8 +595,37 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-03-18T12:08:55.5156291Z",
+    "savedAt": "2026-04-01T03:16:12.9659473Z",
     "dbVersion": 1,
-    "isStale": false
+    "isStale": false,
+    "revision": 117,
+    "leaseId": "cd02b78b-fab4-4ac8-9248-35a1b31038a2",
+    "leaseExpiresAt": "2026-04-01T03:26:12.9503851Z",
+    "deletedWidgetIds": [
+      "widget-1774073482028",
+      "widget-1774050442931",
+      "widget-1773755665709-99wo69she",
+      "widget-1774108659142",
+      "widget-1773756415364",
+      "widget-1775012623321"
+    ],
+    "persistedWidgetIds": [
+      "widget-1773503505607",
+      "widget-1773503524663",
+      "widget-1773555831096-090nz1q3m",
+      "widget-1773503581760",
+      "widget-1773575574512",
+      "widget-1773755665709-6c4i4djbj",
+      "widget-1773755665709-987tfgwnd",
+      "widget-1773755665709-cz4ftupor",
+      "widget-1773755665709-l3ludyrwm",
+      "widget-1775012667042-2ks9yfusm",
+      "widget-1775012667042-n0x2ksyqb",
+      "widget-1775012667042-ww38ayvtd",
+      "widget-1775012667042-nexh0g3hk",
+      "widget-1773756433465",
+      "widget-1774194816706",
+      "widget-1a00908b"
+    ]
   }
 }

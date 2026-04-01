@@ -1,0 +1,35 @@
+{
+  "id": "widget-1775006963220",
+  "type": "chart",
+  "title": "Basic area chart",
+  "layout": {
+    "x": 16,
+    "y": 0,
+    "w": 6,
+    "h": 12,
+    "zIndex": 1
+  },
+  "templateId": "1",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 16,
+      "y": 0,
+      "w": 6,
+      "h": 12,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

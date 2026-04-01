@@ -1,0 +1,110 @@
+{
+  "$schema": "./draft-schema.json",
+  "version": "1.0",
+  "dashboard": {
+    "id": "6042",
+    "name": "title test",
+    "description": "",
+    "category": "Production",
+    "mode": "monitor",
+    "canvas": {
+      "gridSettings": {
+        "cols": 24,
+        "rowHeight": 30,
+        "margin": [
+          8,
+          8
+        ],
+        "padding": [
+          16,
+          16
+        ]
+      }
+    },
+    "monitor": {
+      "rows": [],
+      "layoutModel": "fixed-grid",
+      "rowHeight": "auto",
+      "rowGapPx": 16,
+      "panelGapPx": 12
+    }
+  },
+  "widgets": [
+    {
+      "id": "widget-1774953763813",
+      "type": "chart",
+      "title": "XYFlow",
+      "layout": {
+        "x": 9,
+        "y": 1,
+        "w": 2,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "plugin-xyflow",
+      "monitor": {
+        "gridPos": {
+          "x": 3,
+          "y": 12,
+          "w": 10,
+          "h": 8,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "xyflow-options.json",
+      "dataFileName": "xyflow-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "xyflow"
+    },
+    {
+      "id": "widget-1775006963220",
+      "type": "chart",
+      "title": "Basic area chart",
+      "layout": {
+        "x": 16,
+        "y": 0,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "1",
+      "monitor": {
+        "gridPos": {
+          "x": 16,
+          "y": 0,
+          "w": 6,
+          "h": 12,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    }
+  ],
+  "templates": [],
+  "variables": [],
+  "metadata": {
+    "createdAt": "2026-03-31T09:52:37.8831745Z",
+    "savedAt": "2026-04-01T01:29:24.540953Z",
+    "dbVersion": 1,
+    "isStale": false,
+    "revision": 18,
+    "leaseId": "ab4866ed-666d-4ee4-b4a0-0c2f66b75a9c",
+    "leaseExpiresAt": "2026-04-01T01:39:24.5356439Z",
+    "deletedWidgetIds": [
+      "widget-1774952050741",
+      "widget-1774953325410",
+      "widget-1774950766339"
+    ],
+    "persistedWidgetIds": [
+      "widget-1774953763813",
+      "widget-1775006963220"
+    ]
+  }
+}
