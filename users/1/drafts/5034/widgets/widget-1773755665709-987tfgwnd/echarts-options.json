@@ -99,5 +99,8 @@
         ]
       }
     }
-  ]
+  ],
+  "tableLegend": {
+    "mode": "table"
+  }
 }

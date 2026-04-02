@@ -1,18 +1,19 @@
 {
   "createdAt": "2026-03-31T09:52:37.8831745Z",
-  "savedAt": "2026-04-01T01:29:24.540953Z",
+  "savedAt": "2026-04-02T01:51:04.0632318Z",
   "dbVersion": 1,
   "isStale": false,
-  "revision": 18,
-  "leaseId": "ab4866ed-666d-4ee4-b4a0-0c2f66b75a9c",
-  "leaseExpiresAt": "2026-04-01T01:39:24.5356439Z",
+  "revision": 57,
+  "leaseId": "e3e14cae-506b-432f-8fed-2e684f2a4f2e",
+  "leaseExpiresAt": "2026-04-02T02:01:04.0586503Z",
   "deletedWidgetIds": [
     "widget-1774952050741",
     "widget-1774953325410",
-    "widget-1774950766339"
-  ],
-  "persistedWidgetIds": [
+    "widget-1774950766339",
     "widget-1774953763813",
     "widget-1775006963220"
+  ],
+  "persistedWidgetIds": [
+    "widget-1775092840034"
   ]
 }

@@ -150226,6 +150226,47 @@
           "type": "pie"
         }
       ]
-    }
+    },
+    "widget-1775084306820": [
+      {
+        "fields": [
+          {
+            "name": "time",
+            "type": "time",
+            "values": [
+              1774983600000,
+              1774996200000,
+              1775005200000,
+              1775021400000,
+              1775034900000
+            ]
+          },
+          {
+            "name": "Server A",
+            "type": "string",
+            "values": [
+              "Up",
+              "Warning",
+              "Down",
+              "Up",
+              "Up"
+            ]
+          },
+          {
+            "name": "Server B",
+            "type": "string",
+            "values": [
+              "Up",
+              "Up",
+              "Maintenance",
+              "Maintenance",
+              "Down"
+            ]
+          }
+        ],
+        "length": 5,
+        "name": "Sample State Timeline"
+      }
+    ]
   }
 }

@@ -8,10 +8,11 @@
     "repeat": "repeat"
   },
   "title": {
-    "text": "\u997C\u56FE\u7EB9\u7406",
+    "text": "",
     "textStyle": {
       "color": "#235894"
-    }
+    },
+    "show": false
   },
   "tooltip": {},
   "series": [

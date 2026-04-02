@@ -6,6 +6,9 @@
   "textMode": "auto",
   "decimals": 2,
   "fieldName": "avgSkill",
-  "displayName": "Skill",
-  "colorScheme": "blues"
+  "displayName": " ",
+  "colorScheme": "blues",
+  "valueSize": 40,
+  "showPercentChange": true,
+  "unit": "percent"
 }

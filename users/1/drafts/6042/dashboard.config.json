@@ -31,51 +31,23 @@
   },
   "widgets": [
     {
-      "id": "widget-1774953763813",
+      "id": "widget-1775092840034",
       "type": "chart",
-      "title": "XYFlow",
+      "title": "Temperature Change in the Coming Week",
       "layout": {
-        "x": 9,
-        "y": 1,
-        "w": 2,
-        "h": 4,
-        "zIndex": 1
-      },
-      "templateId": "plugin-xyflow",
-      "monitor": {
-        "gridPos": {
-          "x": 3,
-          "y": 12,
-          "w": 10,
-          "h": 8,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "xyflow-options.json",
-      "dataFileName": "xyflow-data.json",
-      "isCodeDriven": false,
-      "libraryCode": "xyflow"
-    },
-    {
-      "id": "widget-1775006963220",
-      "type": "chart",
-      "title": "Basic area chart",
-      "layout": {
-        "x": 16,
-        "y": 0,
+        "x": 2,
+        "y": 9,
         "w": 6,
         "h": 12,
         "zIndex": 1
       },
-      "templateId": "1",
+      "templateId": "143",
       "monitor": {
         "gridPos": {
-          "x": 16,
+          "x": 2,
           "y": 0,
-          "w": 6,
-          "h": 12,
+          "w": 11,
+          "h": 8,
           "zIndex": 0
         },
         "order": 0,
@@ -91,20 +63,21 @@
   "variables": [],
   "metadata": {
     "createdAt": "2026-03-31T09:52:37.8831745Z",
-    "savedAt": "2026-04-01T01:29:24.540953Z",
+    "savedAt": "2026-04-02T01:51:04.0632318Z",
     "dbVersion": 1,
     "isStale": false,
-    "revision": 18,
-    "leaseId": "ab4866ed-666d-4ee4-b4a0-0c2f66b75a9c",
-    "leaseExpiresAt": "2026-04-01T01:39:24.5356439Z",
+    "revision": 57,
+    "leaseId": "e3e14cae-506b-432f-8fed-2e684f2a4f2e",
+    "leaseExpiresAt": "2026-04-02T02:01:04.0586503Z",
     "deletedWidgetIds": [
       "widget-1774952050741",
       "widget-1774953325410",
-      "widget-1774950766339"
-    ],
-    "persistedWidgetIds": [
+      "widget-1774950766339",
       "widget-1774953763813",
       "widget-1775006963220"
+    ],
+    "persistedWidgetIds": [
+      "widget-1775092840034"
     ]
   }
 }

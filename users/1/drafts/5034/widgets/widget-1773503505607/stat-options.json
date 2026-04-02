@@ -6,5 +6,9 @@
   "textMode": "auto",
   "decimals": 2,
   "fieldName": "avgPerformance",
-  "displayName": "Performance"
+  "displayName": " ",
+  "titleSize": 17,
+  "valueSize": 40,
+  "showPercentChange": true,
+  "unit": "percent"
 }

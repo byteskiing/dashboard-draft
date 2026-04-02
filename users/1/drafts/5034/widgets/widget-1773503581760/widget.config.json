@@ -1,13 +1,16 @@
 {
   "id": "widget-1773503581760",
   "type": "chart",
-  "title": "Stat (Basic)",
+  "title": "Overall",
   "layout": {
     "x": 17,
     "y": 0,
     "w": 2,
     "h": 2,
     "zIndex": 1
+  },
+  "style": {
+    "showTitle": true
   },
   "templateId": "1330",
   "dataSource": {
@@ -33,9 +36,9 @@
   "monitor": {
     "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 18,
-      "y": 0,
-      "w": 6,
+      "x": 0,
+      "y": 12,
+      "w": 4,
       "h": 4,
       "zIndex": 0
     },

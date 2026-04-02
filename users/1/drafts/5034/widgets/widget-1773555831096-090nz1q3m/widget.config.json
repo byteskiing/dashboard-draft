@@ -1,13 +1,16 @@
 {
   "id": "widget-1773555831096-090nz1q3m",
   "type": "chart",
-  "title": "Stat (Basic) (Copy)",
+  "title": "Resilence",
   "layout": {
     "x": 2,
     "y": 2,
     "w": 4,
     "h": 3,
     "zIndex": 1
+  },
+  "style": {
+    "showTitle": true
   },
   "templateId": "1330",
   "dataSource": {
@@ -33,9 +36,9 @@
   "monitor": {
     "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 6,
-      "y": 0,
-      "w": 6,
+      "x": 0,
+      "y": 4,
+      "w": 4,
       "h": 4,
       "zIndex": 0
     },

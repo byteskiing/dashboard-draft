@@ -12,12 +12,12 @@
         "cols": 24,
         "rowHeight": 30,
         "margin": [
-          8,
-          8
+          24,
+          6
         ],
         "padding": [
           16,
-          16
+          12
         ]
       },
       "style": {
@@ -25,7 +25,8 @@
         "themePreset": "system"
       },
       "globalWidgetStyle": {
-        "borderRadius": 8
+        "showTitle": true,
+        "borderRadius": 0
       }
     },
     "monitor": {
@@ -110,7 +111,7 @@
     {
       "id": "widget-1773503505607",
       "type": "chart",
-      "title": "Stat (Basic)2",
+      "title": "Performnce",
       "layout": {
         "x": 0,
         "y": 11,
@@ -124,7 +125,7 @@
         "gridPos": {
           "x": 0,
           "y": 0,
-          "w": 6,
+          "w": 4,
           "h": 4,
           "zIndex": 0
         },
@@ -139,7 +140,7 @@
     {
       "id": "widget-1773503524663",
       "type": "chart",
-      "title": "Stat (Basic)",
+      "title": "Skill",
       "layout": {
         "x": 0,
         "y": 0,
@@ -151,9 +152,9 @@
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 12,
-          "y": 0,
-          "w": 6,
+          "x": 0,
+          "y": 8,
+          "w": 4,
           "h": 4,
           "zIndex": 0
         },
@@ -168,7 +169,7 @@
     {
       "id": "widget-1773555831096-090nz1q3m",
       "type": "chart",
-      "title": "Stat (Basic) (Copy)",
+      "title": "Resilence",
       "layout": {
         "x": 2,
         "y": 2,
@@ -180,9 +181,9 @@
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 6,
-          "y": 0,
-          "w": 6,
+          "x": 0,
+          "y": 4,
+          "w": 4,
           "h": 4,
           "zIndex": 0
         },
@@ -197,7 +198,7 @@
     {
       "id": "widget-1773503581760",
       "type": "chart",
-      "title": "Stat (Basic)",
+      "title": "Overall",
       "layout": {
         "x": 17,
         "y": 0,
@@ -209,9 +210,9 @@
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 18,
-          "y": 0,
-          "w": 6,
+          "x": 0,
+          "y": 12,
+          "w": 4,
           "h": 4,
           "zIndex": 0
         },
@@ -222,33 +223,6 @@
       "dataFileName": "stat-data.json",
       "isCodeDriven": false,
       "libraryCode": "stat"
-    },
-    {
-      "id": "widget-1773575574512",
-      "type": "chart",
-      "title": "Business Text",
-      "layout": {
-        "x": 0,
-        "y": 4,
-        "w": 6,
-        "h": 4,
-        "zIndex": 1
-      },
-      "templateId": "325",
-      "monitor": {
-        "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 0,
-          "y": 4,
-          "w": 24,
-          "h": 2,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "isCodeDriven": false,
-      "libraryCode": "grafana-businesstext"
     },
     {
       "id": "widget-1773755665709-6c4i4djbj",
@@ -265,10 +239,10 @@
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 0,
-          "y": 6,
-          "w": 12,
-          "h": 14,
+          "x": 4,
+          "y": 4,
+          "w": 17,
+          "h": 15,
           "zIndex": 0
         },
         "order": 0,
@@ -281,13 +255,14 @@
           "title": "Temperature Change in the Coming Week",
           "layout": {
             "x": 0,
-            "y": 6,
-            "w": 24,
-            "h": 6,
+            "y": 4,
+            "w": 12,
+            "h": 10,
             "zIndex": 0
           },
           "templateId": "143",
           "monitor": {
+            "rowId": "",
             "gridPos": {
               "x": 2,
               "y": 8,
@@ -309,8 +284,8 @@
           "layout": {
             "x": 0,
             "y": 0,
-            "w": 12,
-            "h": 6,
+            "w": 4,
+            "h": 4,
             "zIndex": 0
           },
           "templateId": "325",
@@ -339,12 +314,13 @@
           "layout": {
             "x": 13,
             "y": 0,
-            "w": 11,
-            "h": 6,
+            "w": 8,
+            "h": 8,
             "zIndex": 0
           },
           "templateId": "214",
           "monitor": {
+            "rowId": "",
             "gridPos": {
               "x": 13,
               "y": 0,
@@ -364,117 +340,31 @@
       "libraryCode": "panel"
     },
     {
-      "id": "widget-1775012667042-2ks9yfusm",
+      "id": "widget-1773575574512",
       "type": "chart",
-      "title": "Panel (Copy) (Copy) (Copy)",
+      "title": "Alarm",
       "layout": {
-        "x": 8,
-        "y": 13,
-        "w": 6,
-        "h": 4,
+        "x": 12,
+        "y": 46,
+        "w": 12,
+        "h": 2,
         "zIndex": 1
       },
-      "templateId": "1342",
+      "templateId": "325",
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 12,
-          "y": 6,
-          "w": 12,
-          "h": 14,
+          "x": 4,
+          "y": 0,
+          "w": 20,
+          "h": 4,
           "zIndex": 0
         },
         "order": 0,
         "flex": 1
       },
-      "children": [
-        {
-          "id": "widget-1775012667042-n0x2ksyqb",
-          "type": "chart",
-          "title": "Temperature Change in the Coming Week",
-          "layout": {
-            "x": 0,
-            "y": 6,
-            "w": 24,
-            "h": 6,
-            "zIndex": 0
-          },
-          "templateId": "143",
-          "monitor": {
-            "gridPos": {
-              "x": 2,
-              "y": 8,
-              "w": 6,
-              "h": 3,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "childSortOrder": 0,
-          "isCodeDriven": false,
-          "libraryCode": "echarts"
-        },
-        {
-          "id": "widget-1775012667042-ww38ayvtd",
-          "type": "chart",
-          "title": "Business Text",
-          "layout": {
-            "x": 0,
-            "y": 0,
-            "w": 12,
-            "h": 6,
-            "zIndex": 0
-          },
-          "templateId": "325",
-          "monitor": {
-            "rowId": "",
-            "gridPos": {
-              "x": 1,
-              "y": 1,
-              "w": 6,
-              "h": 3,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "childSortOrder": 1,
-          "configFileName": "grafana-businesstext-options.json",
-          "dataFileName": "grafana-businesstext-data.json",
-          "isCodeDriven": false,
-          "libraryCode": "grafana-businesstext"
-        },
-        {
-          "id": "widget-1775012667042-nexh0g3hk",
-          "type": "chart",
-          "title": "Basic Radar Chart",
-          "layout": {
-            "x": 13,
-            "y": 0,
-            "w": 11,
-            "h": 6,
-            "zIndex": 0
-          },
-          "templateId": "214",
-          "monitor": {
-            "gridPos": {
-              "x": 13,
-              "y": 0,
-              "w": 8,
-              "h": 6,
-              "zIndex": 0
-            },
-            "order": 0,
-            "flex": 1
-          },
-          "childSortOrder": 2,
-          "isCodeDriven": false,
-          "libraryCode": "echarts"
-        }
-      ],
       "isCodeDriven": false,
-      "libraryCode": "panel"
+      "libraryCode": "grafana-businesstext"
     },
     {
       "id": "widget-1773756433465",
@@ -562,6 +452,35 @@
       "dataFileName": "echarts-data.json",
       "isCodeDriven": false,
       "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775084306820",
+      "type": "chart",
+      "title": "State timeline",
+      "layout": {
+        "x": 5,
+        "y": 19,
+        "w": 5,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1371",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 19,
+          "w": 21,
+          "h": 5,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "state-timeline-options.json",
+      "dataFileName": "state-timeline-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "state-timeline"
     }
   ],
   "templates": [],
@@ -595,37 +514,38 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-04-01T03:16:12.9659473Z",
+    "savedAt": "2026-04-02T01:12:00.3056916Z",
     "dbVersion": 1,
     "isStale": false,
-    "revision": 117,
-    "leaseId": "cd02b78b-fab4-4ac8-9248-35a1b31038a2",
-    "leaseExpiresAt": "2026-04-01T03:26:12.9503851Z",
+    "revision": 262,
+    "leaseId": "212f9ca7-398f-45dc-902e-25430d666058",
+    "leaseExpiresAt": "2026-04-02T01:22:00.2651246Z",
     "deletedWidgetIds": [
       "widget-1774073482028",
       "widget-1774050442931",
       "widget-1773755665709-99wo69she",
       "widget-1774108659142",
       "widget-1773756415364",
-      "widget-1775012623321"
+      "widget-1775012623321",
+      "widget-1775012667042-2ks9yfusm",
+      "widget-1775012667042-ww38ayvtd",
+      "widget-1775012667042-nexh0g3hk",
+      "widget-1775012667042-n0x2ksyqb"
     ],
     "persistedWidgetIds": [
       "widget-1773503505607",
       "widget-1773503524663",
       "widget-1773555831096-090nz1q3m",
       "widget-1773503581760",
-      "widget-1773575574512",
       "widget-1773755665709-6c4i4djbj",
       "widget-1773755665709-987tfgwnd",
       "widget-1773755665709-cz4ftupor",
       "widget-1773755665709-l3ludyrwm",
-      "widget-1775012667042-2ks9yfusm",
-      "widget-1775012667042-n0x2ksyqb",
-      "widget-1775012667042-ww38ayvtd",
-      "widget-1775012667042-nexh0g3hk",
+      "widget-1773575574512",
       "widget-1773756433465",
       "widget-1774194816706",
-      "widget-1a00908b"
+      "widget-1a00908b",
+      "widget-1775084306820"
     ]
   }
 }

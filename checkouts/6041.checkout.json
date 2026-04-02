@@ -1,4 +1,6 @@
 {
   "userId": 1,
-  "checkedOutAt": "2026-03-18T15:02:36.9509658Z"
+  "checkedOutAt": "2026-03-18T15:02:36.9509658Z",
+  "leaseId": "9ce49d86-6cab-4ca2-bc27-ff9148245311",
+  "expiresAt": "2026-04-02T01:28:57.9739475Z"
 }

@@ -6,6 +6,9 @@
   "textMode": "auto",
   "decimals": 2,
   "fieldName": "avgOverallScore",
-  "displayName": "Overall",
-  "colorScheme": "yellow-blue"
+  "displayName": " ",
+  "colorScheme": "yellow-blue",
+  "valueSize": 40,
+  "showPercentChange": true,
+  "unit": "percent"
 }

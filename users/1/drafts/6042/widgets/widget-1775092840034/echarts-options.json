@@ -1,12 +1,13 @@
 {
   "title": {
-    "text": "",
-    "show": false
+    "text": "Temperature Change in the Coming Week"
   },
   "tooltip": {
     "trigger": "axis"
   },
-  "legend": {},
+  "legend": {
+    "show": true
+  },
   "toolbox": {
     "show": true,
     "feature": {
@@ -99,5 +100,13 @@
         ]
       }
     }
-  ]
+  ],
+  "tableLegend": {
+    "dimensionMode": "series",
+    "mode": "table",
+    "metrics": [
+      "min",
+      "current"
+    ]
+  }
 }

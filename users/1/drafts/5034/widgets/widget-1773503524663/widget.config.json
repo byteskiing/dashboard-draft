@@ -1,7 +1,7 @@
 {
   "id": "widget-1773503524663",
   "type": "chart",
-  "title": "Stat (Basic)",
+  "title": "Skill",
   "layout": {
     "x": 0,
     "y": 0,
@@ -10,7 +10,8 @@
     "zIndex": 1
   },
   "style": {
-    "borderColor": "#106bea"
+    "borderColor": "#106bea",
+    "showTitle": true
   },
   "templateId": "1330",
   "dataSource": {
@@ -36,9 +37,9 @@
   "monitor": {
     "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 12,
-      "y": 0,
-      "w": 6,
+      "x": 0,
+      "y": 8,
+      "w": 4,
       "h": 4,
       "zIndex": 0
     },

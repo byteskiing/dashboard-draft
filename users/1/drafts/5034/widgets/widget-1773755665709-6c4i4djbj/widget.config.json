@@ -11,8 +11,8 @@
   },
   "style": {
     "borderColor": "#5f9ef7",
-    "borderWidth": 2,
-    "showTitle": true
+    "borderWidth": 1,
+    "showTitle": false
   },
   "templateId": "1342",
   "dataSource": {
@@ -25,10 +25,10 @@
   "monitor": {
     "rowId": "row-1773416401723",
     "gridPos": {
-      "x": 0,
-      "y": 6,
-      "w": 12,
-      "h": 14,
+      "x": 4,
+      "y": 4,
+      "w": 17,
+      "h": 15,
       "zIndex": 0
     },
     "order": 0,

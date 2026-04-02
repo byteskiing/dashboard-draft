@@ -4,10 +4,13 @@
   "title": "Temperature Change in the Coming Week",
   "layout": {
     "x": 0,
-    "y": 6,
-    "w": 24,
-    "h": 6,
+    "y": 4,
+    "w": 12,
+    "h": 10,
     "zIndex": 0
+  },
+  "style": {
+    "showTitle": false
   },
   "templateId": "143",
   "dataSource": {
@@ -18,6 +21,7 @@
     }
   },
   "monitor": {
+    "rowId": "",
     "gridPos": {
       "x": 2,
       "y": 8,

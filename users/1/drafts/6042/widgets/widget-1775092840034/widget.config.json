@@ -1,15 +1,15 @@
 {
-  "id": "widget-1775006963220",
+  "id": "widget-1775092840034",
   "type": "chart",
-  "title": "Basic area chart",
+  "title": "Temperature Change in the Coming Week",
   "layout": {
-    "x": 16,
-    "y": 0,
+    "x": 2,
+    "y": 9,
     "w": 6,
     "h": 12,
     "zIndex": 1
   },
-  "templateId": "1",
+  "templateId": "143",
   "dataSource": {
     "type": "mock",
     "config": {
@@ -19,10 +19,10 @@
   },
   "monitor": {
     "gridPos": {
-      "x": 16,
+      "x": 2,
       "y": 0,
-      "w": 6,
-      "h": 12,
+      "w": 11,
+      "h": 8,
       "zIndex": 0
     },
     "order": 0,

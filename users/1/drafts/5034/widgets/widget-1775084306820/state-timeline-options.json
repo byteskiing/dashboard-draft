@@ -1,0 +1,32 @@
+{
+  "mergeValues": true,
+  "connectNulls": "never",
+  "showValue": "auto",
+  "alignValue": "left",
+  "rowHeight": 0.9,
+  "perPage": 20,
+  "lineWidth": 0,
+  "fillOpacity": 70,
+  "colorMode": "shades",
+  "showLegend": true,
+  "legendPlacement": "bottom",
+  "tooltipMode": "single",
+  "valueMappings": [
+    {
+      "value": "Up",
+      "text": "Up",
+      "color": "#56A64B"
+    },
+    {
+      "value": "Warning",
+      "text": "Warning",
+      "color": "#FADE2A"
+    },
+    {
+      "value": "Down",
+      "text": "Down",
+      "color": "#E02F44"
+    }
+  ],
+  "noValue": "No value"
+}

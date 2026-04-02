@@ -42,5 +42,9 @@
       "name": "Budget vs spending",
       "type": "radar"
     }
-  ]
+  ],
+  "tooltip": {
+    "trigger": "axis",
+    "show": false
+  }
 }

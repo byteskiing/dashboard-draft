@@ -1,7 +1,7 @@
 {
   "id": "widget-1773503505607",
   "type": "chart",
-  "title": "Stat (Basic)2",
+  "title": "Performnce",
   "layout": {
     "x": 0,
     "y": 11,
@@ -11,7 +11,8 @@
   },
   "style": {
     "backgroundOpacity": 0.3,
-    "showTitle": false
+    "borderWidth": 0,
+    "showTitle": true
   },
   "templateId": "1330",
   "dataSource": {
@@ -39,7 +40,7 @@
     "gridPos": {
       "x": 0,
       "y": 0,
-      "w": 6,
+      "w": 4,
       "h": 4,
       "zIndex": 0
     },
