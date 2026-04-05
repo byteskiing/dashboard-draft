@@ -1,6 +1,6 @@
 {
   "$schema": "./draft-schema.json",
-  "version": "1.0",
+  "version": "2.0",
   "dashboard": {
     "id": "5034",
     "name": "scen1",
@@ -38,8 +38,6 @@
           "showTitle": true,
           "rowHeight": "auto",
           "panelGapPx": 12,
-          "displayAs": "tabs",
-          "tabLabel": "\u5168\u90E8\u88C5\u7F6E",
           "gridPos": {
             "x": 0,
             "y": 0,
@@ -58,11 +56,9 @@
           "showTitle": true,
           "rowHeight": "auto",
           "panelGapPx": 12,
-          "displayAs": "tabs",
-          "tabLabel": "\u5176\u4ED6",
           "gridPos": {
             "x": 0,
-            "y": 20,
+            "y": 46,
             "w": 24,
             "h": 1,
             "zIndex": 0
@@ -78,11 +74,9 @@
           "showTitle": true,
           "rowHeight": "auto",
           "panelGapPx": 12,
-          "displayAs": "tabs",
-          "tabLabel": "\u6570\u636E\u5206\u6790",
           "gridPos": {
             "x": 0,
-            "y": 13,
+            "y": 45,
             "w": 24,
             "h": 1,
             "zIndex": 0
@@ -110,7 +104,7 @@
   "widgets": [
     {
       "id": "widget-1773503505607",
-      "type": "chart",
+      "category": "chart",
       "title": "Performnce",
       "layout": {
         "x": 0,
@@ -124,7 +118,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 0,
+          "y": 1,
           "w": 4,
           "h": 4,
           "zIndex": 0
@@ -139,7 +133,7 @@
     },
     {
       "id": "widget-1773503524663",
-      "type": "chart",
+      "category": "chart",
       "title": "Skill",
       "layout": {
         "x": 0,
@@ -153,7 +147,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 8,
+          "y": 9,
           "w": 4,
           "h": 4,
           "zIndex": 0
@@ -168,7 +162,7 @@
     },
     {
       "id": "widget-1773555831096-090nz1q3m",
-      "type": "chart",
+      "category": "chart",
       "title": "Resilence",
       "layout": {
         "x": 2,
@@ -182,7 +176,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 4,
+          "y": 5,
           "w": 4,
           "h": 4,
           "zIndex": 0
@@ -197,7 +191,7 @@
     },
     {
       "id": "widget-1773503581760",
-      "type": "chart",
+      "category": "chart",
       "title": "Overall",
       "layout": {
         "x": 17,
@@ -211,7 +205,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 12,
+          "y": 13,
           "w": 4,
           "h": 4,
           "zIndex": 0
@@ -226,7 +220,7 @@
     },
     {
       "id": "widget-1773755665709-6c4i4djbj",
-      "type": "chart",
+      "category": "container",
       "title": "Panel (Copy) (Copy)",
       "layout": {
         "x": 6,
@@ -240,7 +234,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 4,
-          "y": 4,
+          "y": 5,
           "w": 17,
           "h": 15,
           "zIndex": 0
@@ -251,7 +245,7 @@
       "children": [
         {
           "id": "widget-1773755665709-987tfgwnd",
-          "type": "chart",
+          "category": "chart",
           "title": "Temperature Change in the Coming Week",
           "layout": {
             "x": 0,
@@ -279,7 +273,7 @@
         },
         {
           "id": "widget-1773755665709-cz4ftupor",
-          "type": "chart",
+          "category": "chart",
           "title": "Business Text",
           "layout": {
             "x": 0,
@@ -309,7 +303,7 @@
         },
         {
           "id": "widget-1773755665709-l3ludyrwm",
-          "type": "chart",
+          "category": "chart",
           "title": "Basic Radar Chart",
           "layout": {
             "x": 13,
@@ -341,7 +335,7 @@
     },
     {
       "id": "widget-1773575574512",
-      "type": "chart",
+      "category": "chart",
       "title": "Alarm",
       "layout": {
         "x": 12,
@@ -355,8 +349,8 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 4,
-          "y": 0,
-          "w": 20,
+          "y": 1,
+          "w": 17,
           "h": 4,
           "zIndex": 0
         },
@@ -368,7 +362,7 @@
     },
     {
       "id": "widget-1773756433465",
-      "type": "chart",
+      "category": "chart",
       "title": "Basic area chart",
       "layout": {
         "x": 0,
@@ -379,10 +373,10 @@
       },
       "templateId": "1",
       "monitor": {
-        "rowId": "row-1773476025810",
+        "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 1,
+          "y": 20,
           "w": 6,
           "h": 12,
           "zIndex": 0
@@ -397,7 +391,7 @@
     },
     {
       "id": "widget-1774194816706",
-      "type": "chart",
+      "category": "chart",
       "title": "Rainfall",
       "layout": {
         "x": 6,
@@ -411,7 +405,7 @@
         "rowId": "row-1773476025810",
         "gridPos": {
           "x": 6,
-          "y": 21,
+          "y": 47,
           "w": 6,
           "h": 12,
           "zIndex": 0
@@ -426,7 +420,7 @@
     },
     {
       "id": "widget-1a00908b",
-      "type": "echarts",
+      "category": "chart",
       "title": "Texture on Pie Chart",
       "layout": {
         "x": 0,
@@ -437,10 +431,10 @@
       },
       "templateId": "204",
       "monitor": {
-        "rowId": "row-1773486163932",
+        "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 0,
+          "y": 32,
           "w": 12,
           "h": 8,
           "zIndex": 0
@@ -455,7 +449,7 @@
     },
     {
       "id": "widget-1775084306820",
-      "type": "chart",
+      "category": "chart",
       "title": "State timeline",
       "layout": {
         "x": 5,
@@ -469,7 +463,7 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 19,
+          "y": 40,
           "w": 21,
           "h": 5,
           "zIndex": 0
@@ -514,12 +508,12 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-04-02T01:12:00.3056916Z",
+    "savedAt": "2026-04-03T15:35:55.2250626Z",
     "dbVersion": 1,
     "isStale": false,
-    "revision": 262,
-    "leaseId": "212f9ca7-398f-45dc-902e-25430d666058",
-    "leaseExpiresAt": "2026-04-02T01:22:00.2651246Z",
+    "revision": 278,
+    "leaseId": "0f338e61-457c-4bb3-aa54-c506b4a34a76",
+    "leaseExpiresAt": "2026-04-03T15:45:55.202298Z",
     "deletedWidgetIds": [
       "widget-1774073482028",
       "widget-1774050442931",
@@ -530,7 +524,8 @@
       "widget-1775012667042-2ks9yfusm",
       "widget-1775012667042-ww38ayvtd",
       "widget-1775012667042-nexh0g3hk",
-      "widget-1775012667042-n0x2ksyqb"
+      "widget-1775012667042-n0x2ksyqb",
+      "widget-1775229468020-kzwjsby2n"
     ],
     "persistedWidgetIds": [
       "widget-1773503505607",

@@ -1,0 +1,48 @@
+[
+  {
+    "fields": [
+      {
+        "name": "time",
+        "type": "time",
+        "values": [
+          1775030400000,
+          1775031000000
+        ]
+      },
+      {
+        "name": "CPU",
+        "type": "number",
+        "values": [
+          58,
+          67
+        ]
+      },
+      {
+        "name": "Memory",
+        "type": "number",
+        "values": [
+          71,
+          82
+        ]
+      },
+      {
+        "name": "Disk",
+        "type": "number",
+        "values": [
+          39,
+          45
+        ]
+      },
+      {
+        "name": "Network",
+        "type": "number",
+        "values": [
+          84,
+          91
+        ]
+      }
+    ],
+    "length": 2,
+    "name": "Sample Bar Gauge"
+  }
+]

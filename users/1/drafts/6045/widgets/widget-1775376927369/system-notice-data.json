@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Mock Server Events",
+    "length": 6,
+    "fields": [
+      {
+        "name": "id",
+        "type": "string",
+        "values": [
+          "event-1001",
+          "event-1002",
+          "event-1003",
+          "event-1004",
+          "event-1005",
+          "event-1006"
+        ]
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "values": [
+          "API gateway traffic spike detected",
+          "Database failover completed",
+          "Nightly backup job finished",
+          "Auth service error rate above threshold",
+          "Scheduled patch window starting at 02:00",
+          "Cache cluster latency returned to normal"
+        ]
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "values": [
+          "warning",
+          "success",
+          "success",
+          "error",
+          "ongoing",
+          "default"
+        ]
+      },
+      {
+        "name": "relativeTime",
+        "type": "string",
+        "values": [
+          "5\u5206\u949F\u524D",
+          "18\u5206\u949F\u524D",
+          "1\u5C0F\u65F6\u524D",
+          "3\u5C0F\u65F6\u524D",
+          "\u6628\u5929",
+          "2\u5929\u524D"
+        ]
+      },
+      {
+        "name": "absoluteTime",
+        "type": "string",
+        "values": [
+          "2026-04-05 15:55",
+          "2026-04-05 15:42",
+          "2026-04-05 14:50",
+          "2026-04-05 12:31",
+          "2026-04-04 02:00",
+          "2026-04-03 18:24"
+        ]
+      },
+      {
+        "name": "content",
+        "type": "string",
+        "values": [
+          "Inbound requests crossed 18k rpm on gateway-02. Autoscaling added two pods and response time remains within SLO.",
+          "Primary SQL node switched to db-replica-01 after a health check failure. Write traffic is stable and replication is healthy.",
+          "Backup job backup-prod-01 completed successfully. Archive uploaded to object storage and retention policy verification passed.",
+          "Auth.Api returned elevated 5xx responses after the latest rollout. Rollback completed and the incident is under active review.",
+          "Security patch deployment is in progress for app nodes in the production cluster. Short reconnects may occur during restarts.",
+          "Redis cluster latency dropped back under 10 ms after rebalancing. Monitoring remains enabled for the next maintenance window."
+        ]
+      }
+    ]
+  }
+]

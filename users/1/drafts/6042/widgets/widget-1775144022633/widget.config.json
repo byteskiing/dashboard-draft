@@ -1,0 +1,35 @@
+{
+  "id": "widget-1775144022633",
+  "type": "chart",
+  "title": "Alert list",
+  "layout": {
+    "x": 6,
+    "y": 11,
+    "w": 3,
+    "h": 5,
+    "zIndex": 1
+  },
+  "templateId": "plugin-alertlist",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 6,
+      "y": 11,
+      "w": 3,
+      "h": 5,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "alertlist-options.json",
+  "dataFileName": "alertlist-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "alertlist"
+}

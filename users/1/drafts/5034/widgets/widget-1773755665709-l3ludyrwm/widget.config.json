@@ -1,6 +1,6 @@
 {
   "id": "widget-1773755665709-l3ludyrwm",
-  "type": "chart",
+  "category": "chart",
   "title": "Basic Radar Chart",
   "layout": {
     "x": 13,

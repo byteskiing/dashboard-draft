@@ -1,0 +1,36 @@
+{
+  "id": "widget-1775382626791",
+  "category": "chart",
+  "title": "Pie Charts in Matrix",
+  "layout": {
+    "x": 5,
+    "y": 28,
+    "w": 6,
+    "h": 12,
+    "zIndex": 1
+  },
+  "templateId": "176",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 0,
+      "y": 28,
+      "w": 18,
+      "h": 14,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

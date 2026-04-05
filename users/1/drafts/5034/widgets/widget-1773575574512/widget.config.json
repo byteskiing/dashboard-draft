@@ -1,6 +1,6 @@
 {
   "id": "widget-1773575574512",
-  "type": "chart",
+  "category": "chart",
   "title": "Alarm",
   "layout": {
     "x": 12,
@@ -48,8 +48,8 @@
     "rowId": "row-1773416401723",
     "gridPos": {
       "x": 4,
-      "y": 0,
-      "w": 20,
+      "y": 1,
+      "w": 17,
       "h": 4,
       "zIndex": 0
     },

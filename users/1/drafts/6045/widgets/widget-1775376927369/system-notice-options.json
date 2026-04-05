@@ -1,0 +1,16 @@
+{
+  "headerTitle": "System Notice",
+  "latestLabelPrefix": "Display latest",
+  "idField": "id",
+  "titleField": "title",
+  "statusField": "status",
+  "relativeTimeField": "relativeTime",
+  "absoluteTimeField": "absoluteTime",
+  "contentField": "content",
+  "maxItems": 20,
+  "showLegend": true,
+  "showLatestBadge": true,
+  "showConnectorLine": true,
+  "emptyStateText": "No system notices",
+  "transparent": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "widget-1775135307586",
+  "type": "chart",
+  "title": "LED (Yellow)",
+  "layout": {
+    "x": 15,
+    "y": 6,
+    "w": 2,
+    "h": 2,
+    "zIndex": 1
+  },
+  "templateId": "1326",
+  "monitor": {
+    "gridPos": {
+      "x": 15,
+      "y": 0,
+      "w": 1,
+      "h": 3,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "indicator-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "indicator"
+}

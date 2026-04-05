@@ -1,0 +1,59 @@
+[
+  {
+    "name": "SBC Overview",
+    "fields": [
+      {
+        "name": "avgPerformance",
+        "type": "number",
+        "config": {},
+        "values": [
+          85.9
+        ]
+      },
+      {
+        "name": "avgResilience",
+        "type": "number",
+        "config": {},
+        "values": [
+          83.8
+        ]
+      },
+      {
+        "name": "avgSkill",
+        "type": "number",
+        "config": {},
+        "values": [
+          76.3
+        ]
+      },
+      {
+        "name": "avgOverallScore",
+        "type": "number",
+        "config": {},
+        "values": [
+          82
+        ]
+      },
+      {
+        "name": "alerts",
+        "type": "other",
+        "config": {},
+        "values": [
+          [
+            {
+              "level": "critical",
+              "message": "\u4E59\u70EF\u88C5\u7F6E C-101 \u538B\u5DEE\u8D85\u51FA\u63A7\u5236\u8FB9\u754C \u002B2.3\u03C3",
+              "time": "2026-03-15T05:49:43.5650935Z"
+            },
+            {
+              "level": "warning",
+              "message": "PX\u88C5\u7F6E \u52A0\u70ED\u7089\u51FA\u53E3\u6E29\u5EA6\u504F\u5DEE \u002B1.8\u00B0C",
+              "time": "2026-03-15T05:35:43.5650949Z"
+            }
+          ]
+        ]
+      }
+    ],
+    "length": 1
+  }
+]

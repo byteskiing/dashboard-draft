@@ -1,0 +1,170 @@
+[
+  {
+    "fields": [
+      {
+        "name": "time",
+        "type": "time",
+        "values": [
+          1774983600000,
+          1774987200000,
+          1774990800000,
+          1774994400000,
+          1774998000000,
+          1775001600000,
+          1775005200000,
+          1775008800000,
+          1775012400000,
+          1775016000000,
+          1775019600000,
+          1775023200000
+        ]
+      },
+      {
+        "name": "Server A",
+        "type": "string",
+        "values": [
+          "Up",
+          "Warning",
+          "Down",
+          "Up",
+          "Up",
+          "Maintenance",
+          "Up",
+          "Warning",
+          "Up",
+          "Down",
+          "Up",
+          "Up"
+        ]
+      },
+      {
+        "name": "Server B",
+        "type": "string",
+        "values": [
+          "Up",
+          "Up",
+          "Maintenance",
+          "Maintenance",
+          "Down",
+          "Down",
+          "Up",
+          "Up",
+          "Warning",
+          "Up",
+          "Maintenance",
+          "Up"
+        ]
+      },
+      {
+        "name": "Server C",
+        "type": "string",
+        "values": [
+          "Maintenance",
+          "Maintenance",
+          "Up",
+          "Up",
+          "Up",
+          "Warning",
+          "Warning",
+          "Down",
+          "Down",
+          "Up",
+          "Up",
+          "Maintenance"
+        ]
+      },
+      {
+        "name": "Server D",
+        "type": "string",
+        "values": [
+          "Up",
+          "Up",
+          "Up",
+          "Warning",
+          "Up",
+          "Up",
+          "Down",
+          "Down",
+          "Maintenance",
+          "Maintenance",
+          "Up",
+          "Up"
+        ]
+      },
+      {
+        "name": "Server E",
+        "type": "string",
+        "values": [
+          "Down",
+          "Down",
+          "Warning",
+          "Up",
+          "Up",
+          "Up",
+          "Maintenance",
+          "Maintenance",
+          "Up",
+          "Warning",
+          "Up",
+          "Up"
+        ]
+      },
+      {
+        "name": "Server F",
+        "type": "string",
+        "values": [
+          "Up",
+          "Maintenance",
+          "Maintenance",
+          "Up",
+          "Warning",
+          "Up",
+          "Up",
+          "Down",
+          "Down",
+          "Up",
+          "Up",
+          "Warning"
+        ]
+      },
+      {
+        "name": "Server G",
+        "type": "string",
+        "values": [
+          "Warning",
+          "Up",
+          "Up",
+          "Up",
+          "Maintenance",
+          "Up",
+          "Up",
+          "Warning",
+          "Down",
+          "Down",
+          "Up",
+          "Maintenance"
+        ]
+      },
+      {
+        "name": "Server H",
+        "type": "string",
+        "values": [
+          "Up",
+          "Up",
+          "Down",
+          "Down",
+          "Up",
+          "Maintenance",
+          "Up",
+          "Up",
+          "Warning",
+          "Warning",
+          "Up",
+          "Up"
+        ]
+      }
+    ],
+    "length": 12,
+    "name": "Sample State Timeline"
+  }
+]

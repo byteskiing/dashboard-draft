@@ -1,0 +1,51 @@
+{
+  "id": "widget-1775273345367-yho7z9ahw",
+  "category": "chart",
+  "title": "Overall (Copy)",
+  "layout": {
+    "x": 12,
+    "y": 10,
+    "w": 12,
+    "h": 3,
+    "zIndex": 1
+  },
+  "style": {
+    "showTitle": false
+  },
+  "templateId": "1330",
+  "dataSource": {
+    "type": "api",
+    "config": {
+      "url": "https://localhost:49603/api/v1/sbc/overview",
+      "method": "GET",
+      "mapperKey": "object",
+      "headers": {}
+    },
+    "refreshIntervalMs": 5000,
+    "transformations": [
+      {
+        "id": "transform-1773574180435-6b15ffz1a",
+        "type": "custom",
+        "options": {
+          "scriptFile": "transform-transform-1773574180435-6b15ffz1a.js"
+        },
+        "disabled": false
+      }
+    ]
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 13,
+      "y": 10,
+      "w": 8,
+      "h": 3,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "stat-options.json",
+  "dataFileName": "stat-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "stat"
+}

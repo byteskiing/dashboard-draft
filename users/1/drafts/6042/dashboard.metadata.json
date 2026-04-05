@@ -1,19 +1,25 @@
 {
   "createdAt": "2026-03-31T09:52:37.8831745Z",
-  "savedAt": "2026-04-02T01:51:04.0632318Z",
+  "savedAt": "2026-04-02T15:33:43.5968587Z",
   "dbVersion": 1,
   "isStale": false,
-  "revision": 57,
-  "leaseId": "e3e14cae-506b-432f-8fed-2e684f2a4f2e",
-  "leaseExpiresAt": "2026-04-02T02:01:04.0586503Z",
+  "revision": 76,
+  "leaseId": "5c8ffaa6-82a9-446f-a4fc-15d4a27a8248",
+  "leaseExpiresAt": "2026-04-02T15:43:43.5903028Z",
   "deletedWidgetIds": [
     "widget-1774952050741",
     "widget-1774953325410",
     "widget-1774950766339",
     "widget-1774953763813",
-    "widget-1775006963220"
+    "widget-1775006963220",
+    "widget-1775134250507",
+    "widget-1775134096088"
   ],
   "persistedWidgetIds": [
-    "widget-1775092840034"
+    "widget-1775092840034",
+    "widget-1775135307586",
+    "widget-1775135438172",
+    "widget-1775135448895",
+    "widget-1775144022633"
   ]
 }

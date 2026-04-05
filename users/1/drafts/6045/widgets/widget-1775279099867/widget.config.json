@@ -1,0 +1,39 @@
+{
+  "id": "widget-1775279099867",
+  "category": "chart",
+  "title": "Multiple X Axes",
+  "layout": {
+    "x": 10,
+    "y": 6,
+    "w": 6,
+    "h": 12,
+    "zIndex": 1
+  },
+  "style": {
+    "showTitle": false
+  },
+  "templateId": "181",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 12,
+      "y": 3,
+      "w": 6,
+      "h": 8,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "widget-1775274110620-7ylqzns85",
+  "category": "chart",
+  "title": "Performnce (Copy) (Copy) (Copy)",
+  "layout": {
+    "x": 0,
+    "y": 4,
+    "w": 12,
+    "h": 3,
+    "zIndex": 1
+  },
+  "style": {
+    "backgroundOpacity": 0.3,
+    "borderWidth": 0,
+    "showTitle": false
+  },
+  "templateId": "1330",
+  "dataSource": {
+    "type": "api",
+    "config": {
+      "url": "https://localhost:49603/api/v1/sbc/overview",
+      "method": "GET",
+      "mapperKey": "object",
+      "headers": {}
+    },
+    "refreshIntervalMs": 5000,
+    "transformations": [
+      {
+        "id": "transform-1773574180435-6b15ffz1a",
+        "type": "custom",
+        "options": {
+          "scriptFile": "transform-transform-1773574180435-6b15ffz1a.js"
+        },
+        "disabled": false
+      }
+    ]
+  },
+  "monitor": {
+    "gridPos": {
+      "x": 1,
+      "y": 3,
+      "w": 9,
+      "h": 3,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "stat-options.json",
+  "dataFileName": "stat-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "stat"
+}

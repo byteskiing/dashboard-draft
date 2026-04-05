@@ -1,0 +1,15 @@
+{
+  "series": [
+    {
+      "data": [
+        {
+          "value": 50,
+          "name": "SCORE"
+        }
+      ],
+      "index": 0,
+      "name": "Pressure",
+      "type": "gauge"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tooltip": {
+    "formatter": "{a} \u003Cbr/\u003E{b} : {c}%"
+  },
+  "series": [
+    {
+      "name": "Pressure",
+      "type": "gauge",
+      "detail": {
+        "formatter": "{value}"
+      }
+    }
+  ]
+}

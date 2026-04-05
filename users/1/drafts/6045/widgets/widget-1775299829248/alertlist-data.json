@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Sample Alerts",
+    "length": 4,
+    "fields": [
+      {
+        "name": "time",
+        "type": "time",
+        "values": [
+          1775114100000,
+          1775114340000,
+          1775114640000,
+          1775115060000
+        ]
+      },
+      {
+        "name": "state",
+        "type": "string",
+        "values": [
+          "Firing",
+          "Pending",
+          "Normal",
+          "Firing"
+        ]
+      },
+      {
+        "name": "severity",
+        "type": "string",
+        "values": [
+          "Critical",
+          "Warning",
+          "Info",
+          "Critical"
+        ]
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "values": [
+          "Boiler pressure above high-high limit",
+          "Tank level approaching low threshold",
+          "Maintenance bypass restored to normal",
+          "Cooling loop pump fault detected"
+        ]
+      },
+      {
+        "name": "source",
+        "type": "string",
+        "values": [
+          "Boiler 2",
+          "Tank Farm",
+          "Bypass 4",
+          "Pump P-204"
+        ]
+      }
+    ]
+  }
+]

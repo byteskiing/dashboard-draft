@@ -1,0 +1,36 @@
+{
+  "id": "widget-1775376927369",
+  "category": "chart",
+  "title": "System Notice",
+  "layout": {
+    "x": 10,
+    "y": 31,
+    "w": 6,
+    "h": 6,
+    "zIndex": 1
+  },
+  "templateId": "1379",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 18,
+      "y": 0,
+      "w": 6,
+      "h": 23,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "system-notice-options.json",
+  "dataFileName": "system-notice-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "system-notice"
+}

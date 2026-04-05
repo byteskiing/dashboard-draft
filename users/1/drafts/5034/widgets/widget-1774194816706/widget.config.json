@@ -1,6 +1,6 @@
 {
   "id": "widget-1774194816706",
-  "type": "chart",
+  "category": "chart",
   "title": "Rainfall",
   "layout": {
     "x": 6,
@@ -21,7 +21,7 @@
     "rowId": "row-1773476025810",
     "gridPos": {
       "x": 6,
-      "y": 21,
+      "y": 47,
       "w": 6,
       "h": 12,
       "zIndex": 0

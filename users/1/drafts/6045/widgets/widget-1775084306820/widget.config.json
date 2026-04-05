@@ -1,0 +1,39 @@
+{
+  "id": "widget-1775084306820",
+  "category": "chart",
+  "title": "Server tatus",
+  "layout": {
+    "x": 5,
+    "y": 19,
+    "w": 5,
+    "h": 4,
+    "zIndex": 1
+  },
+  "style": {
+    "showTitle": true
+  },
+  "templateId": "1371",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 5,
+      "y": 14,
+      "w": 13,
+      "h": 7,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "state-timeline-options.json",
+  "dataFileName": "state-timeline-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "state-timeline"
+}

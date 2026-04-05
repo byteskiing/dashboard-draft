@@ -1,0 +1,8 @@
+{
+  "indicatorType": "led",
+  "state": "warning",
+  "onColor": "#eab308",
+  "offColor": "#374151",
+  "blink": true,
+  "blinkSpeed": "normal"
+}

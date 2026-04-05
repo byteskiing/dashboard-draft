@@ -1,0 +1,9 @@
+{
+  "pagination": true,
+  "pageSize": 10,
+  "sortable": true,
+  "filterable": true,
+  "striped": true,
+  "bordered": true,
+  "showHeader": true
+}

@@ -1,0 +1,18 @@
+{
+  "showRowNumbers": false,
+  "showHeader": true,
+  "maxRows": 20,
+  "rowHeight": 38,
+  "stateField": "state",
+  "severityField": "severity",
+  "messageField": "message",
+  "sourceField": "source",
+  "timeField": "time",
+  "headerBackground": "#111827",
+  "headerTextColor": "#cbd5e1",
+  "rowBackground": "#0b1220",
+  "rowTextColor": "#e5e7eb",
+  "rowHoverColor": "rgba(59, 130, 246, 0.12)",
+  "alternateRowColor": "rgba(255, 255, 255, 0.03)",
+  "borderColor": "rgba(148, 163, 184, 0.18)"
+}

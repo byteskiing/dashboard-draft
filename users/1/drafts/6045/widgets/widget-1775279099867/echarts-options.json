@@ -1,0 +1,81 @@
+{
+  "color": [
+    "#5470C6",
+    "#EE6666"
+  ],
+  "tooltip": {
+    "trigger": "none",
+    "axisPointer": {
+      "type": "cross"
+    }
+  },
+  "legend": {},
+  "grid": {
+    "top": 20,
+    "bottom": 45,
+    "left": 8,
+    "right": 8,
+    "containLabel": true
+  },
+  "xAxis": [
+    {
+      "type": "category",
+      "axisTick": {
+        "alignWithLabel": true
+      },
+      "axisLine": {
+        "onZero": false,
+        "lineStyle": {
+          "color": "#EE6666"
+        }
+      },
+      "axisPointer": {
+        "label": {}
+      },
+      "axisLabel": {}
+    },
+    {
+      "type": "category",
+      "axisTick": {
+        "alignWithLabel": true
+      },
+      "axisLine": {
+        "onZero": false,
+        "lineStyle": {
+          "color": "#5470C6"
+        }
+      },
+      "axisPointer": {
+        "label": {}
+      }
+    }
+  ],
+  "yAxis": [
+    {
+      "type": "value"
+    }
+  ],
+  "series": [
+    {
+      "name": "Precipitation(2015)",
+      "type": "line",
+      "xAxisIndex": 1,
+      "smooth": true,
+      "emphasis": {
+        "focus": "series"
+      }
+    },
+    {
+      "name": "Precipitation(2016)",
+      "type": "line",
+      "smooth": true,
+      "emphasis": {
+        "focus": "series"
+      }
+    }
+  ],
+  "tableLegend": {
+    "mode": "table",
+    "heightPercent": 28
+  }
+}

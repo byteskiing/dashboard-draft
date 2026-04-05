@@ -1,0 +1,16 @@
+{
+  "reducer": "last",
+  "colorMode": "none",
+  "graphMode": "area",
+  "justifyMode": "center",
+  "textMode": "auto",
+  "decimals": 2,
+  "fieldName": "avgPerformance",
+  "displayName": "Performance",
+  "titleSize": 20,
+  "valueSize": 17,
+  "showPercentChange": true,
+  "unit": "percent",
+  "title": "Performance",
+  "orientation": "horizontal"
+}

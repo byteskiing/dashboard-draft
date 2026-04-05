@@ -1,0 +1,15 @@
+{
+  "reducer": "last",
+  "colorMode": "background",
+  "graphMode": "none",
+  "justifyMode": "center",
+  "textMode": "auto",
+  "decimals": 2,
+  "fieldName": "avgPerformance",
+  "displayName": "CPU4",
+  "titleSize": 14,
+  "valueSize": 30,
+  "showPercentChange": true,
+  "unit": "percent",
+  "colorScheme": "yellow-red"
+}

@@ -1,0 +1,25 @@
+{
+  "reducer": "last",
+  "orientation": "vertical",
+  "displayMode": "lcd",
+  "showUnfilled": true,
+  "namePlacement": "auto",
+  "valueMode": "value",
+  "min": 0,
+  "decimals": 1,
+  "colorScheme": "green-yellow-red",
+  "thresholds": [
+    {
+      "value": 0,
+      "color": "green"
+    },
+    {
+      "value": 80,
+      "color": "red"
+    }
+  ],
+  "thresholdsMode": "absolute",
+  "noValue": "-",
+  "sortOrder": "none",
+  "limit": 12
+}

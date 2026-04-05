@@ -1,6 +1,6 @@
 {
   "id": "widget-1773503581760",
-  "type": "chart",
+  "category": "chart",
   "title": "Overall",
   "layout": {
     "x": 17,
@@ -37,7 +37,7 @@
     "rowId": "row-1773416401723",
     "gridPos": {
       "x": 0,
-      "y": 12,
+      "y": 13,
       "w": 4,
       "h": 4,
       "zIndex": 0

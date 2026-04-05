@@ -1,0 +1,28 @@
+{
+  "id": "widget-1775135438172",
+  "type": "chart",
+  "title": "Date \u0026 Time",
+  "layout": {
+    "x": 14,
+    "y": 6,
+    "w": 3,
+    "h": 2,
+    "zIndex": 1
+  },
+  "templateId": "1329",
+  "monitor": {
+    "gridPos": {
+      "x": 14,
+      "y": 3,
+      "w": 4,
+      "h": 3,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "clock-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "clock"
+}

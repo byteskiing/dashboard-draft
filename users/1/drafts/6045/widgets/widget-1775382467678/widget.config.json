@@ -1,0 +1,32 @@
+{
+  "id": "widget-1775382467678",
+  "category": "container",
+  "title": "Panel",
+  "layout": {
+    "x": 16,
+    "y": 25,
+    "w": 6,
+    "h": 4,
+    "zIndex": 1
+  },
+  "style": {
+    "showTitle": false
+  },
+  "templateId": "1342",
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 6,
+      "y": 11,
+      "w": 12,
+      "h": 3,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "panel-options.json",
+  "dataFileName": "",
+  "isCodeDriven": false,
+  "libraryCode": "panel"
+}

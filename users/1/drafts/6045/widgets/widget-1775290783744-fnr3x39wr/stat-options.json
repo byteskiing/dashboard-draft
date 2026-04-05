@@ -1,0 +1,15 @@
+{
+  "reducer": "last",
+  "colorMode": "none",
+  "graphMode": "area",
+  "justifyMode": "center",
+  "textMode": "auto",
+  "decimals": 2,
+  "fieldName": "avgResilience",
+  "displayName": " Resilience",
+  "colorScheme": "greens",
+  "valueSize": 17,
+  "showPercentChange": true,
+  "unit": "percent",
+  "titleSize": 22
+}

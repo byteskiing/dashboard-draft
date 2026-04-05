@@ -1,0 +1,1004 @@
+{
+  "$schema": "./draft-schema.json",
+  "version": "2.0",
+  "dashboard": {
+    "id": "6045",
+    "name": "SBC Plant Overview (Copy)",
+    "description": "",
+    "category": "Production",
+    "mode": "monitor",
+    "canvas": {
+      "gridSettings": {
+        "cols": 24,
+        "rowHeight": 30,
+        "margin": [
+          12,
+          12
+        ],
+        "padding": [
+          12,
+          12
+        ]
+      },
+      "style": {
+        "gridColor": "rgba(255,255,255,0.06)",
+        "themePreset": "system"
+      },
+      "globalWidgetStyle": {
+        "showTitle": true,
+        "borderRadius": 0
+      }
+    },
+    "monitor": {
+      "rows": [
+        {
+          "id": "row-1773416401723",
+          "title": "\u5168\u90E8\u88C5\u7F6E",
+          "sortOrder": 0,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "panelGapPx": 12,
+          "gridPos": {
+            "x": 0,
+            "y": 0,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          },
+          "style": {
+            "backgroundOpacity": 1
+          }
+        },
+        {
+          "id": "row-1773476025810",
+          "title": "\u5176\u4ED6",
+          "sortOrder": 1,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "panelGapPx": 12,
+          "gridPos": {
+            "x": 0,
+            "y": 38,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          },
+          "style": {
+            "backgroundOpacity": 1
+          }
+        },
+        {
+          "id": "row-1773486163932",
+          "title": "\u6570\u636E\u5206\u6790",
+          "sortOrder": 12,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "panelGapPx": 12,
+          "gridPos": {
+            "x": 0,
+            "y": 27,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          },
+          "style": {
+            "backgroundOpacity": 1
+          }
+        },
+        {
+          "id": "row-1775178800231",
+          "title": "\u6D4B\u8BD5\u62A5\u544A",
+          "sortOrder": 14,
+          "showTitle": true,
+          "rowHeight": "auto",
+          "panelGapPx": 12,
+          "gridPos": {
+            "x": 0,
+            "y": 37,
+            "w": 24,
+            "h": 1,
+            "zIndex": 0
+          },
+          "style": {
+            "backgroundOpacity": 1
+          }
+        }
+      ],
+      "layoutModel": "fixed-grid",
+      "displayAs": "tabs",
+      "rowHeight": "auto",
+      "rowGapPx": 16,
+      "panelGapPx": 12
+    },
+    "headerSettings": {
+      "visible": true,
+      "showTimeRange": true,
+      "showFilters": true,
+      "showVariables": true,
+      "showRefreshControls": true,
+      "collapsible": true,
+      "defaultCollapsed": false
+    }
+  },
+  "widgets": [
+    {
+      "id": "widget-1773755665709-cz4ftupor",
+      "category": "chart",
+      "title": "KPI",
+      "layout": {
+        "x": 6,
+        "y": 37,
+        "w": 5,
+        "h": 3,
+        "zIndex": 0
+      },
+      "templateId": "325",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 19,
+          "y": 23,
+          "w": 4,
+          "h": 6,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "grafana-businesstext-options.json",
+      "dataFileName": "grafana-businesstext-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "grafana-businesstext"
+    },
+    {
+      "id": "widget-1773575574512",
+      "category": "chart",
+      "title": "Alarm",
+      "layout": {
+        "x": 12,
+        "y": 46,
+        "w": 12,
+        "h": 2,
+        "zIndex": 1
+      },
+      "templateId": "325",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 6,
+          "y": 0,
+          "w": 12,
+          "h": 3,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "isCodeDriven": false,
+      "libraryCode": "grafana-businesstext"
+    },
+    {
+      "id": "widget-1774194816706",
+      "category": "chart",
+      "title": "Rainfall",
+      "layout": {
+        "x": 6,
+        "y": 21,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "3",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 0,
+          "y": 28,
+          "w": 16,
+          "h": 9,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775084306820",
+      "category": "chart",
+      "title": "Server tatus",
+      "layout": {
+        "x": 5,
+        "y": 19,
+        "w": 5,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1371",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 5,
+          "y": 14,
+          "w": 13,
+          "h": 7,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "state-timeline-options.json",
+      "dataFileName": "state-timeline-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "state-timeline"
+    },
+    {
+      "id": "widget-1775279099867",
+      "category": "chart",
+      "title": "Multiple X Axes",
+      "layout": {
+        "x": 10,
+        "y": 6,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "181",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 12,
+          "y": 3,
+          "w": 6,
+          "h": 8,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775281850714",
+      "category": "chart",
+      "title": "geo choropleth scatter",
+      "layout": {
+        "x": 4,
+        "y": 5,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "107",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 6,
+          "y": 3,
+          "w": 6,
+          "h": 8,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775282455084",
+      "category": "chart",
+      "title": "",
+      "layout": {
+        "x": 5,
+        "y": 16,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "214",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 18,
+          "y": 37,
+          "w": 5,
+          "h": 6,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775291002692-8czxkkjdb",
+      "category": "chart",
+      "title": "Power",
+      "layout": {
+        "x": 5,
+        "y": 7,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "7",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 22,
+          "w": 5,
+          "h": 6,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775298453045",
+      "category": "chart",
+      "title": "Bar gauge",
+      "layout": {
+        "x": 7,
+        "y": 26,
+        "w": 6,
+        "h": 8,
+        "zIndex": 1
+      },
+      "templateId": "1374",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 14,
+          "w": 5,
+          "h": 8,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "bargauge-options.json",
+      "dataFileName": "bargauge-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "bargauge"
+    },
+    {
+      "id": "widget-1775299829248",
+      "category": "chart",
+      "title": "Alert list",
+      "layout": {
+        "x": 6,
+        "y": 32,
+        "w": 3,
+        "h": 5,
+        "zIndex": 1
+      },
+      "templateId": "1376",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 5,
+          "y": 21,
+          "w": 13,
+          "h": 7,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "alertlist-options.json",
+      "dataFileName": "alertlist-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "alertlist"
+    },
+    {
+      "id": "widget-1775299994973",
+      "category": "data",
+      "title": "Table",
+      "layout": {
+        "x": 16,
+        "y": 29,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1334",
+      "monitor": {
+        "rowId": "row-1773486163932",
+        "gridPos": {
+          "x": 16,
+          "y": 28,
+          "w": 6,
+          "h": 9,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "table-options.json",
+      "dataFileName": "table-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "table"
+    },
+    {
+      "id": "widget-1775358233207",
+      "category": "container",
+      "title": "Panel",
+      "layout": {
+        "x": 1,
+        "y": 26,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1342",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 14,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "children": [
+        {
+          "id": "widget-1775274104853-p9q3q10tr",
+          "category": "chart",
+          "title": "CPU",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "w": 12,
+            "h": 4,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 14,
+              "y": 1,
+              "w": 9,
+              "h": 4,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 0,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775274110620-7ylqzns85",
+          "category": "chart",
+          "title": "Performnce (Copy) (Copy) (Copy)",
+          "layout": {
+            "x": 0,
+            "y": 4,
+            "w": 12,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 1,
+              "y": 3,
+              "w": 9,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 1,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775274114653-yhqnp7epb",
+          "category": "chart",
+          "title": "Performnce (Copy) (Copy) (Copy) (Copy)",
+          "layout": {
+            "x": 0,
+            "y": 7,
+            "w": 12,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 2,
+              "y": 8,
+              "w": 9,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 2,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775274118178-79eplvhz2",
+          "category": "chart",
+          "title": "Performnce (Copy) (Copy) (Copy) (Copy) (Copy)",
+          "layout": {
+            "x": 0,
+            "y": 10,
+            "w": 12,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 1,
+              "y": 11,
+              "w": 9,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 3,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775273240289-tj2mmdkh3",
+          "category": "chart",
+          "title": "Memory",
+          "layout": {
+            "x": 12,
+            "y": 0,
+            "w": 12,
+            "h": 4,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 10,
+              "y": 1,
+              "w": 9,
+              "h": 4,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 4,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775273306195-z2wkdm4h2",
+          "category": "chart",
+          "title": "Resilence (Copy)",
+          "layout": {
+            "x": 12,
+            "y": 4,
+            "w": 12,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 13,
+              "y": 4,
+              "w": 8,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 5,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775273325648-vnb98hh68",
+          "category": "chart",
+          "title": "Skill (Copy)",
+          "layout": {
+            "x": 12,
+            "y": 7,
+            "w": 12,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 12,
+              "y": 7,
+              "w": 8,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 6,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775273345367-yho7z9ahw",
+          "category": "chart",
+          "title": "Overall (Copy)",
+          "layout": {
+            "x": 12,
+            "y": 10,
+            "w": 12,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 13,
+              "y": 10,
+              "w": 8,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 7,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        }
+      ],
+      "configFileName": "panel-options.json",
+      "dataFileName": "",
+      "isCodeDriven": false,
+      "libraryCode": "panel"
+    },
+    {
+      "id": "widget-1775376927369",
+      "category": "chart",
+      "title": "System Notice",
+      "layout": {
+        "x": 10,
+        "y": 31,
+        "w": 6,
+        "h": 6,
+        "zIndex": 1
+      },
+      "templateId": "1379",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 18,
+          "y": 0,
+          "w": 6,
+          "h": 23,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "system-notice-options.json",
+      "dataFileName": "system-notice-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "system-notice"
+    },
+    {
+      "id": "widget-1775382467678",
+      "category": "container",
+      "title": "Panel",
+      "layout": {
+        "x": 16,
+        "y": 25,
+        "w": 6,
+        "h": 4,
+        "zIndex": 1
+      },
+      "templateId": "1342",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 6,
+          "y": 11,
+          "w": 12,
+          "h": 3,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "children": [
+        {
+          "id": "widget-1773503505607",
+          "category": "chart",
+          "title": "KIPI",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "w": 8,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 2,
+              "y": 1,
+              "w": 15,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 0,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1773503524663",
+          "category": "chart",
+          "title": "Skill",
+          "layout": {
+            "x": 8,
+            "y": 0,
+            "w": 8,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 8,
+              "y": 1,
+              "w": 8,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 1,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        },
+        {
+          "id": "widget-1775290783744-fnr3x39wr",
+          "category": "chart",
+          "title": "Resilence (Copy)",
+          "layout": {
+            "x": 16,
+            "y": 0,
+            "w": 8,
+            "h": 3,
+            "zIndex": 1
+          },
+          "templateId": "1330",
+          "monitor": {
+            "gridPos": {
+              "x": 16,
+              "y": 0,
+              "w": 8,
+              "h": 3,
+              "zIndex": 0
+            },
+            "order": 0,
+            "flex": 1
+          },
+          "childSortOrder": 2,
+          "configFileName": "stat-options.json",
+          "dataFileName": "stat-data.json",
+          "isCodeDriven": false,
+          "libraryCode": "stat"
+        }
+      ],
+      "configFileName": "panel-options.json",
+      "dataFileName": "",
+      "isCodeDriven": false,
+      "libraryCode": "panel"
+    },
+    {
+      "id": "widget-1775382608386",
+      "category": "chart",
+      "title": "Gauge Basic chart",
+      "layout": {
+        "x": 12,
+        "y": 28,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "105",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 18,
+          "y": 29,
+          "w": 6,
+          "h": 8,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775382626791",
+      "category": "chart",
+      "title": "Pie Charts in Matrix",
+      "layout": {
+        "x": 5,
+        "y": 28,
+        "w": 6,
+        "h": 12,
+        "zIndex": 1
+      },
+      "templateId": "176",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 0,
+          "y": 28,
+          "w": 18,
+          "h": 14,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "echarts-options.json",
+      "dataFileName": "echarts-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "echarts"
+    }
+  ],
+  "templates": [],
+  "variables": [
+    {
+      "id": "var-1773452823214",
+      "name": "City",
+      "type": "custom",
+      "label": "",
+      "description": "",
+      "hide": 0,
+      "skipUrlSync": false,
+      "index": 0,
+      "query": "1",
+      "sort": 0,
+      "refresh": 0,
+      "options": [
+        {
+          "text": "1",
+          "value": "1",
+          "selected": false
+        }
+      ],
+      "current": {
+        "value": "",
+        "text": ""
+      },
+      "multi": false,
+      "includeAll": false
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-03-13T15:41:18.244Z",
+    "savedAt": "2026-04-05T09:53:37.287913Z",
+    "dbVersion": 2,
+    "isStale": false,
+    "revision": 1122,
+    "leaseId": "5686810a-0c38-4ed1-a394-1c4d7869ded0",
+    "leaseExpiresAt": "2026-04-05T10:03:37.264068Z",
+    "deletedWidgetIds": [
+      "widget-1773755665709-987tfgwnd",
+      "widget-1773755665709-l3ludyrwm",
+      "widget-1773755665709-6c4i4djbj",
+      "widget-1775274730406",
+      "widget-1775275589897-tyajkd8rt",
+      "widget-1775274956783",
+      "widget-1775278924194",
+      "widget-1775279089108",
+      "widget-1775274530162",
+      "widget-1775281396291",
+      "widget-1775281816112",
+      "widget-1775281844182",
+      "widget-1775282290544",
+      "widget-1775282372269",
+      "widget-1a00908b",
+      "widget-1775280843940",
+      "widget-1773756433465",
+      "widget-1775354448457",
+      "widget-1775354456086",
+      "widget-1775290665257-m7plqlz6l",
+      "widget-1773555831096-090nz1q3m",
+      "widget-1775290789241-st7vtx6ao",
+      "widget-1775290793498-6quxwp7wk",
+      "widget-1773503581760",
+      "widget-1775290251156"
+    ],
+    "persistedWidgetIds": [
+      "widget-1773755665709-cz4ftupor",
+      "widget-1773575574512",
+      "widget-1774194816706",
+      "widget-1775084306820",
+      "widget-1775279099867",
+      "widget-1775281850714",
+      "widget-1775282455084",
+      "widget-1775291002692-8czxkkjdb",
+      "widget-1775298453045",
+      "widget-1775299829248",
+      "widget-1775299994973",
+      "widget-1775358233207",
+      "widget-1775274104853-p9q3q10tr",
+      "widget-1775274110620-7ylqzns85",
+      "widget-1775274114653-yhqnp7epb",
+      "widget-1775274118178-79eplvhz2",
+      "widget-1775273240289-tj2mmdkh3",
+      "widget-1775273306195-z2wkdm4h2",
+      "widget-1775273325648-vnb98hh68",
+      "widget-1775273345367-yho7z9ahw",
+      "widget-1775376927369",
+      "widget-1775382467678",
+      "widget-1773503505607",
+      "widget-1773503524663",
+      "widget-1775290783744-fnr3x39wr",
+      "widget-1775382608386",
+      "widget-1775382626791"
+    ]
+  }
+}

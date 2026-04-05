@@ -8,7 +8,5 @@
   "fieldName": "avgPerformance",
   "displayName": " ",
   "titleSize": 17,
-  "valueSize": 40,
-  "showPercentChange": true,
-  "unit": "percent"
+  "valueSize": 54
 }

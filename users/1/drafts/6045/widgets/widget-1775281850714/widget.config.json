@@ -1,0 +1,37 @@
+{
+  "id": "widget-1775281850714",
+  "category": "chart",
+  "title": "geo choropleth scatter",
+  "layout": {
+    "x": 4,
+    "y": 5,
+    "w": 6,
+    "h": 12,
+    "zIndex": 1
+  },
+  "templateId": "107",
+  "dataSource": {
+    "type": "mock",
+    "config": {
+      "dataType": "timeseries",
+      "pointCount": 50
+    }
+  },
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 6,
+      "y": 3,
+      "w": 6,
+      "h": 8,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "echarts-options.json",
+  "dataFileName": "echarts-data.json",
+  "code": "// geo-choropleth-scatter - customScript\n// Fetches GeoJSON and registers map\n// EChartsRenderer interceptor automatically applies the data and option upon registration.\nfetch(\u0022/data/geo/iceland.geo.json\u0022, {signal: typeof abortSignal !== \u0027undefined\u0027 ? abortSignal : undefined})\n  .then(function(r){ return r.json(); })\n  .then(function(geoJson){\n    echarts.registerMap(\u0022iceland\u0022, geoJson);\n  })\n  .catch(function(e){ if (e.name !== \u0027AbortError\u0027) console.error(\u0027[geo-choropleth-scatter] GeoJSON load failed:\u0027, e); });",
+  "isCodeDriven": false,
+  "libraryCode": "echarts"
+}

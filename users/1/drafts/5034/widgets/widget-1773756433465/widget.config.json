@@ -1,6 +1,6 @@
 {
   "id": "widget-1773756433465",
-  "type": "chart",
+  "category": "chart",
   "title": "Basic area chart",
   "layout": {
     "x": 0,
@@ -18,10 +18,10 @@
     }
   },
   "monitor": {
-    "rowId": "row-1773476025810",
+    "rowId": "row-1773416401723",
     "gridPos": {
       "x": 0,
-      "y": 1,
+      "y": 20,
       "w": 6,
       "h": 12,
       "zIndex": 0

@@ -1,0 +1,14 @@
+{
+  "reducer": "last",
+  "colorMode": "background",
+  "graphMode": "area",
+  "justifyMode": "center",
+  "textMode": "auto",
+  "decimals": 2,
+  "fieldName": "avgSkill",
+  "displayName": " Skill",
+  "colorScheme": "greens",
+  "valueSize": 30,
+  "showPercentChange": true,
+  "unit": "percent"
+}

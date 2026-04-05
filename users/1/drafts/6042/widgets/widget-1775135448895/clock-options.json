@@ -1,0 +1,9 @@
+{
+  "timeFormat": "HH:mm:ss",
+  "showDate": false,
+  "fontSize": 48,
+  "fontWeight": "bold",
+  "textAlign": "center",
+  "fontColor": "#ffffff",
+  "backgroundColor": "transparent"
+}

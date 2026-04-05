@@ -1,0 +1,9 @@
+{
+  "timeFormat": "HH:mm:ss",
+  "showDate": true,
+  "dateFormat": "YYYY-MM-DD",
+  "fontSize": 36,
+  "textAlign": "center",
+  "fontColor": "#ffffff",
+  "backgroundColor": "transparent"
+}

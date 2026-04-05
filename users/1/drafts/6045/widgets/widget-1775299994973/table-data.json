@@ -1,0 +1,44 @@
+[
+  {
+    "fields": [
+      {
+        "name": "id",
+        "type": "number",
+        "values": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "values": [
+          "Item A",
+          "Item B",
+          "Item C"
+        ]
+      },
+      {
+        "name": "value",
+        "type": "number",
+        "values": [
+          100,
+          200,
+          300
+        ]
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "values": [
+          "Active",
+          "Pending",
+          "Complete"
+        ]
+      }
+    ],
+    "length": 3,
+    "name": "Sample Data"
+  }
+]
