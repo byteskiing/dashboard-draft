@@ -1,0 +1,47 @@
+{
+  "id": "widget-1775392984659",
+  "category": "chart",
+  "title": "Stat (Basic)",
+  "layout": {
+    "x": 3,
+    "y": 46,
+    "w": 2,
+    "h": 2,
+    "zIndex": 1
+  },
+  "templateId": "1330",
+  "dataSource": {
+    "type": "api",
+    "config": {
+      "url": "https://localhost:49603/api/v1/sbc/overview",
+      "method": "GET",
+      "headers": {}
+    },
+    "transformations": [
+      {
+        "id": "transform-1775392999410-a7rqwjg59",
+        "type": "custom",
+        "options": {
+          "scriptFile": "scripts/transform-transform-1775392999410-a7rqwjg59.js"
+        },
+        "disabled": false
+      }
+    ]
+  },
+  "monitor": {
+    "rowId": "row-1773416401723",
+    "gridPos": {
+      "x": 3,
+      "y": 46,
+      "w": 2,
+      "h": 2,
+      "zIndex": 0
+    },
+    "order": 0,
+    "flex": 1
+  },
+  "configFileName": "stat-options.json",
+  "dataFileName": "stat-data.json",
+  "isCodeDriven": false,
+  "libraryCode": "stat"
+}

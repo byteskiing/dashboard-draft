@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "widget-1773840798589",
   "type": "chart",
   "title": "Performance Metric Left",
@@ -19,13 +19,13 @@
   "templateId": "325",
   "content": {
     "panelType": "businesstext",
-    "content": "\u003Cdiv class=\u0022sbc-metric-left\u0022\u003E\u003Cdiv class=\u0022sbc-metric-left__head\u0022\u003E\u003Cdiv class=\u0022sbc-metric-left__title\u0022\u003E\u64CD\u4F5C\u7EE9\u6548\u6307\u6570\u003C/div\u003E\u003Cdiv class=\u0022sbc-metric-left__score\u0022\u003E{{formatNumber value 0}}\u5206\u003C/div\u003E\u003C/div\u003E\u003Cdiv class=\u0022sbc-metric-left__metrics\u0022\u003E\u003Cdiv class=\u0022sbc-metric-left__row\u0022\u003E\u003Cspan class=\u0022sbc-metric-left__label\u0022\u003ESBC\u6295\u7528\u7387\u003C/span\u003E\u003Cspan class=\u0022sbc-metric-left__value\u0022\u003E{{formatNumber tir 0}}%\u003C/span\u003E\u003C/div\u003E\u003Cdiv class=\u0022sbc-metric-left__row sbc-metric-left__row--alert\u0022\u003E\u003Cspan class=\u0022sbc-metric-left__label\u0022\u003E\u8FC7\u7A0B\u62A5\u8B66\u7387\u003C/span\u003E\u003Cspan class=\u0022sbc-metric-left__value\u0022\u003E{{formatNumber target 0}}\u6B21/h\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
+    "content": "<div class=\"sbc-metric-left\"><div class=\"sbc-metric-left__head\"><div class=\"sbc-metric-left__title\">操作绩效指数</div><div class=\"sbc-metric-left__score\">{{formatNumber value 0}}分</div></div><div class=\"sbc-metric-left__metrics\"><div class=\"sbc-metric-left__row\"><span class=\"sbc-metric-left__label\">SBC投用率</span><span class=\"sbc-metric-left__value\">{{formatNumber tir 0}}%</span></div><div class=\"sbc-metric-left__row sbc-metric-left__row--alert\"><span class=\"sbc-metric-left__label\">过程报警率</span><span class=\"sbc-metric-left__value\">{{formatNumber target 0}}次/h</span></div></div></div>",
     "contentMode": "handlebars",
     "renderMode": "everyRow",
-    "defaultContent": "\u003Cdiv class=\u0022sbc-metric-left\u0022\u003E\u003Cdiv class=\u0022sbc-metric-left__head\u0022\u003E\u003Cdiv class=\u0022sbc-metric-left__title\u0022\u003E\u64CD\u4F5C\u7EE9\u6548\u6307\u6570\u003C/div\u003E\u003Cdiv class=\u0022sbc-metric-left__score\u0022\u003E--\u5206\u003C/div\u003E\u003C/div\u003E\u003Cdiv class=\u0022sbc-metric-left__metrics\u0022\u003E\u003Cdiv class=\u0022sbc-metric-left__row\u0022\u003E\u003Cspan class=\u0022sbc-metric-left__label\u0022\u003ESBC\u6295\u7528\u7387\u003C/span\u003E\u003Cspan class=\u0022sbc-metric-left__value\u0022\u003E--\u003C/span\u003E\u003C/div\u003E\u003Cdiv class=\u0022sbc-metric-left__row sbc-metric-left__row--alert\u0022\u003E\u003Cspan class=\u0022sbc-metric-left__label\u0022\u003E\u8FC7\u7A0B\u62A5\u8B66\u7387\u003C/span\u003E\u003Cspan class=\u0022sbc-metric-left__value\u0022\u003E--\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E",
+    "defaultContent": "<div class=\"sbc-metric-left\"><div class=\"sbc-metric-left__head\"><div class=\"sbc-metric-left__title\">操作绩效指数</div><div class=\"sbc-metric-left__score\">--分</div></div><div class=\"sbc-metric-left__metrics\"><div class=\"sbc-metric-left__row\"><span class=\"sbc-metric-left__label\">SBC投用率</span><span class=\"sbc-metric-left__value\">--</span></div><div class=\"sbc-metric-left__row sbc-metric-left__row--alert\"><span class=\"sbc-metric-left__label\">过程报警率</span><span class=\"sbc-metric-left__value\">--</span></div></div></div>",
     "wrapInParagraphs": false,
     "helpers": [],
-    "styles": ".business-text { padding: 0; margin: 0; height: 100%; } .sbc-metric-left { height: 100%; box-sizing: border-box; padding: 0 8px 0 0; font-family: \u0027Segoe UI\u0027, \u0027Microsoft YaHei\u0027, sans-serif; color: #1E293B; } .sbc-metric-left__head { display: flex; align-items: center; justify-content: space-between; min-height: 76px; padding: 0 20px; border: 1px solid #0F5EA8; box-sizing: border-box; } .sbc-metric-left__title { font-size: 18px; line-height: 1.2; font-weight: 800; color: #0F172A; } .sbc-metric-left__score { font-size: 24px; line-height: 1; font-weight: 800; color: #64748B; white-space: nowrap; } .sbc-metric-left__metrics { margin-top: 18px; padding: 0 18px; } .sbc-metric-left__row { display: flex; align-items: center; justify-content: space-between; min-height: 54px; border-bottom: 1px solid #E9EFF6; } .sbc-metric-left__row--alert { border-bottom-color: #F9E0E0; } .sbc-metric-left__label { font-size: 17px; font-weight: 500; color: #475569; } .sbc-metric-left__row--alert .sbc-metric-left__label { color: #EF4444; font-weight: 700; } .sbc-metric-left__value { font-size: 18px; font-weight: 700; color: #0F172A; } .sbc-metric-left__row--alert .sbc-metric-left__value { color: #EF4444; }",
+    "styles": ".business-text { padding: 0; margin: 0; height: 100%; } .sbc-metric-left { height: 100%; box-sizing: border-box; padding: 0 8px 0 0; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; color: #1E293B; } .sbc-metric-left__head { display: flex; align-items: center; justify-content: space-between; min-height: 76px; padding: 0 20px; border: 1px solid #0F5EA8; box-sizing: border-box; } .sbc-metric-left__title { font-size: 18px; line-height: 1.2; font-weight: 800; color: #0F172A; } .sbc-metric-left__score { font-size: 24px; line-height: 1; font-weight: 800; color: #64748B; white-space: nowrap; } .sbc-metric-left__metrics { margin-top: 18px; padding: 0 18px; } .sbc-metric-left__row { display: flex; align-items: center; justify-content: space-between; min-height: 54px; border-bottom: 1px solid #E9EFF6; } .sbc-metric-left__row--alert { border-bottom-color: #F9E0E0; } .sbc-metric-left__label { font-size: 17px; font-weight: 500; color: #475569; } .sbc-metric-left__row--alert .sbc-metric-left__label { color: #EF4444; font-weight: 700; } .sbc-metric-left__value { font-size: 18px; font-weight: 700; color: #0F172A; } .sbc-metric-left__row--alert .sbc-metric-left__value { color: #EF4444; }",
     "formatting": "disabled"
   },
   "dataSource": {
@@ -40,7 +40,7 @@
         "id": "transform-performance-metric-left",
         "type": "custom",
         "options": {
-          "scriptFile": "transform-transform-performance-metric-left.js"
+          "scriptFile": "scripts/transform-transform-performance-metric-left.js"
         },
         "disabled": false
       }

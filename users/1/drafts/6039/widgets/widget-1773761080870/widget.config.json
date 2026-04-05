@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "widget-1773761080870",
   "type": "chart",
   "title": "State History Log",
@@ -19,18 +19,18 @@
   "templateId": "325",
   "content": {
     "panelType": "businesstext",
-    "content": "\u003Cdiv class=\u0022sbc-history-log\u0022\u003E\u003Cdiv class=\u0022sbc-history-log__title\u0022\u003E\u5386\u53F2\u72B6\u6001\u5207\u6362\u65E5\u5FD7\u003C/div\u003E\u003Cdiv class=\u0022sbc-history-log__list\u0022\u003E{{#each (json events)}}\u003Cdiv class=\u0022sbc-history-log__item\u0022\u003E\u003Cdiv class=\u0022sbc-history-log__time\u0022\u003E\u003Cdiv class=\u0022sbc-history-log__date\u0022\u003E{{dateLabel}}\u003C/div\u003E\u003Cdiv class=\u0022sbc-history-log__clock\u0022\u003E{{timeLabel}}\u003C/div\u003E\u003C/div\u003E\u003Cdiv class=\u0022sbc-history-log__rail\u0022\u003E\u003Cdiv class=\u0022sbc-history-log__dot\u0022 style=\u0022background:{{dotColor}};\u0022\u003E\u003C/div\u003E{{#unless @last}}\u003Cdiv class=\u0022sbc-history-log__line\u0022\u003E\u003C/div\u003E{{/unless}}\u003C/div\u003E\u003Cdiv class=\u0022sbc-history-log__body\u0022\u003E\u003Cdiv class=\u0022sbc-history-log__event\u0022\u003E{{event}}\u003C/div\u003E{{#if detail}}\u003Cdiv class=\u0022sbc-history-log__detail\u0022\u003E{{detail}}\u003C/div\u003E{{/if}}\u003C/div\u003E\u003C/div\u003E{{/each}}\u003C/div\u003E\u003C/div\u003E",
+    "content": "<div class=\"sbc-history-log\"><div class=\"sbc-history-log__title\">历史状态切换日志</div><div class=\"sbc-history-log__list\">{{#each (json events)}}<div class=\"sbc-history-log__item\"><div class=\"sbc-history-log__time\"><div class=\"sbc-history-log__date\">{{dateLabel}}</div><div class=\"sbc-history-log__clock\">{{timeLabel}}</div></div><div class=\"sbc-history-log__rail\"><div class=\"sbc-history-log__dot\" style=\"background:{{dotColor}};\"></div>{{#unless @last}}<div class=\"sbc-history-log__line\"></div>{{/unless}}</div><div class=\"sbc-history-log__body\"><div class=\"sbc-history-log__event\">{{event}}</div>{{#if detail}}<div class=\"sbc-history-log__detail\">{{detail}}</div>{{/if}}</div></div>{{/each}}</div></div>",
     "contentMode": "handlebars",
     "renderMode": "everyRow",
-    "defaultContent": "\u003Cdiv class=\u0022sbc-history-log sbc-history-log--loading\u0022\u003E\u003Cdiv class=\u0022sbc-history-log__title\u0022\u003E\u5386\u53F2\u72B6\u6001\u5207\u6362\u65E5\u5FD7\u003C/div\u003E\u003Cdiv class=\u0022sbc-history-log__empty\u0022\u003E\u52A0\u8F7D\u4E2D...\u003C/div\u003E\u003C/div\u003E",
+    "defaultContent": "<div class=\"sbc-history-log sbc-history-log--loading\"><div class=\"sbc-history-log__title\">历史状态切换日志</div><div class=\"sbc-history-log__empty\">加载中...</div></div>",
     "wrapInParagraphs": false,
     "helpers": [
       {
         "name": "json",
-        "code": "function(val){ try { return JSON.parse(val || \u0027[]\u0027); } catch (e) { return []; } }"
+        "code": "function(val){ try { return JSON.parse(val || '[]'); } catch (e) { return []; } }"
       }
     ],
-    "styles": ".business-text { padding: 0; margin: 0; height: 100%; } .sbc-history-log { height: 100%; box-sizing: border-box; padding: 14px 18px 10px 14px; font-family: \u0027Segoe UI\u0027, \u0027Microsoft YaHei\u0027, sans-serif; color: #0F172A; overflow: hidden; } .sbc-history-log__title { font-size: 13px; font-weight: 700; color: #1E293B; margin: 0 0 10px 0; } .sbc-history-log__list { height: calc(100% - 24px); overflow-y: auto; padding-right: 4px; } .sbc-history-log__item { display: grid; grid-template-columns: 56px 18px minmax(0, 1fr); column-gap: 10px; align-items: start; min-height: 60px; } .sbc-history-log__time { padding-top: 1px; text-align: right; } .sbc-history-log__date, .sbc-history-log__clock { font-size: 11px; font-weight: 700; color: #A3B3C7; line-height: 1.1; } .sbc-history-log__clock { margin-top: 3px; } .sbc-history-log__rail { display: flex; flex-direction: column; align-items: center; min-height: 60px; } .sbc-history-log__dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 3px; flex-shrink: 0; box-shadow: 0 0 0 2px #FFFFFF; } .sbc-history-log__line { width: 1px; flex: 1; min-height: 40px; margin-top: 4px; background: #E2E8F0; } .sbc-history-log__body { padding: 0 0 14px 10px; border-left: 1px solid rgba(226, 232, 240, 0.55); } .sbc-history-log__event { font-size: 13px; font-weight: 700; color: #1E293B; line-height: 1.3; } .sbc-history-log__detail { margin-top: 8px; font-size: 11px; font-weight: 600; color: #B6C2D2; line-height: 1.35; } .sbc-history-log__empty { font-size: 12px; color: #94A3B8; padding: 8px 0 0 0; }",
+    "styles": ".business-text { padding: 0; margin: 0; height: 100%; } .sbc-history-log { height: 100%; box-sizing: border-box; padding: 14px 18px 10px 14px; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; color: #0F172A; overflow: hidden; } .sbc-history-log__title { font-size: 13px; font-weight: 700; color: #1E293B; margin: 0 0 10px 0; } .sbc-history-log__list { height: calc(100% - 24px); overflow-y: auto; padding-right: 4px; } .sbc-history-log__item { display: grid; grid-template-columns: 56px 18px minmax(0, 1fr); column-gap: 10px; align-items: start; min-height: 60px; } .sbc-history-log__time { padding-top: 1px; text-align: right; } .sbc-history-log__date, .sbc-history-log__clock { font-size: 11px; font-weight: 700; color: #A3B3C7; line-height: 1.1; } .sbc-history-log__clock { margin-top: 3px; } .sbc-history-log__rail { display: flex; flex-direction: column; align-items: center; min-height: 60px; } .sbc-history-log__dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 3px; flex-shrink: 0; box-shadow: 0 0 0 2px #FFFFFF; } .sbc-history-log__line { width: 1px; flex: 1; min-height: 40px; margin-top: 4px; background: #E2E8F0; } .sbc-history-log__body { padding: 0 0 14px 10px; border-left: 1px solid rgba(226, 232, 240, 0.55); } .sbc-history-log__event { font-size: 13px; font-weight: 700; color: #1E293B; line-height: 1.3; } .sbc-history-log__detail { margin-top: 8px; font-size: 11px; font-weight: 600; color: #B6C2D2; line-height: 1.35; } .sbc-history-log__empty { font-size: 12px; color: #94A3B8; padding: 8px 0 0 0; }",
     "formatting": "disabled"
   },
   "dataSource": {
@@ -45,7 +45,7 @@
         "id": "transform-state-history-log",
         "type": "custom",
         "options": {
-          "scriptFile": "transform-transform-state-history-log.js"
+          "scriptFile": "scripts/transform-transform-state-history-log.js"
         },
         "disabled": false
       }

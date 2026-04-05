@@ -1,12 +1,12 @@
 {
   "panelType": "businesstext",
-  "content": "\u003Cdiv class=\u0022sbc-kpi-list\u0022\u003E{{#each data}}\u003Cdiv class=\u0022sbc-kpi-row\u0022\u003E\u003Cdiv class=\u0022sbc-kpi-label\u0022\u003E{{label}}\u003C/div\u003E\u003Cdiv class=\u0022sbc-kpi-meta\u0022\u003E\u003Cspan class=\u0022sbc-kpi-value sbc-kpi-value--{{tone}}\u0022\u003E{{score}}\u003C/span\u003E\u003Cspan class=\u0022sbc-kpi-target\u0022\u003E{{target}}\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E{{/each}}\u003C/div\u003E",
   "contentMode": "handlebars",
   "renderMode": "allRows",
-  "defaultContent": "No KPI data available",
-  "styles": ".sbc-kpi-list { display: flex; flex-direction: column; gap: 8px; padding: 0; font-family: \u0027Segoe UI\u0027, \u0027Microsoft YaHei\u0027, sans-serif; } .sbc-kpi-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: baseline; column-gap: 10px; min-height: 26px; } .sbc-kpi-label { color: #64748b; font-size: 12px; font-weight: 600; letter-spacing: 0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .sbc-kpi-meta { display: contents; } .sbc-kpi-value { font-size: 15px; line-height: 1; font-weight: 700; color: #475569; white-space: nowrap; } .sbc-kpi-value--normal { color: #64748b; } .sbc-kpi-value--warn { color: #d97706; } .sbc-kpi-value--good { color: #2563eb; } .sbc-kpi-target { color: #94a3b8; font-size: 11px; font-weight: 600; white-space: nowrap; }",
   "wrapInParagraphs": false,
   "helpers": [],
   "formatting": "disabled",
-  "padding": 19
+  "padding": 19,
+  "contentFile": "assets/content.html",
+  "defaultContentFile": "assets/defaultcontent.html",
+  "stylesFile": "assets/styles.css"
 }

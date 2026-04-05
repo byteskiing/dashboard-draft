@@ -905,6 +905,35 @@
       "dataFileName": "echarts-data.json",
       "isCodeDriven": false,
       "libraryCode": "echarts"
+    },
+    {
+      "id": "widget-1775392984659",
+      "category": "chart",
+      "title": "Stat (Basic)",
+      "layout": {
+        "x": 3,
+        "y": 46,
+        "w": 2,
+        "h": 2,
+        "zIndex": 1
+      },
+      "templateId": "1330",
+      "monitor": {
+        "rowId": "row-1773416401723",
+        "gridPos": {
+          "x": 3,
+          "y": 46,
+          "w": 2,
+          "h": 2,
+          "zIndex": 0
+        },
+        "order": 0,
+        "flex": 1
+      },
+      "configFileName": "stat-options.json",
+      "dataFileName": "stat-data.json",
+      "isCodeDriven": false,
+      "libraryCode": "stat"
     }
   ],
   "templates": [],
@@ -938,12 +967,12 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-04-05T09:53:37.287913Z",
+    "savedAt": "2026-04-05T12:47:37.2037372Z",
     "dbVersion": 2,
     "isStale": false,
-    "revision": 1122,
-    "leaseId": "5686810a-0c38-4ed1-a394-1c4d7869ded0",
-    "leaseExpiresAt": "2026-04-05T10:03:37.264068Z",
+    "revision": 1128,
+    "leaseId": "de1c2821-8ce5-4c86-b147-06e8d0956e7f",
+    "leaseExpiresAt": "2026-04-05T12:57:37.150468Z",
     "deletedWidgetIds": [
       "widget-1773755665709-987tfgwnd",
       "widget-1773755665709-l3ludyrwm",
@@ -998,7 +1027,8 @@
       "widget-1773503524663",
       "widget-1775290783744-fnr3x39wr",
       "widget-1775382608386",
-      "widget-1775382626791"
+      "widget-1775382626791",
+      "widget-1775392984659"
     ]
   }
 }

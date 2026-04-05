@@ -34,7 +34,7 @@
         "id": "transform-performance-trend",
         "type": "custom",
         "options": {
-          "scriptFile": "transform-transform-performance-trend.js"
+          "scriptFile": "scripts/transform-transform-performance-trend.js"
         },
         "disabled": false
       }
