@@ -254,7 +254,17 @@
             "h": 10,
             "zIndex": 0
           },
+          "style": {
+            "showTitle": false
+          },
           "templateId": "143",
+          "dataSource": {
+            "type": "mock",
+            "config": {
+              "dataType": "timeseries",
+              "pointCount": 50
+            }
+          },
           "monitor": {
             "rowId": "",
             "gridPos": {
@@ -282,7 +292,43 @@
             "h": 4,
             "zIndex": 0
           },
+          "style": {
+            "showTitle": false
+          },
           "templateId": "325",
+          "content": {
+            "panelType": "businesstext",
+            "contentMode": "handlebars",
+            "renderMode": "allRows",
+            "wrapInParagraphs": false,
+            "helpers": [],
+            "formatting": "disabled",
+            "contentFile": "assets/content-content.html",
+            "defaultContentFile": "assets/content-defaultcontent.html",
+            "stylesFile": "assets/content-styles.css",
+            "content": "\u003Cdiv class=\u0022sbc-kpi-list\u0022\u003E{{#each data}}\u003Cdiv class=\u0022sbc-kpi-row\u0022\u003E\u003Cdiv class=\u0022sbc-kpi-label\u0022\u003E{{label}}\u003C/div\u003E\u003Cdiv class=\u0022sbc-kpi-meta\u0022\u003E\u003Cspan class=\u0022sbc-kpi-value sbc-kpi-value--{{tone}}\u0022\u003E{{score}}\u003C/span\u003E\u003Cspan class=\u0022sbc-kpi-target\u0022\u003E{{target}}\u003C/span\u003E\u003C/div\u003E\u003C/div\u003E{{/each}}\u003C/div\u003E",
+            "defaultContent": "No KPI data available",
+            "styles": ".sbc-kpi-list { display: flex; flex-direction: column; gap: 8px; padding: 0; font-family: \u0027Segoe UI\u0027, \u0027Microsoft YaHei\u0027, sans-serif; } .sbc-kpi-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: baseline; column-gap: 10px; min-height: 26px; } .sbc-kpi-label { color: #64748b; font-size: 12px; font-weight: 600; letter-spacing: 0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .sbc-kpi-meta { display: contents; } .sbc-kpi-value { font-size: 15px; line-height: 1; font-weight: 700; color: #475569; white-space: nowrap; } .sbc-kpi-value--normal { color: #64748b; } .sbc-kpi-value--warn { color: #d97706; } .sbc-kpi-value--good { color: #2563eb; } .sbc-kpi-target { color: #94a3b8; font-size: 11px; font-weight: 600; white-space: nowrap; }"
+          },
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/plants",
+              "method": "GET",
+              "mapperKey": "rows"
+            },
+            "transformations": [
+              {
+                "id": "transform-plant-kpis",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-plant-kpis.js",
+                  "code": "// Plant KPI transform \u2014 PlantSummaryDto[] -\u003E 3 compact rows for Business Text allRows mode.\r\n// Supports two input shapes:\n// 1. DataFrame rows: frames[0].fields -\u003E toRows(frames[0])\n// 2. Passthrough row arrays: frames === PlantSummaryDto[]\n\nconst looksLikePlantRow = (item) =\u003E item \u0026\u0026 typeof item === \u0027object\u0027 \u0026\u0026 (\n  \u0027plantId\u0027 in item || \u0027performance\u0027 in item || \u0027resilience\u0027 in item || \u0027skill\u0027 in item\n);\n\nconst plants = Array.isArray(frames) \u0026\u0026 frames[0]?.fields?.length\n  ? toRows(frames[0])\n  : (Array.isArray(frames) \u0026\u0026 frames.every(looksLikePlantRow) ? frames : []);\n\r\nconst normalizedPlants = plants.filter((item) =\u003E item \u0026\u0026 typeof item === \u0027object\u0027);\r\n\r\nif (normalizedPlants.length === 0) {\r\n  return [\r\n    {\r\n      name: \u0027PlantKpis\u0027,\r\n      fields: [\r\n        { name: \u0027label\u0027, type: \u0027string\u0027, config: {}, values: [] },\r\n        { name: \u0027score\u0027, type: \u0027string\u0027, config: {}, values: [] },\r\n        { name: \u0027target\u0027, type: \u0027string\u0027, config: {}, values: [] },\r\n        { name: \u0027tone\u0027, type: \u0027string\u0027, config: {}, values: [] }\r\n      ],\r\n      length: 0\r\n    }\r\n  ];\r\n}\r\n\r\nconst preferredPlant =\r\n  normalizedPlants.find((item) =\u003E String(item.plantId ?? \u0027\u0027).toLowerCase() === \u0027ethylene\u0027) ?? normalizedPlants[0];\r\n\r\nconst toScore = (value) =\u003E {\r\n  const numberValue = Number(value ?? 0);\r\n  return Number.isFinite(numberValue) ? numberValue.toFixed(1) : \u00270.0\u0027;\r\n};\r\n\r\nconst toneFor = (value) =\u003E {\r\n  const numberValue = Number(value ?? 0);\r\n  if (numberValue \u003E= 90) return \u0027good\u0027;\r\n  if (numberValue \u003E= 80) return \u0027warn\u0027;\r\n  return \u0027normal\u0027;\r\n};\r\n\r\nreturn [\r\n  {\r\n    name: \u0027PlantKpis\u0027,\r\n    fields: [\r\n      { name: \u0027label\u0027, type: \u0027string\u0027, config: {}, values: [\u0027\u64CD\u4F5C\u7EE9\u6548\u0027, \u0027\u64CD\u4F5C\u5F39\u6027\u0027, \u0027\u64CD\u4F5C\u6280\u80FD\u0027] },\r\n      {\r\n        name: \u0027score\u0027,\r\n        type: \u0027string\u0027,\r\n        config: {},\r\n        values: [\r\n          toScore(preferredPlant.performance),\r\n          toScore(preferredPlant.resilience),\r\n          toScore(preferredPlant.skill)\r\n        ]\r\n      },\r\n      { name: \u0027target\u0027, type: \u0027string\u0027, config: {}, values: [\u0027\u003E85\u5206\u0027, \u0027\u003E80\u5206\u0027, \u0027\u003E85\u5206\u0027] },\r\n      {\r\n        name: \u0027tone\u0027,\r\n        type: \u0027string\u0027,\r\n        config: {},\r\n        values: [\r\n          toneFor(preferredPlant.performance),\r\n          toneFor(preferredPlant.resilience),\r\n          toneFor(preferredPlant.skill)\r\n        ]\r\n      }\r\n    ],\r\n    length: 3\r\n  }\r\n];\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "rowId": "",
             "gridPos": {
@@ -312,7 +358,17 @@
             "h": 8,
             "zIndex": 0
           },
+          "style": {
+            "showTitle": false
+          },
           "templateId": "214",
+          "dataSource": {
+            "type": "mock",
+            "config": {
+              "dataType": "timeseries",
+              "pointCount": 50
+            }
+          },
           "monitor": {
             "rowId": "",
             "gridPos": {
@@ -508,25 +564,13 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-04-03T15:35:55.2250626Z",
-    "dbVersion": 1,
+    "savedAt": "2026-04-19T11:52:17.4719092Z",
+    "dbVersion": 3,
     "isStale": false,
-    "revision": 278,
-    "leaseId": "0f338e61-457c-4bb3-aa54-c506b4a34a76",
-    "leaseExpiresAt": "2026-04-03T15:45:55.202298Z",
-    "deletedWidgetIds": [
-      "widget-1774073482028",
-      "widget-1774050442931",
-      "widget-1773755665709-99wo69she",
-      "widget-1774108659142",
-      "widget-1773756415364",
-      "widget-1775012623321",
-      "widget-1775012667042-2ks9yfusm",
-      "widget-1775012667042-ww38ayvtd",
-      "widget-1775012667042-nexh0g3hk",
-      "widget-1775012667042-n0x2ksyqb",
-      "widget-1775229468020-kzwjsby2n"
-    ],
+    "revision": 283,
+    "leaseId": "7425f247-e802-4a83-820b-6548a9efc3b7",
+    "leaseExpiresAt": "2026-04-19T12:02:17.0850172Z",
+    "deletedWidgetIds": [],
     "persistedWidgetIds": [
       "widget-1773503505607",
       "widget-1773503524663",

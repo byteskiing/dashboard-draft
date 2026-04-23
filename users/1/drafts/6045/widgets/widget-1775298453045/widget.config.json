@@ -9,6 +9,9 @@
     "h": 8,
     "zIndex": 1
   },
+  "style": {
+    "showTitle": false
+  },
   "templateId": "1374",
   "dataSource": {
     "type": "mock",

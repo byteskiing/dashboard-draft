@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "./draft-schema.json",
   "version": "1.0",
   "dashboard": {
@@ -45,7 +45,7 @@
   "widgets": [
     {
       "id": "widget-1773842860720",
-      "type": "chart",
+      "category": "chart",
       "title": "\u88C5\u7F6E\u7EE9\u6548\u5747\u503C",
       "layout": {
         "x": 2,
@@ -59,7 +59,7 @@
         "gridPos": {
           "x": 0,
           "y": 0,
-          "w": 4,
+          "w": 6,
           "h": 3,
           "zIndex": 0
         },
@@ -73,7 +73,7 @@
     },
     {
       "id": "widget-1773842894207",
-      "type": "chart",
+      "category": "static",
       "title": "\u5355\u5143\u6027\u80FD\u770B\u677F",
       "layout": {
         "x": 0,
@@ -101,7 +101,7 @@
     },
     {
       "id": "widget-1773844119003",
-      "type": "chart",
+      "category": "container",
       "title": "U-101\u538B\u7F29\u5355\u5143",
       "layout": {
         "x": 0,
@@ -114,7 +114,7 @@
       "monitor": {
         "gridPos": {
           "x": 0,
-          "y": 6,
+          "y": 5,
           "w": 23,
           "h": 14,
           "zIndex": 0
@@ -125,7 +125,7 @@
       "children": [
         {
           "id": "widget-1773844529933",
-          "type": "chart",
+          "category": "chart",
           "title": "\u7EFC\u5408\u8BC4\u5206\u96F7\u8FBE",
           "layout": {
             "x": 17,
@@ -134,7 +134,21 @@
             "h": 12,
             "zIndex": 0
           },
+          "style": {
+            "theme": "light",
+            "backgroundColor": "transparent",
+            "borderColor": "transparent",
+            "borderWidth": 0,
+            "padding": 0
+          },
           "templateId": "214",
+          "dataSource": {
+            "type": "mock",
+            "config": {
+              "dataType": "timeseries",
+              "pointCount": 50
+            }
+          },
           "monitor": {
             "gridPos": {
               "x": 17,
@@ -146,6 +160,7 @@
             "order": 0,
             "flex": 1
           },
+          "childSortOrder": 0,
           "configFileName": "echarts-options.json",
           "dataFileName": "echarts-data.json",
           "isCodeDriven": false,
@@ -153,7 +168,7 @@
         },
         {
           "id": "widget-1773844543876",
-          "type": "chart",
+          "category": "chart",
           "title": "\u7EE9\u6548\u8D8B\u52BF",
           "layout": {
             "x": 1,
@@ -162,7 +177,21 @@
             "h": 8,
             "zIndex": 0
           },
+          "style": {
+            "theme": "light",
+            "backgroundColor": "transparent",
+            "borderColor": "transparent",
+            "borderWidth": 0,
+            "padding": 0
+          },
           "templateId": "151",
+          "dataSource": {
+            "type": "mock",
+            "config": {
+              "dataType": "timeseries",
+              "pointCount": 50
+            }
+          },
           "monitor": {
             "gridPos": {
               "x": 1,
@@ -174,6 +203,7 @@
             "order": 0,
             "flex": 1
           },
+          "childSortOrder": 1,
           "configFileName": "echarts-options.json",
           "dataFileName": "echarts-data.json",
           "isCodeDriven": false,
@@ -181,7 +211,7 @@
         },
         {
           "id": "widget-1773844517331",
-          "type": "chart",
+          "category": "chart",
           "title": "\u5355\u5143\u7EE9\u6548\u6458\u8981",
           "layout": {
             "x": 1,
@@ -190,7 +220,21 @@
             "h": 10,
             "zIndex": 0
           },
+          "style": {
+            "theme": "light",
+            "backgroundColor": "transparent",
+            "borderColor": "transparent",
+            "borderWidth": 0,
+            "padding": 0
+          },
           "templateId": "325",
+          "dataSource": {
+            "type": "mock",
+            "config": {
+              "dataType": "timeseries",
+              "pointCount": 50
+            }
+          },
           "monitor": {
             "gridPos": {
               "x": 3,
@@ -202,6 +246,7 @@
             "order": 0,
             "flex": 1
           },
+          "childSortOrder": 2,
           "configFileName": "grafana-businesstext-options.json",
           "dataFileName": "grafana-businesstext-data.json",
           "isCodeDriven": false,
@@ -218,8 +263,20 @@
   "variables": [],
   "metadata": {
     "createdAt": "2026-03-17T14:30:25.36Z",
-    "savedAt": "2026-03-18T15:21:23.0750466Z",
-    "dbVersion": 1,
-    "isStale": false
+    "savedAt": "2026-04-19T11:53:11.4951994Z",
+    "dbVersion": 2,
+    "isStale": false,
+    "revision": 3,
+    "leaseId": "e377708d-bb44-43b4-9e48-c18b81b7f37d",
+    "leaseExpiresAt": "2026-04-19T12:03:11.4386453Z",
+    "deletedWidgetIds": [],
+    "persistedWidgetIds": [
+      "widget-1773842860720",
+      "widget-1773842894207",
+      "widget-1773844119003",
+      "widget-1773844529933",
+      "widget-1773844543876",
+      "widget-1773844517331"
+    ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "id": "widget-1773842860720",
-  "type": "chart",
+  "category": "chart",
   "title": "\u88C5\u7F6E\u7EE9\u6548\u5747\u503C",
   "layout": {
     "x": 2,
@@ -29,7 +29,7 @@
     "gridPos": {
       "x": 0,
       "y": 0,
-      "w": 4,
+      "w": 6,
       "h": 3,
       "zIndex": 0
     },

@@ -1,6 +1,6 @@
 {
   "id": "widget-1773844119003",
-  "type": "chart",
+  "category": "container",
   "title": "U-101\u538B\u7F29\u5355\u5143",
   "layout": {
     "x": 0,
@@ -28,7 +28,7 @@
   "monitor": {
     "gridPos": {
       "x": 0,
-      "y": 6,
+      "y": 5,
       "w": 23,
       "h": 14,
       "zIndex": 0

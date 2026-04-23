@@ -15,14 +15,14 @@
   "templateId": "325",
   "content": {
     "panelType": "businesstext",
-    "content": "<div class=\"sbc-kpi-list\">{{#each data}}<div class=\"sbc-kpi-row\"><div class=\"sbc-kpi-label\">{{label}}</div><div class=\"sbc-kpi-meta\"><span class=\"sbc-kpi-value sbc-kpi-value--{{tone}}\">{{score}}</span><span class=\"sbc-kpi-target\">{{target}}</span></div></div>{{/each}}</div>",
     "contentMode": "handlebars",
     "renderMode": "allRows",
-    "defaultContent": "No KPI data available",
     "wrapInParagraphs": false,
     "helpers": [],
-    "styles": ".sbc-kpi-list { display: flex; flex-direction: column; gap: 8px; padding: 0; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; } .sbc-kpi-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: baseline; column-gap: 10px; min-height: 26px; } .sbc-kpi-label { color: #64748b; font-size: 12px; font-weight: 600; letter-spacing: 0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .sbc-kpi-meta { display: contents; } .sbc-kpi-value { font-size: 15px; line-height: 1; font-weight: 700; color: #475569; white-space: nowrap; } .sbc-kpi-value--normal { color: #64748b; } .sbc-kpi-value--warn { color: #d97706; } .sbc-kpi-value--good { color: #2563eb; } .sbc-kpi-target { color: #94a3b8; font-size: 11px; font-weight: 600; white-space: nowrap; }",
-    "formatting": "disabled"
+    "formatting": "disabled",
+    "contentFile": "assets/content-content.html",
+    "defaultContentFile": "assets/content-defaultcontent.html",
+    "stylesFile": "assets/content-styles.css"
   },
   "dataSource": {
     "type": "api",

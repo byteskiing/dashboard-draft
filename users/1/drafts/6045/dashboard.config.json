@@ -224,7 +224,7 @@
           "x": 5,
           "y": 14,
           "w": 13,
-          "h": 7,
+          "h": 10,
           "zIndex": 0
         },
         "order": 0,
@@ -323,35 +323,6 @@
       "libraryCode": "echarts"
     },
     {
-      "id": "widget-1775291002692-8czxkkjdb",
-      "category": "chart",
-      "title": "Power",
-      "layout": {
-        "x": 5,
-        "y": 7,
-        "w": 6,
-        "h": 12,
-        "zIndex": 1
-      },
-      "templateId": "7",
-      "monitor": {
-        "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 0,
-          "y": 22,
-          "w": 5,
-          "h": 6,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "echarts-options.json",
-      "dataFileName": "echarts-data.json",
-      "isCodeDriven": false,
-      "libraryCode": "echarts"
-    },
-    {
       "id": "widget-1775298453045",
       "category": "chart",
       "title": "Bar gauge",
@@ -395,8 +366,8 @@
       "monitor": {
         "rowId": "row-1773416401723",
         "gridPos": {
-          "x": 5,
-          "y": 21,
+          "x": 0,
+          "y": 24,
           "w": 13,
           "h": 7,
           "zIndex": 0
@@ -474,7 +445,32 @@
             "h": 4,
             "zIndex": 1
           },
+          "style": {
+            "backgroundOpacity": 0.3,
+            "borderWidth": 0,
+            "showTitle": true
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 14,
@@ -503,7 +499,32 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "backgroundOpacity": 0.3,
+            "borderWidth": 0,
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 1,
@@ -532,7 +553,32 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "backgroundOpacity": 0.3,
+            "borderWidth": 0,
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 2,
@@ -561,7 +607,32 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "backgroundOpacity": 0.3,
+            "borderWidth": 0,
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 1,
@@ -590,7 +661,32 @@
             "h": 4,
             "zIndex": 1
           },
+          "style": {
+            "backgroundOpacity": 0.3,
+            "borderWidth": 0,
+            "showTitle": true
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 10,
@@ -619,7 +715,30 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\r\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 13,
@@ -648,7 +767,31 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "borderColor": "#106bea",
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\r\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 12,
@@ -677,7 +820,30 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\r\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 13,
@@ -766,7 +932,32 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "backgroundOpacity": 0.3,
+            "borderWidth": 0,
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 2,
@@ -795,7 +986,31 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "borderColor": "#106bea",
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\r\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 8,
@@ -824,7 +1039,30 @@
             "h": 3,
             "zIndex": 1
           },
+          "style": {
+            "showTitle": false
+          },
           "templateId": "1330",
+          "dataSource": {
+            "type": "api",
+            "config": {
+              "url": "https://localhost:49603/api/v1/sbc/overview",
+              "method": "GET",
+              "mapperKey": "object",
+              "headers": {}
+            },
+            "transformations": [
+              {
+                "id": "transform-1773574180435-6b15ffz1a",
+                "type": "custom",
+                "options": {
+                  "scriptFile": "scripts/transform-transform-1773574180435-6b15ffz1a.js",
+                  "code": "const frame = frames?.[0];\nconst apiData = (() =\u003E {\n  if (!frame || !Array.isArray(frame.fields) || frame.fields.length === 0) {\n    return null;\n  }\n\n  const wrappedValue = frame.fields[0]?.name === \u0027data\u0027\n    ? frame.fields[0]?.values?.[0]\n    : null;\n\n  if (wrappedValue \u0026\u0026 typeof wrappedValue === \u0027object\u0027 \u0026\u0026 !Array.isArray(wrappedValue)) {\n    return wrappedValue;\n  }\n\n  if (frame.length === 1) {\n    return frame.fields.reduce((result, field) =\u003E {\n      if (!field?.name || !Array.isArray(field.values)) {\n        return result;\n      }\n\n      result[field.name] = field.values[0];\n      return result;\n    }, {});\n  }\n\n  return null;\n})();\n\nif (!apiData || typeof apiData !== \u0027object\u0027) {\n  return frames;\n}\n\r\nconst toSeries = (trendKey, valueKey) =\u003E {\r\n  const trend = Array.isArray(apiData[trendKey])\r\n    ? apiData[trendKey].map((value) =\u003E Number(value ?? 0)).filter((value) =\u003E Number.isFinite(value))\r\n    : [];\r\n\r\n  if (trend.length \u003E 0) {\r\n    return trend;\r\n  }\r\n\r\n  return [Number(apiData[valueKey] ?? 0)];\r\n};\r\n\r\nconst performanceSeries = toSeries(\u0027avgPerformanceTrend\u0027, \u0027avgPerformance\u0027);\r\nconst resilienceSeries = toSeries(\u0027avgResilienceTrend\u0027, \u0027avgResilience\u0027);\r\nconst skillSeries = toSeries(\u0027avgSkillTrend\u0027, \u0027avgSkill\u0027);\r\nconst overallSeries = toSeries(\u0027avgOverallScoreTrend\u0027, \u0027avgOverallScore\u0027);\r\n\r\nconst maxLength = Math.max(\r\n  performanceSeries.length,\r\n  resilienceSeries.length,\r\n  skillSeries.length,\r\n  overallSeries.length,\r\n  1\r\n);\r\n\r\nreturn [\r\n  {\r\n    name: \u0027SBC Overview\u0027,\r\n    fields: [\r\n      {\r\n        name: \u0027avgPerformance\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: performanceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgResilience\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: resilienceSeries,\r\n      },\r\n      {\r\n        name: \u0027avgSkill\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: skillSeries,\r\n      },\r\n      {\r\n        name: \u0027avgOverallScore\u0027,\r\n        type: \u0027number\u0027,\r\n        config: {},\r\n        values: overallSeries,\r\n      },\r\n    ],\r\n    length: maxLength,\r\n  },\r\n];\r\n"
+                },
+                "disabled": false
+              }
+            ]
+          },
           "monitor": {
             "gridPos": {
               "x": 16,
@@ -893,9 +1131,9 @@
         "rowId": "row-1773416401723",
         "gridPos": {
           "x": 0,
-          "y": 28,
-          "w": 18,
-          "h": 14,
+          "y": 31,
+          "w": 16,
+          "h": 19,
           "zIndex": 0
         },
         "order": 0,
@@ -905,35 +1143,6 @@
       "dataFileName": "echarts-data.json",
       "isCodeDriven": false,
       "libraryCode": "echarts"
-    },
-    {
-      "id": "widget-1775392984659",
-      "category": "chart",
-      "title": "Stat (Basic)",
-      "layout": {
-        "x": 3,
-        "y": 46,
-        "w": 2,
-        "h": 2,
-        "zIndex": 1
-      },
-      "templateId": "1330",
-      "monitor": {
-        "rowId": "row-1773416401723",
-        "gridPos": {
-          "x": 3,
-          "y": 46,
-          "w": 2,
-          "h": 2,
-          "zIndex": 0
-        },
-        "order": 0,
-        "flex": 1
-      },
-      "configFileName": "stat-options.json",
-      "dataFileName": "stat-data.json",
-      "isCodeDriven": false,
-      "libraryCode": "stat"
     }
   ],
   "templates": [],
@@ -967,39 +1176,13 @@
   ],
   "metadata": {
     "createdAt": "2026-03-13T15:41:18.244Z",
-    "savedAt": "2026-04-05T12:47:37.2037372Z",
-    "dbVersion": 2,
+    "savedAt": "2026-04-19T11:53:26.8089588Z",
+    "dbVersion": 3,
     "isStale": false,
-    "revision": 1128,
-    "leaseId": "de1c2821-8ce5-4c86-b147-06e8d0956e7f",
-    "leaseExpiresAt": "2026-04-05T12:57:37.150468Z",
-    "deletedWidgetIds": [
-      "widget-1773755665709-987tfgwnd",
-      "widget-1773755665709-l3ludyrwm",
-      "widget-1773755665709-6c4i4djbj",
-      "widget-1775274730406",
-      "widget-1775275589897-tyajkd8rt",
-      "widget-1775274956783",
-      "widget-1775278924194",
-      "widget-1775279089108",
-      "widget-1775274530162",
-      "widget-1775281396291",
-      "widget-1775281816112",
-      "widget-1775281844182",
-      "widget-1775282290544",
-      "widget-1775282372269",
-      "widget-1a00908b",
-      "widget-1775280843940",
-      "widget-1773756433465",
-      "widget-1775354448457",
-      "widget-1775354456086",
-      "widget-1775290665257-m7plqlz6l",
-      "widget-1773555831096-090nz1q3m",
-      "widget-1775290789241-st7vtx6ao",
-      "widget-1775290793498-6quxwp7wk",
-      "widget-1773503581760",
-      "widget-1775290251156"
-    ],
+    "revision": 1139,
+    "leaseId": "48fd2226-95d6-4cec-ab06-df0753e5df13",
+    "leaseExpiresAt": "2026-04-19T12:03:26.7630036Z",
+    "deletedWidgetIds": [],
     "persistedWidgetIds": [
       "widget-1773755665709-cz4ftupor",
       "widget-1773575574512",
@@ -1008,7 +1191,6 @@
       "widget-1775279099867",
       "widget-1775281850714",
       "widget-1775282455084",
-      "widget-1775291002692-8czxkkjdb",
       "widget-1775298453045",
       "widget-1775299829248",
       "widget-1775299994973",
@@ -1027,8 +1209,7 @@
       "widget-1773503524663",
       "widget-1775290783744-fnr3x39wr",
       "widget-1775382608386",
-      "widget-1775382626791",
-      "widget-1775392984659"
+      "widget-1775382626791"
     ]
   }
 }

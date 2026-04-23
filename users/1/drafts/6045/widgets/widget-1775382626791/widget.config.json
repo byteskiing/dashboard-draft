@@ -9,6 +9,9 @@
     "h": 12,
     "zIndex": 1
   },
+  "style": {
+    "showTitle": false
+  },
   "templateId": "176",
   "dataSource": {
     "type": "mock",
@@ -21,9 +24,9 @@
     "rowId": "row-1773416401723",
     "gridPos": {
       "x": 0,
-      "y": 28,
-      "w": 18,
-      "h": 14,
+      "y": 31,
+      "w": 16,
+      "h": 19,
       "zIndex": 0
     },
     "order": 0,
